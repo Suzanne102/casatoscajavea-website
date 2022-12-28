@@ -40,8 +40,24 @@ linkBtns.forEach((btn) => {
     const tempBtn = e.currentTarget.getBoundingClientRect();
     const bottom = tempBtn.bottom - 3;
     const center = (tempBtn.left + tempBtn.right) / 2;
-    submenu.classList.add("show");
-    submenu.style.left = `${center}px`;
-    submenu.style.top = `${bottom}px`;
+
+    const tempPage = sublinks.find(({ page }) => page === text);
+    const { page, links } = tempPage;
+    if (tempBtn) {
+      submenu.classList.add("show");
+      submenu.style.left = `${center}px`;
+      submenu.style.top = `${bottom}px`;
+      submenu.innerHTML = `
+      <section>
+      <h4>${page}</h4>
+      <div class="submenu-center col-2">
+      ${links
+        .map(({ url, icon, label }) => {
+          return `<a href="${url}"><i class="${icon}"></i>${label}</a>`;
+        })
+        .join("")}
+      </div>
+      </section>`;
+    }
   });
 });
