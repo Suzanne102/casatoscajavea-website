@@ -61,3 +61,12 @@ linkBtns.forEach((btn) => {
     }
   });
 });
+
+hero.addEventListener("mouseover", function (e) {
+  submenu.classList.remove("show");
+});
+nav.addEventListener("mouseover", function (e) {
+  if (!e.target.classList.contains("link-btn")) {
+    submenu.classList.remove("show");
+  }
+});
