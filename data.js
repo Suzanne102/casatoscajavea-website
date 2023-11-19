@@ -1,26 +1,40 @@
 const sublinks = [
   {
-    page: 'products',
+    page: 'Our Apartments',
     links: [
-      { label: 'payment', icon: 'fas fa-credit-card', url: 'products.html' },
-      { label: 'terminal', icon: 'fas fa-credit-card', url: 'products.html' },
-      { label: 'connect', icon: 'fas fa-credit-card', url: 'products.html' },
+      { label: 'No.1', icon: 'fas fa-bed', url: 'rooms.html' },
+      { label: 'No.2', icon: 'fas fa-bed', url: 'rooms.html' },
+      { label: 'No.3', icon: 'fas fa-bed', url: 'rooms.html' },
+      { label: 'No.4', icon: 'fas fa-bed', url: 'room.html' },
+      { label: 'No.5', icon: 'fas fa-bed', url: 'rooms.html' },
+      { label: 'calendar', icon: 'fas fa-calendar', url: 'rooms.html' },
     ],
   },
   {
-    page: 'developers',
+    page: 'location',
     links: [
-      { label: 'plugins', icon: 'fas fa-book', url: 'products.html' },
-      { label: 'libraries', icon: 'fas fa-book', url: 'products.html' },
-      { label: 'plugins', icon: 'fas fa-book', url: 'products.html' },
-      { label: 'billing', icon: 'fas fa-book', url: 'products.html' },
+      { label: 'google map', icon: 'fas fa-map-pin', url: 'map.html' },
+      { label: 'parkings', icon: 'fas fa-map-pin', url: 'map.html' },
     ],
   },
   {
-    page: 'company',
+    page: 'amenities',
     links: [
-      { label: 'about', icon: 'fas fa-briefcase', url: 'products.html' },
-      { label: 'customers', icon: 'fas fa-briefcase', url: 'products.html' },
+      { label: 'Code key', icon: 'fas fa-key', url: 'rooms.html' },
+      { label: 'wifi', icon: 'fas fa-wifi', url: 'rooms.html' },
+      { label: 'Smart TV', icon: 'fa fa-tv', url: 'rooms.html' },
+      { label: 'Equiped kitchen', icon: 'fa fa-cutlery', url: 'rooms.html' },
+      { label: 'A/C & Heater', icon: 'fa fa-thermometer-three-quarters', url: 'rooms.html' },
+      { label: 'Shared terrace', icon: 'fa fa-sun-o', url: 'rooms.html' },
+            
+      { label: 'Small wood fire place', icon: 'fa fa-fire', url: 'rooms.html' },
+    ],
+  },
+  {
+    page: 'About Us',
+    links: [
+      { label: 'about', icon: 'fas fa-briefcase', url: 'about.html' },
+      { label: 'reviews', icon: 'fas fa-star', url: 'reviews.html' },
     ],
   },
 ];
