@@ -124,7 +124,7 @@ p {
 /* flag styling */
 .nav-logo {
   height: 25px;
-  display: flex;
+  display:flex;
 }
 /* 
 =============== 
@@ -134,14 +134,18 @@ Stripe Styles
 .nav {
   height: 5rem;
   display: flex;
-  align-items: center;
+   align-items: center;
   justify-content: space-evenly;
   background: transparent;
   position: relative;
   z-index: 1;
 }
 .nav-center {
-  width: 90vw;
+  display: flex;
+  justify-content: space-between; /* Or 'space-around' depending on your design 
+    align-items: center;*/
+  flex-wrap: nowrap;
+    width: 100%;
   max-width: var(--max-width);
 }
 .nav-header {
@@ -162,7 +166,19 @@ Stripe Styles
   background: var(--clr-grey-5);
 }
 .nav-links {
+  display: flex;
   display: none;
+  list-style-type: none;
+
+ }
+ .nav-links li {
+  margin-right: 20px; /* Adjust spacing between items */
+}
+
+/* Adjust font size and padding as needed */
+.nav-links button {
+  font-size: 1rem;
+  padding: 10px;
 }
 .signin-btn {
   display: none;
@@ -209,18 +225,12 @@ Stripe Styles
 
 /* nav media query */
 @media screen and (min-width: 800px) {
-  .nav-center {
+ /* .nav-center {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
   }
-  .toggle-btn {
-    display: none;
-  }
-  .signin-btn {
-    display: inline-block;
-  }
-  .nav-links {
+   .nav-links {
     display: block;
     justify-self: center;
     display: grid;
@@ -233,7 +243,33 @@ Stripe Styles
   .nav-links li {
     height: 100%;
   }
-  .link-btn {
+  */
+  @media screen and (min-width: 800px) {
+    .nav-center {
+      display: flex; /* Changed from grid to flex */
+      justify-content: space-between; /* This spreads out the nav items */
+      align-items: center;
+    }
+  
+    .nav-links {
+      display: flex; /* Changed from grid to flex */
+      align-items: center; /* Aligns items vertically */
+      justify-content: center; /* Centers items horizontally */
+    }
+  
+    .nav-links li {
+      margin-right: 10px; /* Adjust spacing between nav items */
+    }
+  
+    /* Other styles... */
+  }
+  
+  .toggle-btn {
+    display: none;
+  }
+  .signin-btn {
+    display: inline-block;
+  }.link-btn {
     height: 100%;
     background: transparent;
     border-color: transparent;
@@ -245,6 +281,18 @@ Stripe Styles
   }
 }
 
+/*styling for the google map for large screens*/
+iframe {
+  width: 800px;
+  height: auto;
+  border: none;
+}
+/* google maps for smaller screens
+@media screen and (min-width: 1200px) {
+  iframe::before {
+    width: 100px;
+}
+*/
 /* hero media query */
 @media screen and (min-width: 800px) {
   .hero::before {
