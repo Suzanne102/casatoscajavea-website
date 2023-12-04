@@ -128,13 +128,13 @@ p {
 }
 /* 
 =============== 
-Stripe Styles
+Stripe Styles/TOP-NAV
 ===============
 */
 .nav {
   height: 5rem;
   display: flex;
-   align-items: center;
+  align-items: center;
   justify-content: space-evenly;
   background: transparent;
   position: relative;
@@ -176,7 +176,7 @@ Stripe Styles
 }
 
 /* Adjust font size and padding as needed */
-.nav-links button {
+.btn .toggle-btn {
   font-size: 1rem;
   padding: 10px;
 }
@@ -212,7 +212,7 @@ Stripe Styles
 
 .hero-info h1 {
   text-transform: none;
-  max-width: 500px;
+  max-width: 600px;
   margin-bottom: 2rem;
 }
 .hero-info p {
@@ -222,15 +222,7 @@ Stripe Styles
 .hero-images {
   display: none;
 }
-
-/* nav media query */
-@media screen and (min-width: 800px) {
- /* .nav-center {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-  }
-   .nav-links {
+.nav-links {
     display: block;
     justify-self: center;
     display: grid;
@@ -243,33 +235,43 @@ Stripe Styles
   .nav-links li {
     height: 100%;
   }
+/* nav media query */
+/*@media screen and (min-width: 800px) {
+  .nav-center {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+  /*  align-items: center;
+  }
   */
-  @media screen and (min-width: 800px) {
+  
+ @media screen and (min-width: 800px) {
     .nav-center {
       display: flex; /* Changed from grid to flex */
       justify-content: space-between; /* This spreads out the nav items */
       align-items: center;
-    }
-  
+    }  
     .nav-links {
       display: flex; /* Changed from grid to flex */
       align-items: center; /* Aligns items vertically */
       justify-content: center; /* Centers items horizontally */
     }
-  
     .nav-links li {
       margin-right: 10px; /* Adjust spacing between nav items */
     }
-  
+    .hero-info p {
+      line-height: 1.3;
+      font-size: 1.2rem;
+    }
+      }
     /* Other styles... */
-  }
-  
+    
   .toggle-btn {
     display: none;
   }
   .signin-btn {
     display: inline-block;
-  }.link-btn {
+  }
+  .link-btn {
     height: 100%;
     background: transparent;
     border-color: transparent;
@@ -279,7 +281,6 @@ Stripe Styles
     letter-spacing: 1px;
     width: 10rem;
   }
-}
 
 /*styling for the google map for large screens*/
 iframe {
@@ -294,6 +295,33 @@ iframe {
 }
 */
 /* hero media query */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .toggle-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 10px;
+    margin-left: 30px;
+  }
+  .hero::before {
+    margin-top: 0;
+  }
+
+  .hero-info p {
+    font-size: 1.1em;
+  }
+}
+/*@media screen and (min-width: 768px) and (min-width: 800px)  {
+  .hero-info h1 {
+    font-size: 2em;
+  }
+*/
 @media screen and (min-width: 800px) {
   .hero::before {
     background-size: contain;
@@ -313,9 +341,6 @@ iframe {
     display: block;
     justify-self: center;
   }
-  .phone-img {
-    width: 12rem;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -331,18 +356,15 @@ iframe {
   .hero-images {
     align-self: end;
   }
-  .phone-img {
-    width: 15rem;
-  }
 }
 @media screen and (min-width: 1400px) {
   .hero-center {
     padding-bottom: 20vh;
   }
-  .phone-img {
-    width: 17rem;
-  }
 }
+
+  /* Other styles for smaller screens */
+
 
 /* sidebar */
 .sidebar-wrapper {
@@ -467,8 +489,11 @@ iframe {
 }
 
 /* Styles for the Sections*/
-
-
+.distinctions__img iframe {
+  width: 100%;
+  height: 500px;
+  /* additional styles if needed */
+}
 .location {
   padding: 0 0 20px 20px;
   color: black;
@@ -477,3 +502,4 @@ iframe {
 hlocation {
   color: black;
 }
+/*Styles taken from 
