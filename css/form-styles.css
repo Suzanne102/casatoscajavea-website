@@ -1,0 +1,44 @@
+/* styles for the Entrada de viajeros - 
+necesseray details that must be obtained from guests
+once they have booked. Registration form */
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #4A4E69; /* Example color */
+}
+
+/* Styling form elements */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #9A8C98; /* Example color */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #4A4E69; /* Darker shade for hover */
+}
+
+/* Additional styling as needed */
