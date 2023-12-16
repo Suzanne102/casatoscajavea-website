@@ -5,6 +5,8 @@
 		<meta charset="UTF-8">
   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  	<link rel="stylesheet" href="/css/form-styles.css" />
+		<link rel="stylesheet" href="/css/queries.css">
+		<link rel="stylesheet" href="/CSS/styles.css">
 
 	</head>
 	<body>  
@@ -14,15 +16,20 @@
 					</div>
 					<h1>CASA TOSCA<br /> ALOJAMIENTO VACACIONAL </h1>
 					<h2>Hoja - registro</h2>
-					<h3>(Rellanar con mayusculas)</h3>	
 					<h3>DATOS DEL ESTABLECIMIENTO</h3>
 					<p>NIE: Y5519217J </p>
 					<p>NOMBRE: PETER ZWAGER</p>
 					<p>Nombre del Establecimiento: CASA TOSCA JAVEA</p>
 					<p>Municipio: VALENCIA</p>
 					<p>Provincia: ALICANTE</p>
-					<h2>ENTRE SUS DATOS AQUI</h2>
-				<form action="/action_page.php" target="_blank" method="get" autocomplete="on">
+					<h2>ENTRE SUS DATOS</h2>
+				<form action="/action_page.php" target="_blank" method="post" enctype="multipart/form-data" autocomplete="on">
+				 <!-- Existing form fields -->
+    
+				    <!-- File upload field -->
+					<label for = "id-upload">Cargar ID</label><br />
+					<input type="file" id="id-upload" name="id-upload" accept=".jpg, .jpeg, .png, .pdf"><br />
+					<h3>O Rellanar sus datos aqui con mayusculas)</h3>						
 					<label for = "tipodoc"><p>Tipo de documento:</p></label> 
 						<select name="tipodoc"  id="IdType">
 						<option value="D.N.I." selected="selected">D.N.I. </option>
