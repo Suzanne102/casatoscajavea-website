@@ -17,7 +17,8 @@
 		<link rel="stylesheet" type="text/css" href="../CSS/maincasatosca.css">
 		<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 		<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
-
+		/* this is a tag for the Facebook account for Casatosca */
+		<meta name="facebook-domain-verification" content="v0vcel3gpwojszvtnh0bdg7wqzhic5" />
 		<!-- Google tag (gtag.js) PUT MY ONW TAG AND PROPER GOOGLE ID IN THE JS FILE-->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-G-7MBHPYGQCX"></script>
 		<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-7MBHPYGQCX');

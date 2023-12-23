@@ -1,24 +1,7 @@
-/*Big tablets to 1200px (width smaller than the 1140px row*/
-@media only screen and (max-width: 1200px) {
-
-    .distinctions__img img { 
-        max-height: 20vh;
-        max-height: calc(var(--vh, 1vh) * 20); 
-        width: auto; 
-    }
-
-    .distinctions__img iframe { 
-        max-height: 50vh;
-        max-height: calc(var(--vh, 1vh) * 50); 
-        max-width: 30vw;
-        max-width: calc(var(--vw, 1vw) * 30); 
-    }
-}
-
-/*Small tablets to big tablets: 768 to 1023px*/
-@media only screen and (max-width: 1023px) {
+/*Small tablets to big tablets: 768 to 1169px*/
+@media only screen and (min-width: 768px) and (max-width: 1169px) {
     html,
-    body { font-size: 56.25%; /*100% = 16px, I want 10px = 62.5% for responsive design*/ }
+    body { font-size: 75%; /*100% = 16px, I want 10px = 62.5% for responsive design*/ }
 
     /* DISTINCTIONS */
     .distinctions__contentrow { 
@@ -40,8 +23,8 @@
     }
 
     .distinctions__txt {
-        text-align: center;
-        line-height: 35px;
+        text-align: left;
+        line-height: 25px;
         
       }
 
@@ -86,13 +69,18 @@
 
 /*Small phones to small tablets: 481 to 767px*/
 @media only screen and (max-width: 767px) {
+    html,
+    body { font-size: 65%; /*100% = 16px, I want 10px = 62.5% for responsive design*/ }
 
     .show-mobile { display: block; } 
     .hide-mobile { display: none; } 
 
+
     .section-container {
         padding-top: 30px;
         padding-bottom: 30px;
+        body { font-size: 55%; /*100% = 16px, I want 10px = 62.5% for responsive design*/ }
+
     }
 
     /* SPECIALS */
@@ -209,60 +197,8 @@
     
     /* FOOTER */
     .foot__copy img { margin: 1rem; }    
-
-}    
-
-/*Extra Small phones: 0 to 480px*/
-@media only screen and (max-width: 480px) {
-
-    html,
-    body { font-size: 43.75%; /*100% = 16px, I want 10px = 62.5% for responsive design*/ }
-
-    /* HERO */
-    /* .hero { background-color: none; } */
-
-    header {
-        height: 50vh;
-    }
-
-    .hero {
-        height: 100%;
-    }
-    
-    .hero__logo { 
-        grid-column-start: 5; 
-        grid-column-end: 6; 
-    } 
-     
-    
-     .logo {
-        margin: 1rem;
-        width: 100%;
-        height: auto;
-        max-height: auto;
-    } 
-
-    .hero__slogan { 
-        grid-column-start: 4; 
-        grid-column-end: 6; 
-        grid-row-start: 3; 
-        grid-row-end: 4;
-    }
-        
-    .slogan {
-        margin: 0;
-        padding-right: 5rem;
-        width: 150%;
-        height: auto;
-        max-height: auto;
-    }        
-
-    .hero__img img {
-        min-height: 0;
-        width: 100%;
-        height: 100%;
-      }
-
+      
+    /*this nav css came from another website */
     /* .container__nav {
         background-color: white;
         justify-content: flex-end;
@@ -331,5 +267,5 @@
         max-height: 40vh;
         max-height: calc(var(--vh, 1vh) * 40); 
     }
-    
 }
+    
