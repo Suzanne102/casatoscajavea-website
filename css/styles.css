@@ -489,6 +489,10 @@ iframe {
 }
 
 /* Styles for the Sections*/
+
+section {
+  
+} 
 .distinctions__img iframe {
   width: 100%;
   height: 500px;

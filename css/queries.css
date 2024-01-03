@@ -1,0 +1,335 @@
+/*Big tablets to 1200px (width smaller than the 1140px row*/
+@media only screen and (max-width: 1200px) {
+
+    .distinctions__img img { 
+        max-height: 20vh;
+        max-height: calc(var(--vh, 1vh) * 20); 
+        width: auto; 
+    }
+
+    .distinctions__img iframe { 
+        max-height: 50vh;
+        max-height: calc(var(--vh, 1vh) * 50); 
+        max-width: 30vw;
+        max-width: calc(var(--vw, 1vw) * 30); 
+    }
+}
+
+/*Small tablets to big tablets: 768 to 1023px*/
+@media only screen and (max-width: 1023px) {
+    html,
+    body { font-size: 56.25%; /*100% = 16px, I want 10px = 62.5% for responsive design*/ }
+
+    /* DISTINCTIONS */
+    .distinctions__contentrow { 
+        grid-template-columns: 1fr; 
+        row-gap: 4rem;
+    }
+            
+    .distinctions__img img { 
+        max-height: 20vh;
+        max-height: calc(var(--vh, 1vh) * 20); 
+        width: auto; 
+    }
+
+    .distinctions__img iframe { 
+        max-height: 50vh;
+        max-height: calc(var(--vh, 1vh) * 50); 
+        max-width: 80vw;
+        max-width: calc(var(--vw, 1vw) * 80); 
+    }
+
+    .distinctions__txt {
+        text-align: center;
+        line-height: 35px;
+        
+      }
+
+    /* SERVICES */
+    .services__contentrow {
+        column-gap: 2rem;
+        padding: 0;
+    }
+
+    /* PHOTOS */
+    .gallery-container {
+        height: 50vh;
+        height: calc(var(--vh, 1vh) * 50);
+    }
+
+    /* .photos__btnrow { max-width: 75%; }   */
+    .photos__btnrow { 
+        max-width: 80%;
+        margin-left: 10%; 
+    }
+
+    .custom-icon-big {
+        width: 6rem;
+        height: 6rem;
+      }
+
+    /* ECO-FRIENDLY */
+    .ecofriendly__list--item { font-size: 1.5rem;}
+
+     /* ROOMS */
+    .rooms__contentrow { column-gap: 1rem; }    
+    .rooms__box--title h3 { font-size: 1.7rem; }    
+    .rooms__box--feature { font-size: 1.3rem; }
+            
+    /* SPECIAL OFFERS */
+    .offers__contentrow {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 3rem;
+    }
+
+}    
+
+/*Small phones to small tablets: 481 to 767px*/
+@media only screen and (max-width: 767px) {
+
+    .show-mobile { display: block; } 
+    .hide-mobile { display: none; } 
+
+    .section-container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    /* SPECIALS */
+    .specials__contentrow { 
+        grid-template-columns: 1fr; 
+        row-gap: 6rem;
+    }
+    
+    .specials__list { 
+        grid-template-columns: 1fr; 
+        row-gap: 6rem;
+    }
+        
+    .specials__img img { 
+        max-height: 15vh;
+        max-height: calc(var(--vh, 1vh) * 15); 
+        width: auto; 
+    }
+
+    /* SERVICES */
+    .services__contentrow { grid-template-columns: 1fr; }    
+
+    /* PHOTOS */
+    .gallery-container {
+        height: 70vh;
+        height: calc(var(--vh, 1vh) * 70);
+        flex-direction: column;
+    }
+
+    /* .photos__btnrow { max-width: 90%; } */
+    .photos__btnrow { 
+        max-width: 100%;
+        margin-left: 0%; 
+    }
+
+    .custom-icon-big {
+        width: 5rem;
+        height: 5rem;
+      }
+    
+    /* ECO-FRIENDLY */
+    .ecofriendly__contentrow {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+    
+    .ecofriendly__img img { 
+        max-height: 60vh;
+        max-height: calc(var(--vh, 1vh) * 60); 
+        width: auto; 
+    }
+
+    .ecofriendly__list { row-gap: 3rem; }    
+
+    /* ROOMS */
+    .rooms__contentrow {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+
+    .rooms__box--title {
+        grid-template-rows: 1fr;
+        row-gap: 2rem;
+    }
+
+    .rooms__box--title h3 { font-size: 3rem; }    
+
+    /* REVIEWS */
+    .reviews__contentrow {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+    
+    .reviews__box blockquote {
+        display: grid;
+        font-style: italic;
+        line-height: 2rem;
+    }
+    
+    .reviews__box p { font-size: 2rem; }
+
+    .reviews__box a { font-size: 2rem; }
+
+    .reviews__box cite {
+        grid-template-columns: 1fr auto; 
+        margin-top: 0;
+    }
+
+    .reviews__icon { justify-self: right; }   
+
+    /* SPECIAL OFFERS */
+    .offers__contentrow {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+
+    .offers__box {
+        row-gap: 2rem;
+        margin-left: 5%;
+        max-width: 90%;
+    }
+
+    .offers__box--title h3{ font-size: 3rem; }
+
+    .offers__box--subtitle {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .offers__box--subtitle span { font-size: 3rem; }        
+
+    .offers__box--descrip { font-size: 2rem; }
+
+    .offers__box--btn a { font-size: 2rem; }     
+    
+    /* FOOTER */
+    .foot__copy img { margin: 1rem; }    
+
+}    
+
+/*Extra Small phones: 0 to 480px*/
+@media only screen and (max-width: 480px) {
+
+    html,
+    body { font-size: 43.75%; /*100% = 16px, I want 10px = 62.5% for responsive design*/ }
+
+    /* HERO */
+    /* .hero { background-color: none; } */
+
+    header {
+        height: 50vh;
+    }
+
+    .hero {
+        height: 100%;
+    }
+    
+    .hero__logo { 
+        grid-column-start: 5; 
+        grid-column-end: 6; 
+    } 
+     
+    
+     .logo {
+        margin: 1rem;
+        width: 100%;
+        height: auto;
+        max-height: auto;
+    } 
+
+    .hero__slogan { 
+        grid-column-start: 4; 
+        grid-column-end: 6; 
+        grid-row-start: 3; 
+        grid-row-end: 4;
+    }
+        
+    .slogan {
+        margin: 0;
+        padding-right: 5rem;
+        width: 150%;
+        height: auto;
+        max-height: auto;
+    }        
+
+    .hero__img img {
+        min-height: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+    /* .container__nav {
+        background-color: white;
+        justify-content: flex-end;
+        align-items: right;
+    } */
+
+    /* .mobile-nav-icon {
+        margin: 10px 20px;
+        cursor: pointer;
+        display: inline-block;
+        color: #FFF;
+    } */
+
+    /* .main-nav { display:none;} */
+    
+    /* .main-nav {
+        float: left;
+        margin-top: 35px;
+        margin-bottom: 25px;
+    } */
+
+    /* .main-nav li {
+        display: block;
+    } */
+    
+    /* .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border-bottom: 0;
+        padding: 5px 0;
+        font-size: 1.5rem;
+    } */
+
+    /* .sticky .main-nav { margin-top: 10px;} */
+
+    /* .sticky .mobile-nav-icon  { 
+        margin-top: 10px;
+        color: #555;
+    } */
+
+    /* .sticky .logo { display: none;} */
+    /* .sticky .logo-black { display: block;}       */
+
+    /* ECO-FRIENDLY */
+    .ecofriendly__img img { 
+        max-height: 40vh;
+        max-height: calc(var(--vh, 1vh) * 40); 
+        width: auto; 
+    }
+
+    .ecofriendly__btnrow {
+        grid-template-columns: repeat(2,1fr);;
+        row-gap: 2rem;
+        column-gap: 2rem;
+        align-content: center;
+    }
+
+    /* OFFERS */
+    .offers__btnrow {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+
+    /* ROOMS */       
+    .rooms__box--title img { 
+        max-height: 40vh;
+        max-height: calc(var(--vh, 1vh) * 40); 
+    }
+    
+}
