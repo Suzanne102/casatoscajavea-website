@@ -43,14 +43,13 @@ Variables
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
-  --fixed-width: 620px;
+  --fixed-width: 620px; /* used for the sidebar */
 }
 /*
 =============== 
 Global Styles
 ===============
 */
-
 *,
 ::after,
 ::before {
@@ -58,13 +57,16 @@ Global Styles
   padding: 0;
   box-sizing: border-box;
 }
+div {
+  border: 3px solid red; /* Example: adds a red border */
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background: var(--clr-white);
   color: var(--clr-grey-1);
   line-height: 1.5;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 ul {
   list-style-type: none;
@@ -98,113 +100,100 @@ p {
   color: var(--clr-grey-5);
   font-weight: 600;
 }
-@media screen and (min-width: 769px) {
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  body {
-    font-size: 1rem;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
-  }
-}
-/* flag styling */
 
-/* 
-=============== 
-Stripe Styles/TOP-NAV
-===============
-*/
+/* FLAG styling 
+===============*/ 
+/*Stripe Styles/TOP-NAV
+===============*/
 .nav {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-family: 'Arial', sans-serif;
-  align-items: center;
-  /*justify-content: space-evenly;
+  display: inline-flex;
+  justify-content: space-evenly;
   background: transparent;
+  height: 100px;
   position: relative;
-  z-index: 1;*/
+  z-index: 1;
 }
-.nav-center {
-  max-width: var(--max-width);
-  display: flex;
-  justify-content: space-between; /* Or 'space-around' depending on your design 
-    align-items: center;*/
-  flex-wrap: nowrap;
+
+.nav-header {  /*where my logo, and the 2 flags are located. They are children of nav and nav.center*/
+  display: inline-flex;
+  justify-content: space-evenly;
+  height: 60px;
   width: 100%;
+  background-color: #fff;
 }
-.nav-header {
-  height: 25px;
-  margin-top: 50px;
-  padding-left: 20px;
+.flags {
+  height: 30px;
+} 
+.casatosca-logo img {
   display: flex;
-  justify-content: flex-end ;
+  height: 40px;
+  margin-left: 20px;
 }
-.btn {
-  font-size: 1.8rem;
-  padding: 0.25rem 0.25rem;
+/*STYLING FOR TOP-NAV HIDDEN*/
+
+.nav-links {  /*those are hidden untill @media larger than 780px*/
+  display: none;
+  list-style: none;
+  display: flex;
+}
+.nav-links li { /*@media larger than 780px*/
+ display: inline-flex;
+ align-items: center;
+ margin-right: 20px; /* Adjust spacing between items */
+}
+.nav-links .btn { /*those are hidden untill @media larger than 780px*/
+  font-size: 1rem;
+  padding: 0.3rem 0.25rem;
   border-radius: var(--radius);
   border-color: transparent;
-  color: white;
-  background: var(--clr-black);
+  color:  blanchedalmond;
+  background: rgb(130, 100, 0);
   cursor: pointer;
-  transition: var(--transition);
+  transition: all 0.3s ease;
 }
-.btn:hover {
+.nav-links .btn:hover {  /*those are hidden untill @media larger than 780px*/
   background: var(--clr-grey-5);
-}
-.nav-links {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between; /* Or 'space-around' depending on your 
-
- }
- .nav-links li {
-  margin-right: 20px; /* Adjust spacing between items */
+  color: black; /* Highlight color on hover */
+  cursor: pointer;
 }
 
-/* Adjust font size and padding as needed */
+/* VISIT US button.  */
 .btn .toggle-btn {
-  font-size: 1rem;
-  padding: 10px;
+  padding: 0 10px 0 10px;
+  background-color: black; /*this does not seem to work*/
 }
 .signin-btn {
-  display: none;
+  display: inline-block;
 }
+
+/*STYLING FOR HERO */
 .hero::before {
   content: '';
   position: absolute;
+  margin-top: 0;
   width: 100%;
-  height: 85%;
-  top: 0;
+  height: 100%;
+  top: 0px;
   left: 0;
-  background: url(/images/gold-hue.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+background: url(/images/gold-hue.png);
+background-color: rgba(255, 0, 0, 0.2); /* Red background for testing */
+  
+background-size: cover;
   z-index: -1;
 }
 .hero {
   position: relative;
-  min-height: 100vh;
-  margin-top: -5rem;
+  /*min-height: 60vh;*/
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+  
 }
 .hero-center {
   width: 90vw;
+  margin-top: 0rem;
   max-width: var(--max-width);
   display: grid;
   align-items: center;
@@ -212,14 +201,15 @@ Stripe Styles/TOP-NAV
 
 .hero-info h1 {
   text-transform: none;
-  max-width: 600px;
+  margin-top: 0rem;
+  max-width: 70vw;
   margin-bottom: 2rem;
 }
 .hero-info p {
-  max-width: 35em;
+  max-width: 60vw;
   line-height: 1.8;
   color: var(--clr-grey-1); 
-  font-size: 2rem;
+  font-size: 1rem;
 }
 .hero-images {
   display: none;
@@ -237,212 +227,36 @@ Stripe Styles/TOP-NAV
   .nav-links li {
     height: 100%;
   }
-/* nav media query */
-/*@media screen and (min-width: 800px) {
-  .nav-center {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-  /*  align-items: center;
-  }
-  */
-  /* Media query for large screens (e.g., desktops) */
-  @media screen and (min-width: 769px) and (max-width: 1170px) {
-  .hero .btn {
-      /* Adjustments specific for large screens */
-      bottom: 2ch;
-      /* Other styles as needed */
-  }
-    .nav-center {
-      display: flex; /* Changed from grid to flex */
-      justify-content: space-between; /* This spreads out the nav items */
-      align-items: center;
-    }  
-    .nav-links {
-      display: flex; /* Changed from grid to flex */
-      align-items: center; /* Aligns items vertically */
-      justify-content: center; /* Centers items horizontally */
-    }
-    .nav-links li {
-      margin-right: 10px; /* Adjust spacing between nav items */
-    }
-    .hero {
-      margin-top: -155px;
-    }
-    .hero-info p {
-      line-height: 1.3;
-      font-size: 1.2rem;
-    }
-  }
-    /* Other styles... */
+/* Other styles... */
     
-  .toggle-btn {
-    display: none;
-  }
-  .signin-btn {
-    display: inline-block;
-  }
-  .link-btn {
-    height: 100%;
-    background: transparent;
-    border-color: transparent;
-    font-size: 1.1rem;
-    color: white;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    width: 10rem;
-  }
+.toggle-btn {
+  display: none;
+}
+.signin-btn {
+  display: inline-block;
+}
+.link-btn {
+  height: 100%;
+  background: transparent;
+  border-color: transparent;
+  font-size: 1.1rem;
+  color: white;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  width: 10rem;
+}
 
-/*styling for the google map for large screens*/
+/*styling for the GOOGLE MAPS */
 iframe {
-  width: 768px;
-  height: auto;
-  border: none;
-}
-/* google maps for smaller screens
-@media screen and (min-width: 1200px) {
-  iframe::before {
-    width: 100px;
-}
-*/
-/*  I think this nav css came from another website it also had a hero section */ 
-/*Extra Small phones: 0 to 480px*/
-@media only screen and (max-width: 480px) {
-
-    html,
-    body { font-size: 2.0rem; /*100% = 16px, I want 10px = 62.5% for responsive design*/ } */
-
-    /* HERO */
-    /* .hero { background-color: none; } */
-
-    header {
-        height: 50vh;
-    }
-
-    .hero {
-        height: 100%;
-    }
-    
-    .hero__logo { 
-        grid-column-start: 5; 
-        grid-column-end: 6; 
-    } 
-    
-     .logo {
-        margin: 1rem;
-        width: 100%;
-        height: auto;
-        max-height: auto;
-    } 
-
-    .hero__slogan { 
-        grid-column-start: 4; 
-        grid-column-end: 6; 
-        grid-row-start: 3; 
-        grid-row-end: 4;
-    }
-        
-    .slogan {
-        margin: 0;
-        padding-right: 5rem;
-        width: 150%;
-        height: auto;
-        max-height: auto;
-    }        
-
-    .hero__img img {
-        min-height: 0;
-        width: 100%;
-        height: 100%;
-      }
-
-/* hero media query for small screens like tablets */
-@media screen and (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-  .nav-header {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .toggle-btn {
-    display: flex;
-    justify-content: flex-end;
-    padding-left: 10px;
-    margin-left: 30px;
-  }
-  .hero::before {
-    margin-top: 0;
-    height: 100%;
-  }
-  .hero-info p {
-    font-size: 2em;
-  }
-  .hero .btn {
-    /* Adjustments specific for medium screens */
-    bottom: 5px;
+width: 768px;
+height: auto;
+border: none;
 }
 
-
-/*@media screen and (min-width: 769px)  {
-  .hero-info h1 {
-    font-size: 2em;
-  }*/
-/* hero media query for medium sized screens, tablets etc..  */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .hero::before {
-    background-size: contain;
-    height: 100%;
-  }
-  .hero-center {
-    grid-template-columns: 2fr 1fr;
-  }
-
-  .hero-info h1 {
-    font-size: 3rem;
-  }
-  .hero-info p {
-    font-size: 2.25rem;
-  }
-  .hero-images {
-    display: block;
-    justify-self: center;
-  }
-}
-/* hero Media query for large screens max-width 1170px */
-@media screen and (min-width: 1024px) and (max-width: 1170px) {
-  .hero .btn {
-      /* Add your specific styles for the "Book now" button here */
-      /* For example: */
-      position: absolute;
-      bottom: 20px; /* Adjust as needed */
-      left: 50%; /* Center the button */
-      transform: translateX(-50%); /* Adjust for centering */
-      z-index: 10; /* Ensure it's above the background */
-  }
-  .hero-center {
-    grid-template-columns: 2fr 1fr;
-    align-items: end;
-    padding-bottom: 12vh;
-  }
-  .hero-info h1 {
-    max-width: 100%;
-    font-size: 5.5rem;
-  }
-  .hero-info p {
-    font-size: 2.25rem;
-  }
-  .hero-images {
-    align-self: end;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .hero-center {
-    padding-bottom: 20vh;
-  }
-}
-
-  /* Other styles for smaller screens */
-
+/* Google maps for smaller screens*/
+/*@media screen and (min-width: 1200px) {
+iframe::before {
+  width: 100px;}*/
 
 /* sidebar */
 .sidebar-wrapper {
@@ -467,7 +281,7 @@ iframe {
 .sidebar {
   width: 90vw;
   height: 95vh;
-  max-width: var(--fixed-width);
+  max-width: var(--fixed-width);  /* fixed width is 620px*/
   background: var(--clr-white);
   border-radius: var(--radius);
   box-shadow: var(--dark-shadow);
@@ -501,85 +315,416 @@ iframe {
   color: var(--clr-grey-5);
   margin-right: 1rem;
 }
+/* ROOMS */
 
-@media screen and (min-width: 769px) {
+.rooms {
+  background-color: white ;
+}
+
+  .rooms__contentrow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+  }
+
+    .rooms__box {
+      padding: 3%;
+      background-color: #F4F4F4;
+      border-radius: .5rem;
+      -webkit-box-shadow: .4rem .4rem .2rem #efefef;
+              box-shadow: .4rem .4rem .2rem #efefef; /*x-offset y-offset blur*/          
+    }
+    
+      .rooms__box--title {
+        display: grid;
+        grid-template-rows: 3fr auto;
+        border-bottom: .1rem solid #76981B;
+        row-gap: 1.5rem;
+      }
+
+      .rooms__box--title img {
+        width: 100%;
+        height: auto;
+        align-self: center;
+        justify-self: center;
+      }
+      
+      .rooms__box--title h3 {
+        padding-bottom: 1rem;
+        justify-self: left;
+      }
+
+      .rooms__box--feature {
+        margin-top: .8rem;
+        font-size: 1.6rem;
+        text-align: left;
+        line-height: 2rem;
+      }  
+      
+
+/*  FOR SMALL SCREENS - I think this nav css came from another website it also had a hero section */ 
+/*I made adjustments to it jan 14 2024*/
+@media only screen and (max-width: 469px) {
   .sidebar-wrapper {
     display: none;
   }
-}
 
-/* links */
-.submenu {
-  background: var(--clr-white);
-  box-shadow: var(--dark-shadow);
-  position: absolute;
-  top: 4rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
-  display: none;
-  padding: 2rem;
-  border-radius: var(--radius);
-}
-.submenu::before {
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid var(--clr-white);
-  position: absolute;
-  top: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-}
+  html,
+  body { 
+      font-size: .65rem; /*100% = 16px or 1rem, I want .8rem or 10px or 62.5% for responsive small design*/ 
+      max-width: 479px;
+  }
+  h2 {
+    padding-left: 20px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links li {
+    display: none;
+  }  
+    /*Styling for the Flags and logo*/
+  .nav {
+      margin: 0 0 0 10px;
+      display: flex;
+      justify-content: space-between;
+      height: 50px;
+  }
+  .nav-header {
+      display: flex; /* Changed from grid to flex */
+      justify-content: space-between; /* This spreads out the nav items */
+      height: 50px;   
+      width: auto;
+  }
+  .casatosca-logo img {
+    height: 40px;
+  }
+  .flags {
+      width: auto;
+      height: 40px;
+      display: flex; /* Changed from grid to flex */
+      justify-content: space-between; /* This spreads out the nav items */
+  }  
+  .btn.toggle-btn {
+    display: flex; /* Ensure the button is visible */
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1rem; /* Adjusting the font size */
+    background-color: rgb(248, 186, 13); 
+  }
+  /*STYLING FOR HERO CLASS */
+  .hero {
+    width: 100%;
+    padding-left: 20px; /* Adds some padding around the content for smaller screens */
+    background-size: cover; /* Ensures the background covers the available space */
+    background-position: left; /* left  background image */
+  }
+  .hero-center {
+    width: 100%; /* Allows the content to fill the available width */
+    }
+  .hero-info h1 {
+      font-size: 2rem; /* Slightly smaller, considering the reduced screen real estate */
+      font-weight: 700;
+      margin-bottom: 5px; /* Adjusting the bottom margin for tighter spacing */
+  }
+  .hero-info p {
+      font-size: 1.2rem; /* Smaller paragraph text for compact spaces */
+      max-width: none;
+      margin-bottom: 1rem; /* Slightly reduced bottom margin */
+  }
+  .btn {
+      font-size: 1rem; /* Keeping the button text readable */
+      padding: 1rem 0.75rem; /* Adjusting the padding for a smaller button */
+    }
+/* OUR LOCATION */
 
-.submenu.show {
-  display: block;
+.location__txt h2 {
+  font-size: 1.9rem;
+  padding-left: 20px;
+  }
+.location__txt p {
+  font-size: 1.2rem;
+  padding-left: 20px;  
+  }
+.location__img {
+  display: inline;
+  
 }
+  /* STYLING FOR OUR ROOMS*/
 
-.submenu-center {
-  display: grid;
-  gap: 0.25rem 2rem;
-}
-.col-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-.col-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-.col-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-.submenu h4 {
-  margin-bottom: 1.5rem;
-}
-.submenu-center a {
-  width: 10rem;
-  display: block;
-  color: var(--clr-grey-1);
-  text-transform: capitalize;
-}
-.submenu-center i {
-  color: var(--clr-grey-5);
-  margin-right: 1rem;
-}
-
-/* Styles for the Sections*/
-
-
-.distinctions__img iframe {
-  width: 100%;
+.section-container rooms {
+  font-size: 1rem;
+  color:hsl(125, 67%, 44%);
   height: 500px;
-  /* additional styles if needed */
-}
-.location {
-  padding: 0 0 20px 20px;
-  color: black;
 }
 
-hlocation {
-  color: black;
+  }
+   /* END OF STYLING FOR PHONES media smaller than 480px);
+/* hero media query for small screens like tablets */
+  /*@@media screen and (min-width: 780px) {
+  .nav-center {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+  }
+}*/
+@media screen and (min-width: 470px) and (max-width: 779px) {
+  .sidebar-wrapper {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+  }
+  .nav-header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .casatosca-logo img {
+    height: 50px;
+  }
+  .flags {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .toggle-btn {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem; /* Adjusting the font size */
+    padding-left: 10px; /* Adding padding */
+    background-color: rgb(248, 186, 13); 
+  }
+/*STYLES FOR THE NAV LINKS TO BE HIDDEN*/
+  .nav-links {
+    display: none;
+  }
+  .hero::before {
+    margin-top: 0;
+    height: 100%;
+  }
+  /*STYLES FOR HERO CLASS9*/
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero p {
+    font-size: .62rem;
+  }
+  .hero .btn {
+    /* Adjustments specific for medium screens */
+    bottom: 5px;
+  }
+
+/*STYLES FOR LOCATION*/  
+  .location__txt p {
+    font-size: 1rem;
+  }
 }
-/*Styles taken from */
+
+
+/* Media query for large screens (e.g., desktops) the var max width is 1179px */
+
+@media screen and (min-width: 780px) and (max-width: var(--max-width)) {
+  body,
+  html 
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between; /* Adjusts children alignment to space between */
+    align-items: center; /* Vertically centers children */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    background: transparent;
+    position: relative;
+    z-index: 1;
+    padding: 0 20px; /* Add padding for some spacing at the edges */
+  }
+  .nav-header {
+    display: flex;
+    justify-content: space-between; /* This ensures the logo, flags, and nav-links are spread out */
+    align-items: center;
+    width: 100%; /* Ensures the nav-header takes full width of its parent */
+    height: 60px;
+    background-color: #fff;
+  }
+  .casatosca-logo, .flags, .nav-links {
+    display: flex;
+    align-items: center; /* Align items in the center vertically */
+  }
+  
+  .nav-links {
+    justify-content: center; /* Center the links if there's enough space */
+    gap: 10px; /* Creates space between individual links */
+  }
+ .toggle-btn {
+    display: none;
+  }
+ .nav-center {
+  display: grid; /* This should be grid - Changed from grid to flex */
+  justify-content: space-between; /* This spreads out the nav items */
+  align-items: center;
+  }  
+  .nav-links li {
+    display: inline-flex; /* Use inline-flex to keep li items inline but also enable flexbox properties */
+    align-items: center; /* Vertically center the content of each li */
+    margin-right: 20px; /* Add some space between each list item, adjust as needed */
+  
+  }
+    /*Styling for hero which is the introduction*/
+  .hero .btn {
+    /* Adjustments specific for large screens */
+    bottom: 2ch;
+    /* Add your specific styles for the "Book now" button here */
+    /* For example: */
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 50%; /* Center the button */
+    transform: translateX(-50%); /* Adjust for centering */
+    z-index: 10; /* Ensure it's above the background */
+  }
+  .hero::before {
+    background-size: contain;
+    height: 100%;
+  }
+  .hero {
+      margin-top: 10px;
+  }
+  .hero-center {
+    grid-template-columns: 2fr 1fr;
+    align-items: end;
+    padding-bottom: 12vh;
+  }
+  .hero-info h1 {
+    max-width: 100%;
+    font-size: 3.5rem;
+  }
+  .hero-info p {
+    line-height: 1.3;
+    font-size: 2.25rem;
+  }
+  .hero-images {
+    display: block;
+    align-self: end;
+  }
+  
+  /* links */
+  .submenu {
+    background: var(--clr-white);
+    box-shadow: var(--dark-shadow);
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    display: none;
+    padding: 2rem;
+    border-radius: var(--radius);
+  }
+  .submenu::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid var(--clr-white);
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .submenu.show {
+    display: block;
+  }
+
+  .submenu-center {
+    display: grid;
+    gap: 0.25rem 2rem;
+  }
+  .col-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .submenu h4 {
+    margin-bottom: 1.5rem;
+  }
+  .submenu-center a {
+    width: 10rem;
+    display: block;
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+  }
+  .submenu-center i {
+    color: var(--clr-grey-5);
+    margin-right: 1rem;
+  }
+
+  /* Styles for the Sections*/
+  .location__img iframe {
+    width: auto;
+    height: 100%;
+    /* additional styles if needed */
+  }
+  .location {
+    padding: 0 0 20px 20px;
+    color: black;
+  }
+
+  hlocation {
+    color: black;
+  }
+}
+@media screen and (min-width: 1400px) {
+    .hero-center {
+      padding-bottom: 20vh;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between; /* Adjusts children alignment to space between */
+      align-items: center; /* Vertically centers children */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-family: 'Arial', sans-serif;
+      background: transparent;
+      position: relative;
+      z-index: 1;
+      padding: 0 20px; /* Add padding for some spacing at the edges */
+    }
+    .nav-header {
+      display: flex;
+      justify-content: space-between; /* This ensures the logo, flags, and nav-links are spread out */
+      align-items: center;
+      width: 100%; /* Ensures the nav-header takes full width of its parent */
+      height: 60px;
+      background-color: #fff;
+    }
+    .casatosca-logo, .flags, .nav-links {
+      display: flex;
+      align-items: center; /* Align items in the center vertically */
+    }
+   
+  }

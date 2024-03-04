@@ -11,8 +11,6 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 //   });
 
 
-
-
 $(document).ready(function() {
 
 // //  click on h3, and change his color to red. 
@@ -33,7 +31,7 @@ $(document).ready(function() {
 
 
 /*For the sticky navigation */
-    $('.js--section-services').waypoint(function(direction) {
+/*  $('.js--section-services').waypoint(function(direction) {
         if (direction == "down") {
             $('nav').addClass('sticky');
             $('.js--container-nav').removeClass('container__nav-color');
@@ -46,8 +44,8 @@ $(document).ready(function() {
             $('.js--container-nav').removeClass('show-mobile');
         }
     }, { /*para que empiece 80px antes de donde le digo */
-        offset: '50px'
-       });
+    //    offset: '50px'
+    //   });
 /*END Sticky navigation */
 /*Animations on Scroll */
     /*SPECIALS*/

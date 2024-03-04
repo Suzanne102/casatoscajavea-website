@@ -4,7 +4,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CASA TOSCA JAVEA</title>
+    <meta name="description" content="To visit Costa Blanca we have the best rental in the middle of the old town of Javea.">  
+
+    <title>CASA TOSCA JAVEA - Vacation Rental</title>
     <!-- Font-awesome stylesheet -->
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -14,44 +16,57 @@
     <!-- List of stylesheets -->
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/queries.css" />
-    </head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MBHPYGQCX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7MBHPYGQCX');
+    </script>
+    <!-- END Global site tag (gtag.js) - Google Analytics -->
+  </head>
   <body>
     <nav class="nav">
-      <div class="nav-center">
-          <!-- Navigation Header -->
-          <div class="nav-header">
+      <!-- Navigation Header  -->
+      <div class="nav-header">
           <!-- Logo and Toggle Button -->
-          <img src="assets/logo.png" alt="logo"  />
-          <img src="images/hero/french-flag.png" alt="logo"  />
-          <img src="images/hero/english-flag.png" alt="logo" />
-          <button class="btn toggle-btn">Visit us<i class="fas fa-bars"></i></button>
-        </div>
-        <!-- Navigation Links -->
+        <div class = "casatosca-logo">
+          <img src="assets/logo.jpg" alt="Casa Tosca Javea logo"/>
+        </div> 
+        <div class = "flags">
+          <img src="images/hero/french-flag.png" class="flags" alt="Switch to French"  />
+          <img src="images/hero/english-flag.png" class="flags" alt="Switch to English" />
+          <!-- I don't need the Switch to Spanish since my site is in Spanish 
+          <img src="images/hero/spanish-flag.png" class="flags" alt="spanish flag" />-->
+        </div>  
+        <!-- the Visit us which should be visible only on the small screens -->
+        <button class="btn toggle-btn">Visit us<i class="fas fa-bars"></i></button>
+        <!-- Navigation Links should be visible only on larger screens-->
         <ul class="nav-links">
          <!-- List of Navigation Buttons -->
+          <li><button class="btn link-btn">Location</button></li>
           <li><button class="btn link-btn">Apartments</button></li>
           <li><button class="btn link-btn">Calendar</button></li>
-          <li><button class="btn link-btn">Location</button></li>
           <li><button class="btn link-btn">Reviews</button></li>
           <li><button class="signin-btn">Contact us</button></li>
         </ul>
-      </div>
-    </nav>
+      </div><!--end of nav-header-->
+    </nav><!--end of nav-->
     <section class="hero">
       <div class="hero-center">
-        <article class="hero-info">
-          <h1>CASA TOSCA JAVEA</h1>
+        <div class="hero-info">
+          <h1>CASA TOSCA JAVEA - Vacation Rental</h1>
           <p>
-            Welcome to Casa Tosca, your enchanting refuge nestled in the lively heart of historic Javea. A 200  year old restaured house with 4 apartments and 1 ensuite room.
+            Welcome to Casa Tosca, your enchanting refuge nestled in the lively heart of historic Javea. A 200  year old restaured house with 4 apartments and 1 ensuite room available for short term rentals.
           </p>
           <button class="btn" type="button">Book now</button>
-        </article>
-        <!-- <article class="hero-images">
-          <img src="./images/phonec.jpg" class="phone-img" alt="phone image"/>
-        </article> -->
+        </div>
       </div>
     </section>
-    <!-- side bar -->
+    <!-- STYLING FOR THE VISIT US BUTTON  -->
     <div class="sidebar-wrapper">
       <aside class="sidebar">
         <button class="close-btn">Casa Tosca <i class="fas fa-times"></i></button>
@@ -60,37 +75,109 @@
     </div>
     <aside class="submenu"></aside>
     <script type="module" src="/js/app.js"></script>
-    <section>
+  
 
-      <!-- DISTINCTIONS!  -->
-    <section class="section-container distinctions" id="our_distinctions">
-      <h1 class="hidden"> Our Location </h1>
-      <div class="section-content distinctions__contentrow js--wp-4">
-            <!--<div class="distinctions__booknow">
-            <a href="https://hotels.cloudbeds.com/reservation/znv3bT" target="_blank">
-            <i class="fa fa-calendar icon-big-special"></i>
-          </a>
+      <!-- LOCATION!  -->
+    <section class="section-location" id="our_location">
+      <h2>Our Location </h2>
+      <!--<div class="section-location__contentrow js--wp-4">
+          <i class="fa fa-calendar icon-big-special"></i>
           <h3>Reserva Online</h3>
-        </div> -->
-        <div class="distinctions__txt">
+        </div>-->
+        <div class="location__txt">
           <p>For your exploration of the Costa Blanca, our location in Javea is perfect. Nestled in the charming old village, we are conveniently close to an array of fine restaurants and shops to cater to all your needs. Just 2 km away from the picturesque pebble beach, our place offers the ideal blend of convenience and scenic beauty. Centrally positioned between two airports, Valencia and Alicante, we ensure easy accessibility.
           </p>
         </div>
-        <div class="distinctions__img">
+        <div class="location__img">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.929952095833!2d0.15933943774592105!3d38.788240153259395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129e0f9a654b15ff%3A0xc0576841bd638809!2sCarrer%20del%20Forn%2C%206%2C%2003730%20X%C3%A0bia%2C%20Alacant%2C%20Spain!5e0!3m2!1sen!2ske!4v1701461139844!5m2!1sen!2ske"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="google-map"</iframe>
-      
-          </div> 
+        </div> 
       </div>
     </section>
-    <!-- Services / our Apartments -->
-    <section class="services__contentrow">
+    <!-- ROOM AND APARTEMENTS     -->
+    <section class="section-container rooms" id="rooms">
       <h1>Our Apartments</h1>
-      
+      <h2 class="section-title">Our Apartments</h2>
+      <p class="section-body long-copy">
+        Each apartment has its own charm and vary in size. The Attic apartment can sleep 4 people, and Julietta can sleep 3, we have 2 studio apartments. Lastly, a small room, but conveniently on the first floor, with its oww bathroom.<br>Casa Tosca is in the center of the village, with all amenities at walking distance, the museums, church, banks, groceries, flowers, printers, hardware and of course fabulous restaurants. The streets are really cute and narrow with the balconies protruding over the narrow streets. 
+      </p>
+      <div class="section-content rooms__contentrow">
+        <div class="rooms__box">
+          <div class="rooms__box--title">
+            <img src="/images/gallery/no1/no1-img-01.jpg" alt="No4 apartment">
+            <h3>Attic apartment - next to the terrace, on the fourth floor. <br><p>Sleeps 4</p></h3>
+          </div>
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>150 cm queen bed</div> 
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i><!--*Loza radiante y aire acondicionado frio/calor.-->Air-condition unit and fireplace</div> 
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Internet 5G</div>
+          <div class="rooms__box--feature"><i class="fas fa-tv icon-small"></i>Smart TV, Netflix, Amazon Prime</div>
+        </div>
+        <div class="rooms__box">
+          <div class="rooms__box--title">
+            <img src="./img/gallery/triple_room.jpg" alt="Triple Room">
+            <h3>Habitación Triple</h3>
+          </div>
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Camas individuales Simmons.</div> 
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Bañera.</div> 
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Loza radiante y aire acondicionado.</div> 
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Internet 1 GB.</div>
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Smart TV Android, TV Cable y Aplicaciones.</div>
+        </div>
+        <div class="rooms__box">
+          <div class="rooms__box--title">
+            <img src="./img/gallery/twin_room.jpg" alt="Twin Double Room">
+            <h3>Habitación Doble Twin</h3>
+          </div>
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Camas individuales Simmons.</div> 
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Bañera o hidromasaje.</div> 
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Loza radiante y aire acondicionado.</div> 
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Internet 1 GB.</div>
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Smart TV Android, TV Cable y Aplicaciones.</div>
+        </div>                
+      </div>
+      <div class="short-copy">* Disponemos de cunas gratuitas para menores de 2 años<br>* Los niños menores de 4 años pueden compartir cama con sus padres.</div>
     </section>
-    <section class="rooms__contentrow">
-      <p>NO.1, NO.2, NO.3, NO.4</p>
+    <!-- REVIEWS -->
+    <section class="section-container reviews" id="reviews">
+      <h1 class="hidden">Comentarios de Clientes</h1>
+      <h2 class="section-title">Nuestros Clientes</h2>
+      <div class="section-content reviews__contentrow">
+        
+        <div class="reviews__box">
+          <blockquote>
+            <p>"Casa Tosca cuenta con todo el confort necesario para pasar una estadía placentera. "</p>
+            <a class="link" href="?">Ver más..</a>
+            <cite>
+              <!-- <div class="reviews__icon"><i class="fab fa-tripadvisor icon-medium"></i></div> -->
+              <div class="reviews__icon"><span class="custom-icon custom-icon-medium icon-tripadvisor"></span></div>
+              <div class="reviews__signature"><p>Cecilia V</p></div>
+            </cite>             
+          </blockquote>
+        </div>
+       
+        <div class="reviews__box">
+          <blockquote>
+            <p>"Excelente lugar! Muy buena opción para descansar... bellísimo en su interior y exterior... la habitación es confortable, el baño amplio,..."</p>
+              <a class="link" href="https://goo.gl/maps/vtR1JDZ1iGzPrxTm8" target="_blank">Ver más..</a>
+            <cite>
+              <!-- <div class="reviews__icon"><i class="fab fa-google icon-medium"></i></div> -->
+              <div class="reviews__icon"><span class="custom-icon custom-icon-medium icon-google"></span></div>
+              <div class="reviews__signature"><p>Noelia S</p></div>
+            </cite>             
+          </blockquote>
+        </div>
+        
+        <div class="reviews__box">
+          <blockquote>
+            <p>"Todo, la atención las instalaciones realmente impecable a pocos minutos de la ciudad de Salta. Cuenta con un pequeño centro muy lindo y con.."</p>
+              <a class="link" href="https://www.booking.com/hotel/ar/posada-de-los-poetas-boutique.es-ar.html#tab-reviews" target="_blank">Ver más..</a>
+            <cite>
+              <!-- <div class="reviews__icon"><i class="fab fa-bootstrap icon-medium"></i></div> -->
+              <div class="reviews__icon"><span class="custom-icon custom-icon-medium icon-booking"></span></div>
+              <div class="reviews__signature"><p>Mirta</p></div>
+            </cite>             
+          </blockquote>
+        </div>
+      </div>
     </section>
-  
-
   </body>
 </html>

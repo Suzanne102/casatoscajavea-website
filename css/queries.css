@@ -1,28 +1,36 @@
-/*Small tablets to big tablets: 768 to 1169px*/
-@media only screen and (min-width: 768px) and (max-width: 1169px) {
+/*--transition: all 0.3s linear;nav*/
+/*Small tablets to big tablets: 768 to 1169px  - For the PHONES up to 479px, the code is in the styles.css there is also a 480 to 767 */
+@media only screen and ((min-width: 770px) and (max-width: 1169px)) {
     html,
-    body { font-size: 75%; /*100% = 16px, I want 10px = 62.5% for responsive design*/ }
-
+    body { 
+        font-size: 1.2rem;/*100% = 16px, I want 10px = 62.5% for responsive design*/ 
+        /*max-width: 469px;*/
+    }
+    .flags {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
     /* DISTINCTIONS */
-    .distinctions__contentrow { 
+    .location__contentrow { 
         grid-template-columns: 1fr; 
         row-gap: 4rem;
     }
             
-    .distinctions__img img { 
+    .location__img img { 
         max-height: 20vh;
         max-height: calc(var(--vh, 1vh) * 20); 
         width: auto; 
     }
 
-    .distinctions__img iframe { 
-        max-height: 50vh;
+    .location__img iframe { 
+        max-height: 300px;
         max-height: calc(var(--vh, 1vh) * 50); 
         max-width: 80vw;
         max-width: calc(var(--vw, 1vw) * 80); 
     }
 
-    .distinctions__txt {
+    .location__txt {
         text-align: left;
         line-height: 25px;
         
@@ -64,25 +72,19 @@
         grid-template-columns: 1fr 1fr;
         row-gap: 3rem;
     }
-
 }    
 
-/*Small phones to small tablets: 481 to 767px*/
-@media only screen and (max-width: 767px) {
+/*STYLING foR TABLETS*/
+@media only screen and ((min-width: 470px) and (max-width: 769px)) {
     html,
-    body { font-size: 65%; /*100% = 16px, I want 10px = 62.5% for responsive design*/ }
-
+    body { 
+        font-size: 1.2rem; /*100% = 16px, I want 10px = 62.5% for responsive design*/ 
+    }
+    
     .show-mobile { display: block; } 
     .hide-mobile { display: none; } 
 
-
-    .section-container {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        body { font-size: 55%; /*100% = 16px, I want 10px = 62.5% for responsive design*/ }
-
-    }
-
+    
     /* SPECIALS */
     .specials__contentrow { 
         grid-template-columns: 1fr; 
@@ -168,7 +170,6 @@
         grid-template-columns: 1fr auto; 
         margin-top: 0;
     }
-
     .reviews__icon { justify-self: right; }   
 
     /* SPECIAL OFFERS */
@@ -197,50 +198,6 @@
     
     /* FOOTER */
     .foot__copy img { margin: 1rem; }    
-      
-    /*this nav css came from another website */
-    /* .container__nav {
-        background-color: white;
-        justify-content: flex-end;
-        align-items: right;
-    } */
-
-    /* .mobile-nav-icon {
-        margin: 10px 20px;
-        cursor: pointer;
-        display: inline-block;
-        color: #FFF;
-    } */
-
-    /* .main-nav { display:none;} */
-    
-    /* .main-nav {
-        float: left;
-        margin-top: 35px;
-        margin-bottom: 25px;
-    } */
-
-    /* .main-nav li {
-        display: block;
-    } */
-    
-    /* .main-nav li a:link,
-    .main-nav li a:visited {
-        display: block;
-        border-bottom: 0;
-        padding: 5px 0;
-        font-size: 1.5rem;
-    } */
-
-    /* .sticky .main-nav { margin-top: 10px;} */
-
-    /* .sticky .mobile-nav-icon  { 
-        margin-top: 10px;
-        color: #555;
-    } */
-
-    /* .sticky .logo { display: none;} */
-    /* .sticky .logo-black { display: block;}       */
 
     /* ECO-FRIENDLY */
     .ecofriendly__img img { 
@@ -268,4 +225,3 @@
         max-height: calc(var(--vh, 1vh) * 40); 
     }
 }
-    
