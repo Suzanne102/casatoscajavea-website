@@ -58,7 +58,7 @@ Global Styles
   box-sizing: border-box;
 }
 div {
-  border: 3px solid red; /* Example: adds a red border */
+  border: 1px solid red; /* Example: adds a red border */
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
@@ -133,7 +133,7 @@ p {
 }
 /*STYLING FOR TOP-NAV HIDDEN*/
 
-.nav-links {  /*those are hidden untill @media larger than 780px*/
+.nav-links {  /*those are hidden untill @ larger than 780px*/
   display: none;
   list-style: none;
   display: flex;
@@ -371,7 +371,7 @@ iframe::before {
 
   html,
   body { 
-      font-size: .65rem; /*100% = 16px or 1rem, I want .8rem or 10px or 62.5% for responsive small design*/ 
+      font-size: .75rem; /*100% = 16px or 1rem, I want .8rem or 10px or 62.5% for responsive small design*/ 
       max-width: 479px;
   }
   h2 {
@@ -408,7 +408,6 @@ iframe::before {
   .btn.toggle-btn {
     display: flex; /* Ensure the button is visible */
     justify-content: flex-end;
-    align-items: center;
     font-size: 1rem; /* Adjusting the font size */
     background-color: rgb(248, 186, 13); 
   }
@@ -437,7 +436,9 @@ iframe::before {
       padding: 1rem 0.75rem; /* Adjusting the padding for a smaller button */
     }
 /* OUR LOCATION */
-
+.section-location {
+  height: 600px;
+}
 .location__txt h2 {
   font-size: 1.9rem;
   padding-left: 20px;
@@ -451,11 +452,11 @@ iframe::before {
   
 }
   /* STYLING FOR OUR ROOMS*/
-
 .section-container rooms {
   font-size: 1rem;
   color:hsl(125, 67%, 44%);
-  height: 500px;
+  display: flex;
+  height: 30rem;
 }
 
   }
@@ -470,7 +471,7 @@ iframe::before {
 @media screen and (min-width: 470px) and (max-width: 779px) {
   .sidebar-wrapper {
     display: none;
-  }
+  } 
   .nav {
     display: flex;
     justify-content: space-between;
@@ -510,7 +511,7 @@ iframe::before {
     font-size: 1.5rem;
   }
   .hero p {
-    font-size: .62rem;
+    font-size: .9rem;
   }
   .hero .btn {
     /* Adjustments specific for medium screens */
@@ -519,8 +520,10 @@ iframe::before {
 
 /*STYLES FOR LOCATION*/  
   .location__txt p {
-    font-size: 1rem;
+    font-size: .9rem;
+    padding-left: 20px;
   }
+
 }
 
 
@@ -530,10 +533,10 @@ iframe::before {
   body,
   html 
   h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
   }
   h3 {
     font-size: 1.75rem;
@@ -547,6 +550,7 @@ iframe::before {
   h4 {
     line-height: 1;
   }
+
   .nav {
     display: flex;
     justify-content: space-between; /* Adjusts children alignment to space between */
@@ -558,6 +562,7 @@ iframe::before {
     z-index: 1;
     padding: 0 20px; /* Add padding for some spacing at the edges */
   }
+
   .nav-header {
     display: flex;
     justify-content: space-between; /* This ensures the logo, flags, and nav-links are spread out */
@@ -566,11 +571,15 @@ iframe::before {
     height: 60px;
     background-color: #fff;
   }
+
   .casatosca-logo, .flags, .nav-links {
-    display: flex;
-    align-items: center; /* Align items in the center vertically */
+    display: flex; 
   }
-  
+
+  .nav-second-line {
+    display: flexbox;
+  }
+
   .nav-links {
     justify-content: center; /* Center the links if there's enough space */
     gap: 10px; /* Creates space between individual links */
@@ -579,7 +588,7 @@ iframe::before {
     display: none;
   }
  .nav-center {
-  display: grid; /* This should be grid - Changed from grid to flex */
+  display: flex; /* This should be grid - Changed from grid to flex */
   justify-content: space-between; /* This spreads out the nav items */
   align-items: center;
   }  
