@@ -29,52 +29,47 @@
     <!-- END Global site tag (gtag.js) - Google Analytics -->
   </head>
   <body>
-    <nav class="nav">
-      <!-- Navigation Header  -->
-      <div class="nav-header">
-          <!-- Logo and Toggle Button -->
-        <div class = "casatosca-logo">
-          <img src="assets/logo.jpg" alt="Casa Tosca Javea logo"/>
-        </div> 
-        <div class = "flags">
-          <img src="images/hero/french-flag.png" alt="Switch to French"  />
-          <img src="images/hero/english-flag.png" alt="Switch to English" />
-        </div>  
-        <!-- the Visit us which should be visible only on the small screens -->
-        <button class="btn toggle-btn">Visit us<i class="fas fa-bars"></i></button>
-        <!-- Navigation Links should be visible only on larger screens-->
-        <div class = "nav-second-line">
-          <ul class="nav-links">
-          <!-- List of Navigation Buttons -->
-            <li><button class="btn link-btn">Location</button></li>
-            <li><button class="btn link-btn">Apartments</button></li>
-            <li><button class="btn link-btn">Calendar</button></li>
-            <li><button class="btn link-btn">Reviews</button></li>
-            <li><button class="signin-btn">Contact us</button></li>
-          </ul>
-        </div>
-      </div><!--end of nav-header-->
-    </nav><!--end of nav-->
-    <section class="hero">
-      <div class="hero-center">
-        <div class="hero-info">
-          <h1>CASA TOSCA JAVEA - Vacation Rental</h1>
-          <p>
-            Welcome to Casa Tosca, your enchanting refuge nestled in the lively heart of historic Javea. A 200  year old restaured house with 4 apartments and 1 ensuite room available for short term rentals.
-          </p>
-          <button class="btn" type="button">Book now</button>
-        </div>
+    <nav class="site-navigation">
+      <div class="navigation-header">
+          <div class="logo-and-flags">
+              <img src="assets/logo.jpg" alt="Casa Tosca Javea Logo" class="logo">
+              <div class="language-flags">
+                  <img src="images/hero/french-flag.png" alt="French" class="flag">
+                  <img src="images/hero/english-flag.png" alt="English" class="flag">
+              </div>
+          </div>
+          <button class="toggle-menu-btn">Visit us<i class="fas fa-bars"></i></button>
       </div>
-    </section>
-    <!-- STYLING FOR THE VISIT US BUTTON  -->
-    <div class="sidebar-wrapper">
-      <aside class="sidebar">
-        <button class="close-btn">Casa Tosca <i class="fas fa-times"></i></button>
-        <div class="sidebar-links"></div>
-      </aside>
-    </div>
-    <aside class="submenu"></aside>
-    <script type="module" src="/js/app.js"></script>
+  
+      <div class="main-menu">
+          <ul>
+              <li><a href="#location" class="menu-link">Location</a></li>
+              <li><a href="#apartments" class="menu-link">Apartments</a></li>
+              <li><a href="#calendar" class="menu-link">Calendar</a></li>
+              <li><a href="#reviews" class="menu-link">Reviews</a></li>
+              <li><a href="#contact" class="menu-link">Contact us</a></li>
+          </ul>
+      </div>
+        <!-- Sidebar for 'Visit Us' button functionality -->
+        <div class="sidebar-wrapper">
+          <aside class="sidebar">
+            <button class="close-btn">Casa Tosca <i class="fas fa-times"></i></button>
+            <div class="sidebar-links"></div>
+          </aside>
+        </div>
+        <aside class="submenu"></aside>
+        <script type="module" src="/js/app.js"></script>
+        
+    </nav>
+  
+  <section class="hero-section">
+      <div class="hero-content">
+          <h1>Casa Tosca Javea - Vacation Rental</h1>
+          <p>Welcome to Casa Tosca, your enchanting refuge nestled in the heart of historic Javea. Discover our 200-year-old restored house with 4 apartments and 1 ensuite room available for your memorable vacation.</p>
+          <a href="#book-now" class="book-now-btn">Book Now</a>
+      </div>
+  </section>
+ 
   
 
       <!-- LOCATION!  -->

@@ -105,7 +105,7 @@ p {
 ===============*/ 
 /*Stripe Styles/TOP-NAV
 ===============*/
-.nav {
+.site-navigation {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-family: 'Arial', sans-serif;
   display: inline-flex;
@@ -116,34 +116,35 @@ p {
   z-index: 1;
 }
 
-.nav-header {  /*where my logo, and the 2 flags are located. They are children of nav and nav.center*/
+.navigation-header {  /*where my logo, and the 2 flags are located. They are children of nav and nav.center*/
   display: inline-flex;
   justify-content: space-evenly;
   height: 60px;
   width: 100%;
   background-color: #fff;
 }
-.flags {
-  height: 30px;
-} 
-.casatosca-logo img {
+
+.logo-and-flags {
   display: flex;
-  height: 40px;
-  margin-left: 20px;
 }
+
+.flag {
+  height: 40px;
+}
+
+
 /*STYLING FOR TOP-NAV HIDDEN*/
 
-.nav-links {  /*those are hidden untill @ larger than 780px*/
+.main-menu {  /*those are hidden untill @ larger than 780px*/
   display: none;
   list-style: none;
-  display: flex;
 }
-.nav-links li { /*@media larger than 780px*/
+.main-menu li { /*@media larger than 780px*/
  display: inline-flex;
  align-items: center;
  margin-right: 20px; /* Adjust spacing between items */
 }
-.nav-links .btn { /*those are hidden untill @media larger than 780px*/
+.main-menu .btn { /*those are hidden untill @media larger than 780px*/
   font-size: 1rem;
   padding: 0.3rem 0.25rem;
   border-radius: var(--radius);
@@ -153,16 +154,15 @@ p {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.nav-links .btn:hover {  /*those are hidden untill @media larger than 780px*/
+.main-menu .btn:hover {  /*those are hidden untill @media larger than 780px*/
   background: var(--clr-grey-5);
   color: black; /* Highlight color on hover */
   cursor: pointer;
 }
 
 /* VISIT US button.  */
-.btn .toggle-btn {
+.btn.toggle.menu.btn {
   padding: 0 10px 0 10px;
-  background-color: black; /*this does not seem to work*/
 }
 .signin-btn {
   display: inline-block;
@@ -229,11 +229,8 @@ background-size: cover;
   }
 /* Other styles... */
     
-.toggle-btn {
-  display: none;
-}
 .signin-btn {
-  display: inline-block;
+  display: flex;
 }
 .link-btn {
   height: 100%;
@@ -408,8 +405,12 @@ iframe::before {
   .btn.toggle-btn {
     display: flex; /* Ensure the button is visible */
     justify-content: flex-end;
-    font-size: 1rem; /* Adjusting the font size */
+    font-size: 1.2rem; /* Adjusting the font size */
     background-color: rgb(248, 186, 13); 
+  }
+
+  .nav-second-line {
+    display: none;
   }
   /*STYLING FOR HERO CLASS */
   .hero {
@@ -488,14 +489,14 @@ iframe::before {
   .flags {
     height: 50px;
     display: flex;
-    justify-content: space-between;
+    padding-top: 5px;
   }
   .toggle-btn {
     height: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     font-size: 1rem; /* Adjusting the font size */
-    padding-left: 10px; /* Adding padding */
+    padding-top: 10px; /* Adding padding */
     background-color: rgb(248, 186, 13); 
   }
 /*STYLES FOR THE NAV LINKS TO BE HIDDEN*/
@@ -571,32 +572,28 @@ iframe::before {
     height: 60px;
     background-color: #fff;
   }
-
-  .casatosca-logo, .flags, .nav-links {
-    display: flex; 
-  }
-
   .nav-second-line {
-    display: flexbox;
+    display: block;
+  }
+  .nav-links li button {
+    padding: 10px;
+    margin: 0 5px;
+  }
+  .nav-center {
+    display: flex;
+    justify-content: space-between; /* Adjust to spread items across the nav bar */
+    align-items: center;
+    width: 100%; /* Ensure nav spans the full width */
   }
 
   .nav-links {
-    justify-content: center; /* Center the links if there's enough space */
-    gap: 10px; /* Creates space between individual links */
+    display: flex; /* Show nav-links inline for larger screens */
+    justify-content: center;
+    align-items: center;
   }
- .toggle-btn {
-    display: none;
-  }
- .nav-center {
-  display: flex; /* This should be grid - Changed from grid to flex */
-  justify-content: space-between; /* This spreads out the nav items */
-  align-items: center;
-  }  
-  .nav-links li {
-    display: inline-flex; /* Use inline-flex to keep li items inline but also enable flexbox properties */
-    align-items: center; /* Vertically center the content of each li */
-    margin-right: 20px; /* Add some space between each list item, adjust as needed */
-  
+
+  .toggle-btn {
+    display: none; /* Hide 'Visit Us' button on larger screens */
   }
     /*Styling for hero which is the introduction*/
   .hero .btn {
