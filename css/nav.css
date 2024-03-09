@@ -1,0 +1,52 @@
+/* Base Navigation Styles */
+.nav {
+  background: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 50px; /* Adjust based on your logo */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* Spacing between links */
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in;
+}
+
+.nav-links a:hover {
+  color: #007bff; /* Hover effect */
+}
+
+/* Responsive Design for screens smaller than 768px */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide links on smaller screens */
+  }
+
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
