@@ -1,0 +1,5 @@
+timestamp,tipodoc,numeroID,fechaExpedicion,apellido1,apellido2,nombre,sexo,fechaNacimiento,pais,email,telefono,fechaLlegada,id_file
+"2025-12-27 11:11:43",dni,123456-A,2025-12-01,Asdff,Dgh,Ghk,F,1980-12-27,Canada,,,,1766833903_IMG_1811.jpeg
+"2025-12-27 11:11:52",dni,123456-A,2025-12-01,Asdff,Dgh,Ghk,F,1980-12-27,Canada,,,,1766833912_IMG_1811.jpeg
+"2026-01-14 04:56:42",dni,X7549337R,2026-06-29,Suzanne,,Chartier,F,1960-05-17,Canada,,,,1768366602_french-flag.png
+"2026-01-16 04:46:54",dni,123456,2027-02-22,Suzanne,,Chartier,F,1960-05-17,Canada,,,,1768538814_english-flag.png

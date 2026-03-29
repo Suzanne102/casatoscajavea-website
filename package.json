@@ -1,0 +1,21 @@
+{
+  "name": "casatoscajavea-website",
+  "version": "1.0.0",
+  "description": "A simple website for Casa Tosca Jávea, a vacation rental in Javea, Spain.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --config bs-config.js"
+  },
+  "author": "Suzanne Chartier",
+  "keywords": [
+    "javea",
+    "vacation",
+    "casa tosca",
+    "apartments",
+    "website"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.4"
+  }
+}

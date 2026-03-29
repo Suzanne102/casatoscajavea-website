@@ -1,0 +1,685 @@
+html {
+    font-size: 100%;
+}
+
+/* =========================================
+   ABOUT PAGE – FLOATING IMAGES WITH WRAP
+   ========================================= */
+
+/* Wrapper so the about sections are nicely centered */
+.about-row {
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+  padding: 0 1.25rem;
+}
+
+/* Remove global padding for headings/paragraphs in about sections
+   so floats align nicely with the text block */
+.about-row h2,
+.about-row p {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Generic floated figure */
+.about-float {
+  max-width: 260px;
+}
+
+.about-float img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+/* Float to the right (default for portraits, etc.) */
+.about-float.right {
+  float: right;
+  margin: 0 0 1rem 1.5rem;  /* space on the left + bottom */
+}
+
+/* Optional: float to the left for variety */
+.about-float.left {
+  float: left;
+  margin: 0 1.5rem 1rem 0;  /* space on the right + bottom */
+}
+
+
+
+
+
+
+body {
+	background:#e8dccd; /* this is a light beige background color */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #333;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 20px;
+	padding-left: 30px;
+}
+
+
+h1 {
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.3rem;
+}
+
+h4 {
+	font-size: 1.1rem;
+}
+
+h5 {
+	font-size: 1.1rem;
+}
+
+h6 {
+	font-size: 1rem
+}
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	color:#4E5869;
+}
+
+/* LOGO AND NAV MENU _ GENERAL */
+.casatosca-logo-link {
+    width: 120px;
+    height: auto;
+    padding-top: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    position: static;
+    background: none;
+    justify-content: space-between;
+    gap: 1.2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-menu li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.nav-menu li a:hover {
+    color: #666;
+}
+
+
+/* LANGUAGE SWITCHER STYLES - FLAGS*/
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.flag {
+  width: 40px;
+  height: auto;
+  max-height: 40px;
+  margin-left: 8px;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.lang-switcher img.flag:hover {
+  transform: scale(1.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #f8f1e6;
+  position: relative;
+}
+
+/* Hamburger button - hidden on large screens */
+.hamburger {
+  display: none;
+}
+
+/* HERO CONTENT OR SECTION */
+.hero-content {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #033
+}
+
+.hero-img-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  max-height: 400px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.enq-now-btn {
+	background-color: #c3bdb4; /* light stone background */
+	color: #333; /* dark text color */
+	border: 2px solid #333; /* dark border */
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 5px; /* Optional: smooth edges */
+	transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* MAP AND CALENDAR SECTION */
+.map-calendar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px 10px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.map-calendar .map,
+.map-calendar .calendar {
+  flex: 1 1 600px;
+  min-width: 300px;
+  padding: 10px;
+}
+
+.map-iframe {
+  width: 100%;
+  height: 700px; /* Adjusted height for better visibility */
+  border: 0;
+}
+
+.calendar iframe {
+  width: 100%;
+  height: 700px;
+  border: 0;
+}
+
+/* Apartments section */
+.apt-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+/* Responsive Columns */
+.apt-card {
+  flex: 1 1 calc(33.33% - 20px); /* 3 columns */
+  max-width: calc(33.33% - 20px);
+  background-color: #f8f1e6;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.apt-card:hover {
+  transform: translateY(-5px);
+}
+
+.apt-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.apt-caption {
+  padding: 1rem;
+}
+
+.apt-caption h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.apt-caption p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+
+/* GALLERY SECTION */
+div.gallery img {
+	max-width: 100%; /* Responsive width */
+	height: auto; /* Maintain aspect ratio */
+}
+
+div.gallery:hover {
+	border: 1px solid #777;
+}
+
+/* CAPTION STYLING */
+
+.caption h3 {
+	font-size: 1.1rem;
+}
+
+.caption h3, .caption p {
+    margin: 5px 0;
+}
+
+/* RESENAS - REVIEWS SECTION */
+.section-reviews {
+  background-color: #f8f1e6;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.section-reviews h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #4b3d33;
+}
+
+.review-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.review-card {
+  background: #fff;
+  border: 1px solid #e1d2be;
+  border-radius: 10px;
+  padding: 1.2rem;
+  max-width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-style: italic;
+}
+
+.review-card cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.review-source i {
+  color: #caa16c;
+  margin-right: 5px;
+}
+
+.btn-secondary {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #caa16c;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+
+.asterisk-note {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto;
+  font-size: 1rem;
+  color: #4b3d33;
+  max-width: 600px;
+  text-align: center;
+}
+
+.asterisk-note li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.asterisk-note i {
+  color: #caa16c;
+  font-size: 1.1rem;
+}
+
+footer {
+  background-color: #f8f1e6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* CENTER all items */
+  align-items: flex-start;
+  padding: 3rem 2rem;
+  color: #4b3d33;
+  font-size: 1rem;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+  margin: 1rem;
+  min-width: 220px;
+}
+
+.footer-col h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #7a5c3c;
+  border-bottom: 2px solid #caa16c;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-col li i {
+  margin-right: 8px;
+  color: #caa16c;
+}
+
+.footer-col a {
+  text-decoration: none;
+  color: #4b3d33;
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: #7a5c3c;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 1.8rem;
+  padding: 12px 16px;
+  border-radius: 50%;
+  z-index: 999;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebd5b;
+}
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  color: #7a5c3c;
+  border-top: 1px solid #d9cbb8;
+  margin-top: 2rem;
+}
+address {
+  font-size: 1.2rem;
+  color: #4b3d33;
+  margin-top: 10px;
+}
+/* RESPONSIVE DESIGN - MAP/CAL  side-by-side layout */
+@media (min-width: 951px) {
+  
+  .map-calendar {
+    flex-direction: row;
+    justify-content: space-between;
+	align-items: flex-end;
+  }
+
+.map-calendar .map,
+  .map-calendar .calendar {
+    flex: 1;
+  }
+
+  .map {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Push iframe to bottom */
+  }
+
+  .amenity-item {
+	font-size: 1.1rem;
+	padding: 10px;
+	line-height: 1.2rem;
+  }
+
+}  /*end of media query section for Map/Cal */
+
+/* Hide icons in nav for mid-sized screens */
+@media (min-width: 769px) and (max-width: 950px) {
+  .nav-menu i {
+    display: none; /* hides the Font Awesome icons */
+  }
+
+  .nav-menu li {
+    padding: 0 8px; /* tighter spacing for labels only */
+  }
+
+  .casatosca-logo {
+    width: 100px; /* Example smaller size */
+  }
+
+  .apt-card {
+    flex: 1 1 calc(50% - 20px); /* 2 columns */
+    max-width: calc(50% - 20px);
+  }
+  .apt-card img {
+    height: 300px; /* Adjusted height for better visibility */
+    width: auto;
+  } 
+  .apt-caption h3 {
+    font-size: 1.2rem;
+  }
+  
+  .apt-card p {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+  
+  .amenity-item {
+    font-size: 1.1rem;
+    padding: 10px;
+    line-height: 1.2rem;
+  }
+
+  .apt-amenities p {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+}
+
+/* MEDIA QUERY GENERAL - 768px NAV MENU_LOGO_TITLES*/
+@media (max-width: 768px) {
+
+	body {
+        font-size: 1.2ren;
+    }
+    h1, h2 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    h1 {
+        font-size: 1.4rem;
+        padding-top: 8%;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    .casatosca-logo {
+        width: 120px; /* Example smaller size */
+    }
+
+	.header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    /* NAV MENU ON SMALL SCREENS */
+    .nav-menu {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: #f8f1e6;
+        padding: 10px 0;
+        position: absolute;
+        top: 60px; /* adjust depending on header height */
+        left: 0;
+        right: 0;
+        z-index: 10;
+        text-align: center;
+        gap: 10px;
+    }
+    .nav-menu li {
+        width: 45%; /* each nav item takes about half the width */
+    }
+
+    /* When .show is added, display it */
+    .nav-menu.show {
+    display: flex;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #333;
+
+    }
+
+	  .hero-content p {
+		font-size: 1.2rem;
+		padding: 0 10px;
+	  }
+    /* RESPONSIVE DESIGN - FOR MAP AND CAL. */
+	  .map-calendar {
+		flex-direction: column;
+		align-items: stretch;
+		padding: 1.5rem;
+		gap: 1.5rem;
+		background: linear-gradient(to bottom, #fdf7f1, #f8f1e6);
+    	border-top: 2px solid #c7aa8a;
+    	border-bottom: 2px solid #c7aa8a;
+  	}
+
+  	.map-calendar .map,
+  	.map-calendar .calendar {
+		background-color: #fffefc;
+		padding: 1rem;
+		border-radius: 12px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+		border-left: 5px solid #caa16c;
+  	}
+
+  	.map-iframe,
+  	.calendar-iframe {
+    	width: 100%;
+    	height: 400px;
+		border: none;
+	    border-radius: 8px;
+  	}
+
+	  .calendar h4 {
+		font-size: .9rem;
+		line-height: .5rem;
+	  }
+
+	  /* Apartment section */
+	  .apt-card {
+    flex: 1 1 calc(100% - 20px); /* 2 columns */
+    max-width: calc(100% - 20px);
+    }
+
+    .apt-card p {
+      font-size: 1.25rem;
+      padding: 0 10px;
+    }
+
+	  .apt-amenities p {
+      font-size: .90rem;
+		  padding: 0 10px;
+	  }
+
+    .amenity-item {
+      font-size: .9rem;
+      padding: 5px 10px;
+      line-height: .7rem;
+    }
+    
+    .asterisk-note {
+      font-size: 0.85rem;
+    }
+
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .footer-col {
+      margin: 1.5rem auto;
+    }
+
+    .btn-secondary {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.9rem;
+    }
+}

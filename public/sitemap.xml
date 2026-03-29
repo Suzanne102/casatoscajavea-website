@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home -->
+  <url>
+    <loc>https://www.casatoscajavea.com/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/index.html"/>
+  </url>
+
+  <!-- Activities -->
+  <url>
+    <loc>https://www.casatoscajavea.com/pages/actividades.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/actividades.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/activities.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/actividades.html"/>
+  </url>
+  <url>
+    <loc>https://www.casatoscajavea.com/en/pages/activities.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/activities.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/actividades.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/actividades.html"/>
+  </url>
+
+  <!-- Gallery -->
+  <url>
+    <loc>https://www.casatoscajavea.com/pages/galeria-fotos.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/galeria-fotos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/photo-gallery.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/galeria-fotos.html"/>
+  </url>
+  <url>
+    <loc>https://www.casatoscajavea.com/en/pages/photo-gallery.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/photo-gallery.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/galeria-fotos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/galeria-fotos.html"/>
+  </url>
+
+  <!-- Availability -->
+  <url>
+    <loc>https://www.casatoscajavea.com/pages/disponibilidad.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/disponibilidad.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/availability.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/disponibilidad.html"/>
+  </url>
+  <url>
+    <loc>https://www.casatoscajavea.com/en/pages/availability.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/availability.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/disponibilidad.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/disponibilidad.html"/>
+  </url>
+
+  <!-- Optional: other core pages -->
+  <url>
+    <loc>https://www.casatoscajavea.com/pages/precios.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/precios.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/prices.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/precios.html"/>
+  </url>
+  <url>
+    <loc>https://www.casatoscajavea.com/en/pages/prices.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/prices.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/precios.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/precios.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.casatoscajavea.com/pages/resenas.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/resenas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/resenas.html"/>
+  </url>
+  <url>
+    <loc>https://www.casatoscajavea.com/en/pages/reviews.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/resenas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/resenas.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.casatoscajavea.com/pages/nosotros.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/nosotros.html"/>
+  </url>
+  <url>
+    <loc>https://www.casatoscajavea.com/en/pages/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/nosotros.html"/>
+  </url>
+
+</urlset>

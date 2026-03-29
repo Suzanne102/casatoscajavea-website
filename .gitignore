@@ -1,0 +1,8 @@
+# Ignore all .psd files
+*.psd
+
+# Ignore FontAwesome folder
+assets/fontawesome/
+
+# Ignore posada-de-los-poetas
+posada-de-los-poetas-grid-Sue/

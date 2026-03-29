@@ -1,0 +1,139 @@
+/* ---------------------------
+   FORM CONTAINER
+---------------------------- */
+.registro-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.registro-content h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #444;
+}
+
+.form-container {
+  background: #faf7f2; /* soft tosca beige */
+  padding: 25px 30px;
+  border-radius: 12px;
+  border: 1px solid #e3ded6;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.form-container h2 {
+  margin-top: 30px;
+  color: #444;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #d7c9b6;
+  padding-bottom: 6px;
+}
+
+/* ---------------------------
+   FORM FIELDS
+---------------------------- */
+form label {
+  display: block;
+  margin: 18px 0 6px;
+  font-weight: 600;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #8c6f56;
+  outline: none;
+  box-shadow: 0 0 4px rgba(140, 111, 86, 0.4);
+}
+
+/* ---------------------------
+   UPLOAD FIELD
+---------------------------- */
+#id-upload {
+  background: #fffdf9;
+  border: 1px dashed #b8a998;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* ---------------------------
+   SEX GROUP
+---------------------------- */
+.sexo-group {
+  margin-top: 18px;
+  padding: 12px 14px;
+  border: 1px solid #ded4c7;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.sexo-group legend {
+  padding: 0 6px;
+  font-weight: 600;
+}
+
+.sexo-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: normal;
+}
+
+/* ---------------------------
+   SUBMIT BUTTON
+---------------------------- */
+.submit-btn {
+  margin-top: 28px;
+  width: 100%;
+  padding: 14px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: #8c6f56; /* Casa Tosca warm brown */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  background: #745b45;
+}
+
+/* ---------------------------
+   RESPONSIVE GRID
+---------------------------- */
+@media (min-width: 700px) {
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+  }
+
+  form label,
+  form input,
+  form select,
+  form fieldset,
+  .submit-btn {
+    grid-column: span 2;
+  }
+
+  /* Put these fields side by side */
+  #apellido1,
+  #apellido2,
+  #fecha-expedicion,
+  #fecha-nacimiento {
+    grid-column: span 1;
+  }
+}

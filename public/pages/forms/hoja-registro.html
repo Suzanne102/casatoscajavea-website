@@ -1,0 +1,100 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Canonical and hreflang -->
+<link rel="canonical" href="https://www.casatoscajavea.com/pages/forms/hoja-registro.html" />
+<link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/forms/hoja-registro.html" />
+<link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/forms/register-now.html" />
+<link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/forms/hoja-registro.html" />
+
+	<!-- 8. Styles & external resources -->    
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/form-styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+	<div id="nav-placeholder"></div>	
+	<main>
+		<div class="form-container">
+
+			<div class="form-row">
+			<h2>Datos del Establecimiento</h2>
+			<p><strong>NIE:</strong> Y5519217J</p>
+			<p><strong>Nombre:</strong> Peter Zwager</p>
+			<p><strong>Establecimiento:</strong> Casa Tosca Jávea</p>
+			<p><strong>Municipio:</strong> Xàbia / Jávea</p>
+			<p><strong>Provincia:</strong> Alicante</p>
+			</div>
+
+			<form action="/form-handlers/registro-handler.php" method="post" enctype="multipart/form-data">
+			<div class="form-row">
+				<h2>Documento</h2>
+				<label for="id-upload">Suba su documento (DNI / Pasaporte):</label>
+				<input type="file" id="id-upload" name="id-upload" accept=".jpg,.jpeg,.png,.pdf" required>
+			</div>
+
+			<div class="form-row">
+				<label for="tipodoc">Tipo de documento</label>
+				<select id="tipodoc" name="tipodoc" required>
+				<option value="">Seleccione…</option>
+				<option value="dni">D.N.I.</option>
+				<option value="pasaporte">Pasaporte</option>
+				<option value="conducir">Permiso de Conducir</option>
+				</select>
+			</div>
+
+			<div class="form-row">
+				<label for="no-id">Número de documento</label>
+				<input type="text" id="no-id" name="no-id" required>
+			</div>
+
+			<div class="form-row">
+				<label for="fecha-expedicion">Fecha de expedición</label>
+				<input type="date" id="fecha-expedicion" name="fecha-expedicion" required>
+			</div>
+
+			<div class="form-row">
+				<h2>Datos del Huésped</h2>
+
+				<label for="apellido1">Primer apellido</label>
+				<input type="text" id="apellido1" name="apellido1" required>
+
+				<label for="apellido2">Segundo apellido (opcional)</label>
+				<input type="text" id="apellido2" name="apellido2">
+
+				<label for="nombre">Nombre</label>
+				<input type="text" id="nombre" name="nombre" required>
+
+				<label>Sexo</label>
+				<label><input type="radio" name="sexo" value="M" required> Hombre</label>
+				<label><input type="radio" name="sexo" value="F"> Mujer</label>
+
+				<label for="fecha-nacimiento">Fecha de nacimiento</label>
+				<input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+
+				<label for="pais">País de nacionalidad</label>
+				<input type="text" id="pais" name="pais" required>
+			</div>
+
+			<button type="submit" class="submit-btn">Enviar Registro</button>
+
+			</form>
+
+		</div>
+	</main>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Load navigation
+			fetch('/templates/nav.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('nav-placeholder').innerHTML = data;
+
+					// Important: Initialize nav.js AFTER nav loads
+					if (typeof initNav === "function") initNav();
+				});
+
+		});
+	</script>
+	<script src="/js/nav.js"></script>
+</body>
