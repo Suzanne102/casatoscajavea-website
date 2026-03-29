@@ -1,9 +1,0 @@
-timestamp,firstName,lastName,email,phone,apartment,noOfPeople,checkInDate,checkOutDate
-"2025-12-25 17:25:57",Abril,Medina,abrilmedina-7@hotmail.com,648279569,No.1,2,2025-12-25,2025-12-25
-"2025-12-25 17:26:05",Abril,Medina,abrilmedina-7@hotmail.com,648279569,No.1,2,2025-12-25,2025-12-26
-"2025-12-25 17:26:18",Abril,Medina,abrilmedina-7@hotmail.com,648279569,No.1,2,2025-12-25,2025-12-26
-"2026-01-11 18:20:10",Suzanne,Chartier,cgslp@hotmail.com,1343,No.4,2,2026-01-22,2026-01-23
-"2026-01-12 04:15:10",Suzanne,Chartier,suzannechartier@gmail.com,1343,No.2,1,2026-02-01,2026-02-05
-"2026-01-13 10:04:18",Suzanne,Chartier,suzannechartier@gmail.com,1343,No.2,1,2026-02-01,2026-02-05
-"2026-01-13 12:08:48",Suzanne,Chartier,suzannechartier@gmail.com,1343,No.2,1,2026-02-01,2026-02-05
-"2026-01-13 12:09:38",Suzanne,Chartier,suzannechartier@gmail.com,1343,No.1,1,2026-02-10,2026-02-10

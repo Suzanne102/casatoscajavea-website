@@ -1,8 +1,32 @@
-# Ignore all .psd files
+# Mac system files
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log
+
+# Environment files
+.env
+
+# Logs
+logs/
+*.log
+
+# Private / sensitive
+form-handlers/private/
+form-handlers/uploads/
+private/
+notes/
+cgi-bin/
+
+# Documents
+*.pdf
+*.docx
+
+# Media (optional)
+*.mov
+*.HEIC
+
+# Design / assets not needed
 *.psd
-
-# Ignore FontAwesome folder
 assets/fontawesome/
-
-# Ignore posada-de-los-poetas
-posada-de-los-poetas-grid-Sue/
