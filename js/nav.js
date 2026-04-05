@@ -14,15 +14,16 @@ const langMap = {
   '/pages/nosotros.html': '/en/pages/about.html',
   '/pages/mapa.html': '/en/pages/maps.html',
   '/pages/actividades.html': '/en/pages/activities.html',
-  '/pages/forms/consulta-ahora.html': '/en/pages/forms/enquire.html',
   '/pages/apt/no1.html': '/en/pages/apt/no1.html',
   '/pages/apt/no2.html': '/en/pages/apt/no2.html',
   '/pages/apt/no3.html': '/en/pages/apt/no3.html',
   '/pages/apt/no4.html': '/en/pages/apt/no4.html',
   '/pages/apt/no5.html': '/en/pages/apt/no5.html',
   '/pages/apt/ca.html': '/en/pages/apt/ca.html',
-  '/pages/forms/hoja-registro.html': '/en/pages/forms/register-now.html',
-  '/pages/forms/gracias-registro.html': '/en/pages/forms/registration-confirmation.html'
+  '/pages/forms/consulta.html': '/en/pages/forms/enquiry.html',
+  '/pages/forms/consulta-exito.html': '/en/pages/forms/enquiry-success.html',
+  '/pages/forms/registro.html': '/en/pages/forms/registration.html',
+  '/pages/forms/registro-exito.html': '/en/pages/forms/registration-success.html'
 };
 
 // EN -> ES computed from langMap
