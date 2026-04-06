@@ -43,6 +43,7 @@
 		
 	  <!-- 8. Styles & external resources -->
 		<link rel="stylesheet" href="/css/styles.css" />
+		<script src="/js/nav.js" defer></script>
 		<!-- FontAwesome Styles -->
 		<script src="https://kit.fontawesome.com/53ce13aac7.js" crossorigin="anonymous"></script>
 	</head>
@@ -87,7 +88,9 @@
 					<p>Desde los aeropuertos o estaciones de tren de Valencia o Alicante hasta Jávea:</p>
 					<ul>
 						<li><strong>Taxi:</strong> aproximadamente <strong>€120-150</strong>, duración de <strong>1h20 a 1h30 min</strong>. Alicante está un poco más cerca.</li>
-						<li><strong>Autobús:</strong> 2,5–3 horas. Consulta las opciones con <a href="https://www.alsa.es" target="_blank">ALSA</a> (alrededor de 15 €). La estación de autobuses de Jávea está a poca distancia caminando de Casa Tosca.</li>
+						<li><strong>Autobús:</strong> 2,5–3 horas. Consulta las opciones con 
+							<a href="https://www.alsa.es" target="_blank" rel="noopener noreferrer">
+								ALSA</a> (alrededor de 15 €). La estación de autobuses de Jávea está a poca distancia caminando de Casa Tosca.</li>
 						<li><strong>Blablacar</strong> también puede ser una buena opción.</li>
 					</ul>
 
@@ -129,41 +132,24 @@
 			</footer>
 		</div> <!-- end of container -->
 		<script>
-		document.addEventListener('DOMContentLoaded', function () {
+			document.addEventListener('DOMContentLoaded', function () {
 
-			// Load navigation
-			fetch('/templates/nav.html')
-			.then(response => response.text())
-			.then(data => {
-				document.getElementById('nav-placeholder').innerHTML = data;
+				// NAV
+				fetch('/templates/nav.html')
+					.then(res => res.text())
+					.then(data => {
+						document.getElementById('nav-placeholder').innerHTML = data;
+						initNav();
+					});
 
-				// Load nav.js AFTER nav.html is in DOM
-				const script = document.createElement('script');
-				script.src = "/js/nav.js";
-				script.onload = () => {
-				initNav(); // now nav.js exists, and nav.html exists
-				};
-				document.body.appendChild(script);
+				// FOOTER
+				fetch('/templates/footer.html')
+					.then(res => res.text())
+					.then(data => {
+						document.getElementById('footer-placeholder').innerHTML = data;
+					});
+
 			});
-
-			// Load footer
-			fetch('/templates/footer.html')
-			.then(response => response.text())
-			.then(data => {
-				document.getElementById('footer-placeholder').innerHTML = data;
-			});
-
-			// Load apartment navbar ONLY if placeholder exists
-			const aptPlaceholder = document.getElementById('apt-nav-placeholder');
-			if (aptPlaceholder) {
-			fetch('/templates/apt-nav.html')
-				.then(response => response.text())
-				.then(data => {
-				aptPlaceholder.innerHTML = data;
-				});
-			}
-
-		});
 		</script>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBXNHFPD"

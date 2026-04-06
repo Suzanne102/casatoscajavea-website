@@ -7,7 +7,7 @@
 		<title>Casa Tosca Jávea | Apartamento No.2 Julietta en el Casco Antiguo</title>
     
     <!-- 2. Basic SEO -->
-    <meta name="description" content="El Apartamento Nº2 de Casa Tosca en Jávea ofrece dos balcones con vistas a diferentes calles del casco antiguo. Luminoso y acogedor, con comedor amplio y sofá cama para hasta 4 huéspedes." />
+    <meta name="description" content="El Apartamento Nº2 de Casa Tosca en Jávea ofrece dos balcones con vistas a diferentes calles del casco antiguo. Luminoso y acogedor, con comedor amplio y sofá cama para hasta 3 huéspedes." />
       <!-- Canonical and hreflang -->
     <link rel="canonical" href="https://www.casatoscajavea.com/pages/apt/no2.html" />
     <link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/apt/no2.html" />
@@ -22,7 +22,7 @@
 
     <!-- 5. Social sharing (Open Graph / Twitter) -->
     <meta property="og:title" content="Casa Tosca Jávea • No. 2 - Julietta" />
-    <meta property="og:description" content="Luminoso y acogedor apartamento en el casco antiguo de Jávea, con dos balcones a la calle y espacio para 2-4 personas. Perfecto para una escapada romántica o una estancia familiar." />
+    <meta property="og:description" content="Luminoso y acogedor apartamento en el casco antiguo de Jávea, con dos balcones a la calle y espacio para 2-3 personas. Perfecto para una escapada romántica o una estancia familiar." />
     <meta property="og:image" content="https://www.casatoscajavea.com/images/og/no2-og-img.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.casatoscajavea.com/pages/apt/no2.html" />
@@ -44,7 +44,6 @@
     <!-- 8. Styles & external resources -->
     <link rel="stylesheet" href="/css/styles.css" />
     <script src="/js/nav.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <!-- GLightbox CSS for the Image Gallery on each apartment individual pages -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     <script src="https://kit.fontawesome.com/53ce13aac7.js" crossorigin="anonymous"></script>
@@ -64,9 +63,9 @@
       <div id="apt-nav-placeholder"></div>
  
       <div class="content">
-        <h1>NO. 2 - JULIETTA- 50 sqm</h1>
-        <p>Todos tienen baño privado, A/C, calefacción, Smart TV y Wi‑Fi.</p>
-		    <section class="apartment-page">
+        <h1>Apartamento No.2 Julietta – 50 m²</h1>
+        <p>El Apartamento No.2 Julietta es amplio y luminoso, situado en el casco antiguo de Jávea, con dos balcones a la calle. Ideal para 2 a 3 personas.</p>
+        <section class="apartment-page">
           <div class="apartment-details">
             <div class="apartment-calendar">
               <h3>Calendario de disponibilidad - No.2</h3>
@@ -75,7 +74,6 @@
               ></iframe>
             </div>
             <aside class="apartment-info">
-              <h3>Para 2-3 pers. Con 2 balcones a la calle</h3>
               <p class="price-range">Desde 120€ a 140€ / noche</p>
               <ul class="amenities">
                 <li>✔️ 1 Cama grande (150 x 190 cm)</li>
@@ -88,7 +86,7 @@
                 <a class="btn btn-consulta js-consulta-link"
                   href="/pages/forms/consulta.html"
 									data-apartment="no2"
-									aria-label="Consulta ahora - Apartamento No.2" >
+									aria-label="Consultar disponibilidad Apartamento No.2 Julietta">
 									Consulta ahora
 								</a>								
                 <a class="cta secondary" 
@@ -342,29 +340,33 @@
       </footer>
 			<script>
 				document.addEventListener('DOMContentLoaded', function () {
-				// Load navigation
-				fetch('/templates/nav.html')
-				.then(response => response.text())
-				.then(data => {
-					document.getElementById('nav-placeholder').innerHTML = data;
-          		
-					// Important: initialize nav.js AFTER the nav is in the DOM
-          			initNav();
-        		});
-						
-				// Load footer
-				fetch('/templates/footer.html')
-					.then(response => response.text())
-					.then(data => {
-					document.getElementById('footer-placeholder').innerHTML = data;
-					});
-				// Load apartment navbar
-				fetch('/templates/apt-nav.html')
-					.then(response => response.text())
-					.then(data => {
-					document.getElementById('apt-nav-placeholder').innerHTML = data;
-					});
-				});
+
+        // NAV
+        fetch('/templates/nav.html')
+          .then(res => res.text())
+          .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+            initNav();
+          });
+
+        // FOOTER
+        fetch('/templates/footer.html')
+          .then(res => res.text())
+          .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+          });
+
+        // APT NAV (if exists)
+        const aptNav = document.getElementById('apt-nav-placeholder');
+        if (aptNav) {
+          fetch('/templates/apt-nav.html')
+            .then(res => res.text())
+            .then(data => {
+              aptNav.innerHTML = data;
+            });
+        }
+
+      });
 			</script>
     </div><!-- end .container -->
     

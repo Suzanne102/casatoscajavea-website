@@ -42,7 +42,8 @@
 
 	  <!-- 8. Styles & external resources -->
 		<link rel="stylesheet" href="/css/styles.css" />
-  	<script src="https://kit.fontawesome.com/53ce13aac7.js" crossorigin="anonymous"></script>
+  	<script src="/js/nav.js" defer></script>
+    <script src="https://kit.fontawesome.com/53ce13aac7.js" crossorigin="anonymous"></script>
 
     <!-- Lightbox CSS for the Image Gallery on each apartment individual pages -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />  
@@ -277,30 +278,34 @@
     </div><!-- end .container -->
 			<script>
 				document.addEventListener('DOMContentLoaded', function () {
-				// Load navigation
-				fetch('/templates/nav.html')
-				.then(response => response.text())
-				.then(data => {
-					document.getElementById('nav-placeholder').innerHTML = data;
-          		
-					// Important: initialize nav.js AFTER the nav is in the DOM
-          			initNav();
-        		});
-						
-				// Load footer
-				fetch('/templates/footer.html')
-					.then(response => response.text())
-					.then(data => {
-					document.getElementById('footer-placeholder').innerHTML = data;
-					});
-				// Load apartment navbar
-				fetch('/templates/apt-nav.html')
-					.then(response => response.text())
-					.then(data => {
-					document.getElementById('apt-nav-placeholder').innerHTML = data;
-					});
-				});
-			</script>
+
+        // NAV
+        fetch('/templates/nav.html')
+          .then(res => res.text())
+          .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+            initNav();
+          });
+
+        // FOOTER
+        fetch('/templates/footer.html')
+          .then(res => res.text())
+          .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+          });
+
+        // APT NAV (if exists)
+        const aptNav = document.getElementById('apt-nav-placeholder');
+        if (aptNav) {
+          fetch('/templates/apt-nav.html')
+            .then(res => res.text())
+            .then(data => {
+              aptNav.innerHTML = data;
+            });
+        }
+
+      });
+		</script>
     <!-- GLightbox JS for the Image Gallery on each apartment individual pages -->
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script>

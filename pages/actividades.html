@@ -44,7 +44,9 @@
 
   	<!-- 8. Styles & external resources -->
 		<link rel="stylesheet" href="/css/styles.css" />
-		<!-- FontAwasome Styles -->
+    <script src="/js/nav.js" defer></script>
+
+    <!-- FontAwasome Styles -->
     <script src="https://kit.fontawesome.com/53ce13aac7.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -475,39 +477,22 @@
     </div>
 
     <script>
-		  document.addEventListener('DOMContentLoaded', function () {
+      document.addEventListener('DOMContentLoaded', function () {
 
-        // Load navigation
+        // NAV
         fetch('/templates/nav.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('nav-placeholder').innerHTML = data;
-
-          // Load nav.js AFTER nav.html is in DOM
-          const script = document.createElement('script');
-          script.src = "/js/nav.js";
-          script.onload = () => {
-          initNav(); // now nav.js exists, and nav.html exists
-          };
-          document.body.appendChild(script);
-        });
-
-        // Load footer
-        fetch('/templates/footer.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('footer-placeholder').innerHTML = data;
-        });
-
-        // Load apartment navbar ONLY if placeholder exists
-        const aptPlaceholder = document.getElementById('apt-nav-placeholder');
-        if (aptPlaceholder) {
-        fetch('/templates/apt-nav.html')
-          .then(response => response.text())
+          .then(res => res.text())
           .then(data => {
-          aptPlaceholder.innerHTML = data;
+            document.getElementById('nav-placeholder').innerHTML = data;
+            initNav();
           });
-        }
+
+        // FOOTER
+        fetch('/templates/footer.html')
+          .then(res => res.text())
+          .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+          });
 
       });
 		</script>

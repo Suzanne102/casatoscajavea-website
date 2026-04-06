@@ -43,7 +43,9 @@
 		
 		<!-- 8. Styles & external resources -->
 		<link rel="stylesheet" href="/css/styles.css" />
-			<!-- FontAwasome Styles -->
+		<script src="/js/nav.js" defer></script>
+
+		<!-- FontAwesome Styles -->
 		<script src="https://kit.fontawesome.com/53ce13aac7.js" crossorigin="anonymous"></script>
 		<!-- GLightbox CSS for the Image Gallery on each apartment individual pages -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
@@ -87,41 +89,34 @@
 		<div class="clearfloat"></div>
 
 		<script>
-		document.addEventListener('DOMContentLoaded', function () {
+			document.addEventListener('DOMContentLoaded', function () {
 
-			// Load navigation
-			fetch('/templates/nav.html')
-			.then(response => response.text())
-			.then(data => {
-				document.getElementById('nav-placeholder').innerHTML = data;
+				// NAV
+				fetch('/templates/nav.html')
+					.then(res => res.text())
+					.then(data => {
+						document.getElementById('nav-placeholder').innerHTML = data;
+						initNav();
+					});
 
-				// Load nav.js AFTER nav.html is in DOM
-				const script = document.createElement('script');
-				script.src = "/js/nav.js";
-				script.onload = () => {
-				initNav(); // now nav.js exists, and nav.html exists
-				};
-				document.body.appendChild(script);
+				// FOOTER
+				fetch('/templates/footer.html')
+					.then(res => res.text())
+					.then(data => {
+						document.getElementById('footer-placeholder').innerHTML = data;
+					});
+
+				// APT NAV (if exists)
+				const aptNav = document.getElementById('apt-nav-placeholder');
+				if (aptNav) {
+					fetch('/templates/apt-nav.html')
+						.then(res => res.text())
+						.then(data => {
+							aptNav.innerHTML = data;
+						});
+				}
+
 			});
-
-			// Load footer
-			fetch('/templates/footer.html')
-			.then(response => response.text())
-			.then(data => {
-				document.getElementById('footer-placeholder').innerHTML = data;
-			});
-
-			// Load apartment navbar ONLY if placeholder exists
-			const aptPlaceholder = document.getElementById('apt-nav-placeholder');
-			if (aptPlaceholder) {
-			fetch('/templates/apt-nav.html')
-				.then(response => response.text())
-				.then(data => {
-				aptPlaceholder.innerHTML = data;
-				});
-			}
-
-		});
 		</script>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript>

@@ -42,6 +42,7 @@
 		
      <!-- 8. Styles & external resources -->
     <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/nav.js" defer></script>
     <script src="https://kit.fontawesome.com/53ce13aac7.js" crossorigin="anonymous"></script>
     <!-- GLightbox CSS for the Image Gallery on each apartment individual pages -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
@@ -356,14 +357,7 @@
           .then(response => response.text())
           .then(data => {
             document.getElementById('nav-placeholder').innerHTML = data;
-
-            // Load nav.js AFTER nav.html is in DOM
-            const script = document.createElement('script');
-            script.src = "/js/nav.js";
-            script.onload = () => {
-              initNav(); // now nav.js exists, and nav.html exists
-            };
-            document.body.appendChild(script);
+            initNav(); // ✅ correct
           });
 
         // Load footer
@@ -373,7 +367,7 @@
             document.getElementById('footer-placeholder').innerHTML = data;
           });
 
-        // Load apartment navbar ONLY if placeholder exists
+        // Load apartment nav
         const aptPlaceholder = document.getElementById('apt-nav-placeholder');
         if (aptPlaceholder) {
           fetch('/en/templates/apt-nav.html')
