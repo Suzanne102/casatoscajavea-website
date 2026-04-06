@@ -44,6 +44,7 @@
 	  <!-- 8. Styles & external resources -->
 		<link rel="stylesheet" href="/css/styles.css" />
 		<script src="/js/nav.js" defer></script>
+		<script src="/js/loadPartials.js" defer></script>
 		<!-- FontAwesome Styles -->
 		<script src="https://kit.fontawesome.com/53ce13aac7.js" crossorigin="anonymous"></script>
 	</head>
@@ -130,31 +131,6 @@
 				<div id="footer-placeholder"></div>
 				<div class="clearfloat"></div>
 			</footer>
-		</div> <!-- end of container -->
-		<script>
-			document.addEventListener('DOMContentLoaded', function () {
-
-				// NAV
-				fetch('/templates/nav.html')
-					.then(res => res.text())
-					.then(data => {
-						document.getElementById('nav-placeholder').innerHTML = data;
-						initNav();
-					});
-
-				// FOOTER
-				fetch('/templates/footer.html')
-					.then(res => res.text())
-					.then(data => {
-						document.getElementById('footer-placeholder').innerHTML = data;
-					});
-
-			});
-		</script>
-		<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBXNHFPD"
-		height="0" width="0" style="display:none;visibility:hidden"></iframe>
-		</noscript>
- 
+		</div> <!-- end of container --> 
 	</body>
 </html><!-- InstanceEnd -->

@@ -7,8 +7,7 @@
     <title>CASA TOSCA JAVEA - Alquiler Vacacional</title>
 
     <!-- 2. Basic SEO -->
-    <meta name="description" content="Boutique-hotel en el Casco Antiguo de Javea - Todo Tosca.">
-    
+    <meta name="description" content="Apartamentos boutique en el casco antiguo de Jávea. Casa Tosca ofrece 4 apartamentos y 1 habitación con baño en una casa histórica restaurada. Alojamiento con encanto en la Costa Blanca.">
     <!-- Canonical -->
     <link rel="canonical" href="https://www.casatoscajavea.com/" />
 
@@ -41,12 +40,11 @@
     <!-- End Google Tag Manager -->
    
    <!-- 8. CSS STYLESHEETS  -->
-		<script src="/js/nav.js" defer></script>
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- FontAwasome Styles -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
-    <script src="https://kit.fontawesome.com/53ce13aac7.js" crossorigin="anonymous"></script>
-  </head>
+		<link rel="stylesheet" href="css/styles.css" />
+    
+    <script src="/js/nav.js" defer></script>
+    <script src="/js/loadPartials.js" defer></script>
+    </head>
   
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -61,10 +59,9 @@
     </header>
     <section class="hero">
       <div class="hero-content">
-        <h1>Casa Tosca Jávea - Alquiler Vacacional</h1>
+        <h1>Casa Tosca Jávea – Apartamentos Boutique en el Casco Antiguo</h1>
         <p>Bienvenido a Casa Tosca, tu encantador refugio ubicado en el corazón del histórico Jávea. Descubre nuestra casa restaurada de 200 años con 4 apartamentos y 1 habitación con baño disponible para tus vacaciones memorables.</p>
         <div class="enquire-now">
-          <i class="fa fa-calendar icon"></i>
           <button
             type="button"
             class="enq-now-btn"
@@ -77,9 +74,27 @@
         </div>
       </div>
     </section>
+    
+    <!-- SEO intro -->
+    <p>
+    ¿Buscas alojamiento con encanto en el casco antiguo de Jávea? 
+    Casa Tosca ofrece apartamentos boutique y una habitación con baño privado en una casa histórica restaurada. 
+    Ideal para parejas, familias y estancias cortas en la Costa Blanca.
+    </p>
+    <!-- SEO internal links -->
+    <p class="seo-links">
+    Descubre nuestros alojamientos: 
+    <a href="/pages/apt/no1.html">Habitación No.1 La Bóveda</a>, 
+    <a href="/pages/apt/no2.html">Apartamento No.2 Julietta</a>, 
+    <a href="/pages/apt/no3.html">Apartamento No.3 El Estudio</a>, 
+    <a href="/pages/apt/no4.html">Apartamento No.4 El Ático</a> 
+    y 
+    <a href="/pages/apt/no5.html">Apartamento No.5 El Refugio</a>.
+    </p>
+
     <section class="map-grid">
       <div class="map-panel">
-        <h3>Google Map</h3>
+        <h3>Mapa</h3>
         <address>Casa Tosca Jávea, Carrer enForn, 2, 03730 Jávea, Alicante, España</address>
         <iframe title="location-map" 
           class="map-iframe" 
@@ -109,71 +124,119 @@
     </section>  
     <!-- ROOM AND APARTEMENTS     -->
 		<section class="apt-box">
-      <h1>Nuestros Alojamientos</h1>
-      <p>Casa Tosca está ubicada en el centro histórico de Jávea, rodeada de museos, iglesias, y deliciosos restaurantes en encantadoras calles peatonales. ¡Un lugar lleno de vida y cultura!</p>
+      <h2>Apartamentos en Jávea Casco Antiguo</h2>
+      <p>Descubre Casa Tosca Jávea, una pensión boutique en el corazón del casco histórico. 
+        Elige entre cinco alojamientos únicos, cada uno con encanto, comodidad y acceso a la terraza.
+        Casa Tosca está ubicada en el centro histórico de Jávea, rodeada de museos, iglesias, y deliciosos restaurantes en encantadoras calles peatonales. ¡Un lugar lleno de vida y cultura!</p>
 			<!-- No1-CARD -->	
       <div class="apt-card">
-        <a href="/pages/apt/no1.html" title="Apartamento No.1 - La Bodeva">
-          <div class="apt-caption">NO. 1 - LA BODEVA</div>
+        <a href="/pages/apt/no1.html" title="Apartamento No.1 - LA BÓVEDA">
+          <div class="apt-caption">NO. 1 - LA BÓVEDA</div>
             <picture>
               <source srcset="/images/gallery/no1/large/no1-img-01.webp" type="image/webp">
               <source
               srcset="
                 /images/gallery/no1/small/no1-img-01.jpg 480w,
                 /images/gallery/no1/med/no1-img-01.jpg 768w,
-                /images/gallery/no1/large/no1-img-01.jpg 1200w"
+                /images/gallery/no1/large/no1-img-01.webp 1200w"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
-              <img src="/images/gallery/no1/large/no1-img-01.jpg"
+              <img src="/images/gallery/no1/large/no1-img-01.webp"
                 alt="Apartamento Nº1 de Casa Tosca Jávea – imagen 01"
                 width="1200" height="900" loading="lazy" decoding="async">
             </picture>
           </div>
         </a>
+      </div>
+  
       <!-- No2-CARD -->
       <div class="apt-card">
-        <a href="/pages/apt/no2.html">	
+        <a href="/pages/apt/no2.html" title="Apartamento No.2 - Julietta">
           <div class="apt-caption">NO. 2 - JULIETTA</div>
-          <picture>
-            <source srcset="/images/gallery/no2/large/no2-img-10.webp" type="image/webp">
-            <source
-              srcset="
-                /images/gallery/no2/small/no2-img-10.jpg 480w,
-                /images/gallery/no2/med/no2-img-10.jpg 768w,
-                /images/gallery/no2/large/no2-img-10.jpg 1200w"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
-              <img src="/images/gallery/no2/large/no2-img-10.jpg"
-                alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 10"
-                width="1200" height="900" loading="lazy" decoding="async">
-          </picture>
+            <picture>
+              <source srcset="/images/gallery/no2/large/no2-img-10.webp" type="image/webp">
+              <source
+                srcset="
+                  /images/gallery/no2/small/no2-img-10.jpg 480w,
+                  /images/gallery/no2/med/no2-img-10.jpg 768w,
+                  /images/gallery/no2/large/no2-img-10.jpg 1200w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
+                <img src="/images/gallery/no2/large/no2-img-10.jpg"
+                  alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 10"
+                  width="1200" height="900" loading="lazy" decoding="async">
+            </picture>
+          </div>
         </a>
       </div>
 
       <!-- No3-CARD -->
       <div class="apt-card">
-        <a href="/pages/apt/no3.html">
-          <div class="apt-caption">NO. 3 - EL ESTUDIO</div>
-          <img src="/images/gallery/no3/large/no3-img-02.jpg" alt="Apart No.3 - El Rincon - Rojo">
+        <a href="/pages/apt/no3.html" title="Apartamento No.3 El Estudio">
+          <div class="apt-caption">NO. 3 – EL ESTUDIO</div>
+          <picture>
+            <source srcset="/images/gallery/no3/large/no3-img-02.jpg" type="image/jpeg">
+            <source
+              srcset="
+                /images/gallery/no3/small/no3-img-02.jpg 480w,
+                /images/gallery/no3/med/no3-img-02.jpg 768w,
+                /images/gallery/no3/large/no3-img-02.jpg 1200w"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
+            <img src="/images/gallery/no3/large/no3-img-02.jpg"
+              alt="Apartamento No.3 El Estudio en Casa Tosca Jávea"
+              width="1200" height="900" loading="lazy" decoding="async">
+          </picture>
         </a>
       </div>
       
       <div class="apt-card">
-        <a href="/pages/apt/no4.html">
-          <div class="apt-caption">NO. 4 - EL ATTICO</div>
-          <img src="/images/gallery/no4/large/no4-img-03.jpg" alt="Apart No.4 - El Attico - Naranja">
+        <a href="/pages/apt/no4.html" title="Apartamento No.4 - El Ático">
+          <div class="apt-caption">NO. 4 - EL ÁTICO</div>
+          <picture>
+            <source srcset="/images/gallery/no4/large/no4-img-01.jpg" type="image/jpeg">
+            <source
+              srcset="
+                /images/gallery/no4/small/no4-img-01.jpg 480w,
+                /images/gallery/no4/med/no4-img-01.jpg 768w,
+                /images/gallery/no4/large/no4-img-01.jpg 1200w"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
+            <img src="/images/gallery/no4/large/no4-img-01.jpg"
+              alt="Apartment No.4 The Attic at Casa Tosca Jávea"
+              width="1200" height="900" loading="lazy" decoding="async">
+          </picture>
         </a>
       </div>
       <!-- No4-CARD -->
       <div class="apt-card">
-        <a href="/pages/apt/no5.html">
+        <a href="/pages/apt/no5.html" title="Apartamento No.5 - El Rincon" >
           <div class="apt-caption">NO. 5 - EL RINCON</div>
-          <img src="/images/gallery/no5/no5-img-01.jpg" alt="Apart No.5 - El Esquina - Verde">
+          <picture>
+            <source srcset="/images/gallery/no5/large/no5-img-01.jpg" type="image/jpeg">
+            <source
+              srcset="
+                /images/gallery/no5/small/no5-img-01.jpg 480w,
+                /images/gallery/no5/med/no5-img-01.jpg 768w,
+                /images/gallery/no5/large/no5-img-01.jpg 1200w"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
+            <img src="/images/gallery/no5/large/no5-img-01.jpg"
+              alt="Apartment No.5 The Refuge at Casa Tosca Jávea"
+              width="1200" height="900" loading="lazy" decoding="async">
+          </picture>
         </a>
       </div>
 
       <div class="apt-card">
-        <a href="/pages/apt/ca.html">
+        <a href="/pages/apt/ca.html" title="La Terraza - Las Entradas">
           <div class="apt-caption">LA TERRAZA</div>
-          <img src="/images/gallery/ca/large/terrace-01.jpg" alt="Terrace CasaToscaJavea"  >
+          <picture>
+            <source srcset="/images/gallery/ca/large/terrace-01.jpg" type="image/jpeg">
+            <source
+              srcset="
+                /images/gallery/ca/small/terrace-01.jpg 480w,
+                /images/gallery/ca/med/terrace-01.jpg 768w,
+                /images/gallery/ca/large/terrace-01.jpg 1200w"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
+            <img src="/images/gallery/ca/large/terrace-01.jpg" alt="The Terrace at Casa Tosca Jávea"
+              width="1200" height="900" loading="lazy" decoding="async">
+          </picture>
         </a>   
       </div>
     </section>
@@ -221,47 +284,5 @@
       <div id="footer-placeholder"></div>
       <div class="clearfloat"></div>
     </footer>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-
-        // Load navigation
-        fetch('/templates/nav.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-
-            // Load nav.js AFTER nav.html is in DOM
-            const script = document.createElement('script');
-            script.src = "/js/nav.js";
-            script.onload = () => {
-              initNav(); // now nav.js exists, and nav.html exists
-            };
-            document.body.appendChild(script);
-          });
-
-        // Load footer
-        fetch('/templates/footer.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-          });
-
-        // Load apartment navbar ONLY if placeholder exists
-        const aptPlaceholder = document.getElementById('apt-nav-placeholder');
-        if (aptPlaceholder) {
-          fetch('/templates/apt-nav.html')
-            .then(response => response.text())
-            .then(data => {
-              aptPlaceholder.innerHTML = data;
-            });
-        }
-
-      });
-      </script>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBXNHFPD"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
   </body>
 </html>

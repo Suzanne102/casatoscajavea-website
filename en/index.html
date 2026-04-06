@@ -9,14 +9,14 @@
     <meta name="description" content="Boutique apartments in the heart of Jávea’s Old Town. Casa Tosca offers 4 boutique apartments and 1 ensuite room in a restored historic house. A/C, free Wi-Fi, and Mediterranean charm." />
 
     <!-- Add hreflang so that Google knows the relationship in BOTH /index.html (ES) and /en/index.html (EN) -->
-    <link rel="canonical" href="https://www.casatoscajavea.com/en/index.html" />
-    <link rel="alternate" href="https://www.casatoscajavea.com/index.html" hreflang="es" />
-    <link rel="alternate" href="https://www.casatoscajavea.com/en/index.html" hreflang="en" />
-    <link rel="alternate" href="https://www.casatoscajavea.com/index.html" hreflang="x-default" />   
+    <link rel="canonical" href="https://www.casatoscajavea.com/en/" />
+    <link rel="alternate" href="https://www.casatoscajavea.com/" hreflang="es" />
+    <link rel="alternate" href="https://www.casatoscajavea.com/en/" hreflang="en" />
+    <link rel="alternate" href="https://www.casatoscajavea.com/" hreflang="x-default" />
 
     <!-- 5. Social sharing (Open Graph / Twitter) -->
     <meta property="og:title" content="Casa Tosca Jávea – Boutique Apartments" />
-    <meta property="og:url" content="https://www.casatoscajavea.com/en/index.html" />
+    <meta property="og:url" content="https://www.casatoscajavea.com/en/" />
     <meta property="og:locale" content="en_GB" />
     <meta property="og:description" content="Boutique apartments and an ensuite room in Jávea Old Town. Restored historic house with A/C, free Wi-Fi, and Mediterranean charm." />
     <meta property="og:image" content="https://www.casatoscajavea.com/images/og/home-og-img.jpg" />
@@ -25,6 +25,36 @@
   
 		<!-- 6. Favicon -->   
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "Casa Tosca Jávea",
+      "image": "https://www.casatoscajavea.com/images/og/home-og-img.jpg",
+      "url": "https://www.casatoscajavea.com/en/",
+      "telephone": "+34",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Carrer En Forn 2",
+        "addressLocality": "Jávea",
+        "addressRegion": "Alicante",
+        "postalCode": "03730",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 38.78833,
+        "longitude": 0.15930
+      },
+      "priceRange": "€€",
+      "description": "Boutique apartments and an ensuite room in Jávea Old Town in a restored historic house.",
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true }
+      ]
+    }
+    </script>
     
     <!-- 7. Google Tag Manager (in head) -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -35,10 +65,10 @@
     <!-- End Google Tag Manager -->
    
     <!-- 8. CSS STYLESHEETS  -->
-    <script src="https://kit.fontawesome.com/53ce13aac7.js" crossorigin="anonymous"></script>
-    <script src="/js/nav.js" defer></script>  
     <link rel="stylesheet" href="/css/styles.css" />
-   
+    <script src="/js/nav.js" defer></script>
+    <script src="/js/loadPartials.js" defer></script>
+    
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -54,9 +84,9 @@
     <section class="hero">
       <div class="hero-content">
         <h1>Casa Tosca Jávea – Boutique Apartments in the Old Town</h1>
-        <p>Welcome to Casa Tosca, your charming hideaway in the heart of Jávea's historic Old Town. Discover our 200-year-old restored house with 4 apartments and 1 ensuite room for a memorable stay.</p>
+        <h2>Boutique Accommodation in Jávea Old Town</h2>
+        <p>Welcome to Casa Tosca, a charming boutique guesthouse in the heart of Jávea’s historic Old Town. Discover our 200-year-old restored house with 4 apartments and 1 ensuite room for a memorable stay.</p>
         <div class="enquire-now">
-          <i class="fa fa-calendar icon"></i>
           <button
             type="button"
             class="enq-now-btn"
@@ -69,17 +99,20 @@
         </div>
       </div>
     </section>
-    <p>
-    Looking for boutique accommodation in Jávea Old Town? Explore our unique apartments and room, ideal for couples, families, and short stays on the Costa Blanca.
+    <p class="seo-links">
+    Explore our stays: 
+    <a href="/en/pages/apt/no1.html">Room No.1 The Vault</a>, 
+    <a href="/en/pages/apt/no2.html">Apartment No.2 Juliet</a>, 
+    <a href="/en/pages/apt/no3.html">Apartment No.3 The Studio</a>, 
+    <a href="/en/pages/apt/no4.html">Apartment No.4 The Attic</a> 
+    and 
+    <a href="/en/pages/apt/no5.html">Apartment No.5 The Refuge</a>.
     </p>
     <section class="homepage-apartments">
-      <h2>Boutique Apartments in Jávea Old Town</h2>
-
+      <h2>Our Apartments in Jávea</h2>
       <p>
-        Discover Casa Tosca Jávea, a charming guesthouse in the heart of the historic centre. 
-        Choose from five unique stays, each offering comfort, character, and access to our rooftop terrace.
+      Choose from five unique stays, each offering comfort, character, and access to our rooftop terrace in Jávea’s historic centre.
       </p>
-
       <ul class="apartment-links">
         <li>
           <a href="/en/pages/apt/no1.html">
@@ -110,7 +143,7 @@
     </section>
     <section class="map-grid">
       <div class="map-panel">
-        <h3>Google Maps</h3>
+        <h3>Location</h3>
         <address>Casa Tosca Jávea, enForn Street 2, 03730 Jávea, Alicante, Spain</address>
         <div class="map-iframe">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.925911822424!2d0.15930237637974407!3d38.78833277174747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129e0f9a6faff26f%3A0x5c50a30833264377!2sCasa%20Tosca!5e0!3m2!1sen!2ske!4v1765358099084!5m2!1sen!2ske" 
@@ -120,7 +153,7 @@
         </div>
       </div>
       <div class="calendar-panel">
-        <h3>Calendars</h3>
+        <h3>📅 Availability Calendar</h3>
         <div class="calendar-legend">
           <a href="/en/pages/apt/no1.html" class="apt-link blue">No.1 – The Vault (Blue)</a>
           <a href="/en/pages/apt/no2.html" class="apt-link yellow">No.2 – Juliet (Yellow)</a>
@@ -159,14 +192,14 @@
                 /images/gallery/no1/large/no1-img-01.jpg 1200w"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
             <img src="/images/gallery/no1/large/no1-img-01.webp"
-              alt="Room No.1 The Vault – image 01"
+              alt="Room No.1 The Vault at Casa Tosca Jávea"
               width="1200" height="900" loading="lazy" decoding="async">
           </picture>
         </a>
       </div>
       <!-- No2-CARD -->
       <div class="apt-card">
-        <a href="/en/pages/apt/no2.html">	
+        <a href="/en/pages/apt/no2.html" title="Apartment No.2 Juliet">	
           <div class="apt-caption">Apartment No. 2 – Juliet</div>
           <picture>
             <source srcset="/images/gallery/no2/large/no2-img-10.webp" type="image/webp">
@@ -185,10 +218,10 @@
 
       <!-- No3-CARD -->
       <div class="apt-card">
-        <a href="/en/pages/apt/no3.html">
+        <a href="/en/pages/apt/no3.html" title="Apartment No.3 The Studio">
           <div class="apt-caption">Apartment No.3 – The Studio</div>
           <picture>
-            <source srcset="/images/gallery/no3/large/no3-img-02.jpg" type="image/jpg">
+            <source srcset="/images/gallery/no3/large/no3-img-02.jpg" type="image/jpeg">
             <source
               srcset="
                 /images/gallery/no3/small/no3-img-02.jpg 480w,
@@ -204,10 +237,10 @@
 
       <!-- No4-CARD -->
       <div class="apt-card">
-        <a href="/en/pages/apt/no4.html">
+        <a href="/en/pages/apt/no4.html" title="Apartment No.4 The Attic">
           <div class="apt-caption">Apartment No. 4 – The Attic</div>
           <picture>
-            <source srcset="/images/gallery/no4/large/no4-img-01.jpg" type="image/jpg">
+            <source srcset="/images/gallery/no4/large/no4-img-01.jpg" type="image/jpeg">
             <source
               srcset="
                 /images/gallery/no4/small/no4-img-01.jpg 480w,
@@ -223,10 +256,10 @@
 
       <!-- No5-CARD -->
       <div class="apt-card">
-        <a href="/en/pages/apt/no5.html">
+        <a href="/en/pages/apt/no5.html" title="Apartment No.5 The Refuge">
           <div class="apt-caption">Apartment No.5 – The Refuge</div>
           <picture>
-            <source srcset="/images/gallery/no5/large/no5-img-01.jpg" type="image/jpg">
+            <source srcset="/images/gallery/no5/large/no5-img-01.jpg" type="image/jpeg">
             <source
               srcset="
                 /images/gallery/no5/small/no5-img-01.jpg 480w,
@@ -243,7 +276,7 @@
         <a href="/en/pages/apt/ca.html">
           <div class="apt-caption">The Terrace</div>
           <picture>
-            <source srcset="/images/gallery/ca/large/terrace-01.jpg" type="image/jpg">
+            <source srcset="/images/gallery/ca/large/terrace-01.jpg" type="image/jpeg">
             <source
               srcset="
                 /images/gallery/ca/small/terrace-01.jpg 480w,
@@ -264,7 +297,7 @@
         <div class="review-card">
           <p>"Lovely stay, great location, simple but practical room. Thanks for having us. "</p>
           <cite>
-            <span class="review-source"><i class="fab fa-google"></i> Booking</span>
+            <span class="review-source">Booking</span> 
             <span class="review-author">– Virginia and Joe</span>
           </cite>
         </div>
@@ -272,7 +305,7 @@
         <div class="review-card">
           <p>"Lovely Apartment. Beautiful town. Would love to come back in the summer"</p>
           <cite>
-            <span class="review-source"><i class="fab fa-airbnb"></i> Airbnb</span>
+            <span class="review-source"> Airbnb</span>
             <span class="review-author">– Barry & Sally</span>
           </cite>
         </div>
@@ -280,11 +313,14 @@
         <div class="review-card">
           <p>"Really enjoyed our stay in No.4 – and loved the unique style and character of the Apartment. Thank you."</p>
           <cite>
-            <span class="review-source"><i class="fab fa-booking"></i> Booking</span>
+            <span class="review-source"> Booking</span>
             <span class="review-author">– Monica and friends, Ireland.</span>
           </cite>
         </div>
       </div>
+      <p class="trust-line">
+        Trusted by guests from Booking.com, Airbnb and Google Reviews.
+      </p>
 
       <div class="centered">
         <a href="/en/pages/reviews.html" class="btn-secondary">See more reviews & awards</a>
@@ -294,41 +330,5 @@
       <div id="footer-placeholder"></div>
       <div class="clearfloat"></div>
     </footer>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        // Load navigation
-        fetch('/en/templates/nav.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-
-          // Load nav.js AFTER nav.html is in DOM
-          const script = document.createElement('script');
-            script.src = "/js/nav.js";
-            script.onload = () => {
-              initNav(); // now nav.js exists, and nav.html exists
-            };
-            document.body.appendChild(script);
-          });
-
-        // Load footer
-        fetch('/en/templates/footer.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-          });
-
-        // Load apartment navbar ONLY if placeholder exists
-        const aptPlaceholder = document.getElementById('apt-nav-placeholder');
-        if (aptPlaceholder) {
-          fetch('/en/templates/apt-nav.html')
-            .then(response => response.text())
-            .then(data => {
-              aptPlaceholder.innerHTML = data;
-            });
-        }
-
-      });
-    </script>
   </body>
 </html>

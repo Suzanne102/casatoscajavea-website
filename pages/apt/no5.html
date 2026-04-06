@@ -47,8 +47,12 @@
 	   <!-- 8. Styles & external resources -->
     <link rel="stylesheet" href="/css/styles.css" />
     <script src="/js/nav.js" defer></script>
+    <script src="/js/loadPartials.js" defer></script>
+    
+    <!-- Font Awesome Styles -->
     <script src="https://kit.fontawesome.com/53ce13aac7.js" crossorigin="anonymous"></script>
-	  <!-- GLightbox CSS for the Image Gallery on each apartment individual pages -->
+
+    <!-- GLightbox CSS for the Image Gallery on each apartment individual pages -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     
   </head>
@@ -66,26 +70,36 @@
       <div id="apt-nav-placeholder"></div>
 
       <div class="content"> 
-        <h1>NO. 5 - EL REFUGIO</h1>
-	 	    <p>Todos tienen baño privado, A/C, calefacción, Smart TV y Wi‑Fi.</p>
-		    <section class="apartment-page">
+        <h1>Apartamento No.5 – El Refugio – 40 m²</h1>
+        <p>El Apartamento No.5 El Refugio es un alojamiento acogedor en Casa Tosca Jávea, situado en el casco antiguo. Cuenta con baño privado, aire acondicionado, Wi-Fi y acceso a un salón compartido por la tarde, ideal para una estancia cómoda y tranquila.</p>
+		    <p>
+        ¿Buscas otra opción en Casa Tosca Jávea? Descubre la 
+        <a href="/pages/apt/no1.html">Habitación No.1 La Bóveda</a>, 
+        o el 
+        <a href="/pages/apt/no2.html">Apartamento No.2 Julietta</a>. 
+        También puedes ver el 
+        <a href="/pages/apt/no3.html">Apartamento No.3 El Estudio</a> 
+        o el 
+        <a href="/pages/apt/no4.html">Apartamento No.4 El Ático</a>.
+        </p>
+        <section class="apartment-page">
           <div class="apartment-details">
             <div class="apartment-calendar">
-              <h3>Calendario de disponibilidad - No.5</h3>
+              <h3>Calendario de disponibilidad – No. 5</h3>
               <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FMadrid&bgcolor=%23ffffff&title=NO.5%20El Refugio&src=c2drdHU0N3BjY241ODg3YnJrYzRyZmE3a3Y3YXFsaGNAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&src=OW5rNHNqbzJucm1naWw1aWdxMmZyaXVoMjZrY2llYWtAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%230B8043&color=%237CB342" 
-                title="No.5 Availability Calendar"
+                title="Calendario de disponibilidad – No.5"
                 style="border:0" 
                 width="800" height="600" 
-                frameborder="0" scrolling="No">
+                frameborder="0" scrolling="no">
               </iframe>
             </div>
             <aside class="apartment-info">
-              <h3>Entrada Puerta Officina</h3>
+              <h3>Entrada por oficina</h3>
               <ul class="amenities">
-                <li>✔️ 1 Cama grande (150 x 190 cm)</li>
+                <li>✔️ 1 cama grande (150 x 190 cm)</li>
                 <li>✔️ Cocina pequeña</li>
-                <li>✔️ Lavadora compartida con officina</li>
-				        <li>✔️ Uso de salon por la tarde</li>
+                <li>✔️ Lavadora compartida con oficina</li>
+				        <li>✔️ Uso de salón por la tarde</li>
               </ul>
               <div class="booking-links">
                 <a href="/pages/forms/consulta.html"
@@ -107,12 +121,14 @@
             </aside>
           </div> <!-- end of apartment-details -->
         </section> <!--end of section apartmewnt-page-->
-   	
+          <h2>Descripción</h2>
+          <p>El Apartamento No.5 El Refugio ofrece un espacio íntimo y funcional en el corazón del casco antiguo de Jávea. Ideal para estancias tranquilas, combina comodidad moderna con el encanto de una casa tradicional mediterránea.</p>
+          <h2>Galería de imágenes – No.5</h2>
         <div class="gallery"> 
           <!-- No5-img-01 -->
           <a href="/images/gallery/no5/large/no5-img-01.jpg" class="glightbox" data-gallery="no5-gallery" data-title="Apartamento Nº5 de Casa Tosca Jávea – imagen 01">
             <picture>
-              <source srcset="/images/gallery/no5/large/no5-img-01.jpg" type="image/jpg">
+              <source srcset="/images/gallery/no5/large/no5-img-01.jpg" type="image/jpeg">
               <source
                 srcset="
                   /images/gallery/no5/small/no5-img-01.jpg 480w,
@@ -259,36 +275,6 @@
 	    <div id="footer-placeholder"></div>
 	    <div class="clearfloat"></div>
 	  </footer>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-
-        // NAV
-        fetch('/templates/nav.html')
-          .then(res => res.text())
-          .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-            initNav();
-          });
-
-        // FOOTER
-        fetch('/templates/footer.html')
-          .then(res => res.text())
-          .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-          });
-
-        // APT NAV (if exists)
-        const aptNav = document.getElementById('apt-nav-placeholder');
-        if (aptNav) {
-          fetch('/templates/apt-nav.html')
-            .then(res => res.text())
-            .then(data => {
-              aptNav.innerHTML = data;
-            });
-        }
-
-      });
-    </script>
 
     <!-- GLightbox JS for the Image Gallery on each apartment individual pages -->
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>

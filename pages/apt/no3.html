@@ -43,6 +43,7 @@
 	  <!-- 8. Styles & external resources -->
 		<link rel="stylesheet" href="/css/styles.css" />
   	<script src="/js/nav.js" defer></script>
+    <script src="/js/loadPartials.js" defer></script>
     <script src="https://kit.fontawesome.com/53ce13aac7.js" crossorigin="anonymous"></script>
 
     <!-- Lightbox CSS for the Image Gallery on each apartment individual pages -->
@@ -62,56 +63,71 @@
 			<div id="apt-nav-placeholder"></div>
   
       <div class="content">
-        <h1>NO. 3 - EL ESTUDIO </h1>
+        <h1>Apartamento No.3 – El Estudio – 40 m²</h1>
+        <p>El Apartamento No.3 El Estudio es un acogedor estudio situado en el segundo piso de Casa Tosca Jávea, en pleno casco antiguo. Con paredes de piedra tosca y cocina equipada, es ideal para una estancia cómoda y con encanto.</p>
+          <p>
+          ¿Buscas otra opción en Casa Tosca Jávea? Descubre la 
+          <a href="/pages/apt/no1.html">Habitación No.1 La Bóveda</a> para una estancia más íntima, 
+          o el 
+          <a href="/pages/apt/no2.html">Apartamento No.2 Julietta</a> con balcones. 
+          También puedes ver el 
+          <a href="/pages/apt/no4.html">Apartamento No.4 El Ático</a> con vistas.
+          </p>
         <section class="apartment-page">
+          
           <div class="apartment-details">
             <div class="apartment-calendar">
-              <h3>Calendario de disponibilidad - No.3</h3>
-        			<iframe src="https://calendar.google.com/calendar/embed?title=NO.3%20-%20El%20ESTUDIO&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=n4pviqg82ri5gj4h2vm2j009jkt0im1t%40import.calendar.google.com&amp;color=%23711616&amp;src=4cg5d1lo6g9dp53acjje4g3e5ldlj83s%40import.calendar.google.com&amp;color=%23B1365F&amp;ctz=Europe%2FMadrid" 
-               title="Calendario de disponibilidad - No.3"
-               style="border-width:0" 
-               width="800" height="600" 
-               frameborder="0" scrolling="No"></iframe>
+              <h3>Calendario de disponibilidad – No.3</h3>
+              <iframe src="https://calendar.google.com/calendar/embed?title=NO.3%20-%20El%20ESTUDIO&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=n4pviqg82ri5gj4h2vm2j009jkt0im1t%40import.calendar.google.com&amp;color=%23711616&amp;src=4cg5d1lo6g9dp53acjje4g3e5ldlj83s%40import.calendar.google.com&amp;color=%23B1365F&amp;ctz=Europe%2FMadrid" 
+                title="Calendario de disponibilidad - No.3"
+                style="border-width:0" 
+                width="800" height="600" 
+                frameborder="0" scrolling="no"></iframe>
             </div>
-              <aside class="apartment-info">
-                <h3>Para 2 pers. En el 2º piso. Paredes de tosca</h3>
-                <ul class="amenities">
-                  <li>✔️ Cama grande (150 x 190 cm)</li>
-                  <li>✔️ Cocina pequeña equipada</li>
-                  <li>✔️ Lavadora</li>
-                  <li>✔️ Secador de pelo</li>
-                  <li>✔️ Plancha y tabla</li>
-                  <li>✔️ Check-in autónomo</li>
-                  <li>✔️ Terraza compartida</li>
-                  <li>No se permiten mascotas ni fumar</li>
-                </ul>
-                <div class="booking-links">
-								<a
-									href="/pages/forms/consulta.html"
-									class="btn btn-consulta js-consulta-link"
-									data-apartment="no3"
-									aria-label="Consulta ahora - Apartamento No.3"
-								>
-									Consulta ahora
-								</a>
-								
-                <a class="cta secondary" 
-                   href="https://www.booking.com/hotel/es/charming-studio-apartment-with-a-47-c-in-medieval-village.en-gb.html?label=gen173nr-10CAsoRkI5Y2hhcm1pbmctc3R1ZGlvLWFwYXJ0bWVudC13aXRoLWEtNDctYy1pbi1tZWRpZXZhbC12aWxsYWdlSDNYBGhGiAEBmAEzuAEHyAEM2AED6AEB-AEBiAIBqAIBuAKpk6PIBsACAdICJDc5OTliMDY2LTNmNTQtNDZkNy04MTc1LTI5YWFiMzZiZTIxONgCAeACAQ&sid=12323c7d0368c20c251515381da1f03e&dist=0&keep_landing=1&sb_price_type=total&type=total&" 
-                   target="_blank" rel="noopener noreferrer">
-                  Ver en Booking.com
-                </a>
-                <a class="cta" 
-                   href="https://www.airbnb.com/rooms/21759982?guests=1&adults=1&s=67&unique_share_id=7c58956f-961e-45fb-983f-f03c4c0da51e" 
-                   target="_blank" rel="noopener noreferrer">
-                  Ver en Airbnb
-                </a>
-              </div>
-              </aside>
+            <aside class="apartment-info">
+              <h3>Para 2 personas • 2º piso • Estudio con encanto en piedra tosca</h3>
+              <ul class="amenities">
+                <li>✔️ Cama grande (150 x 190 cm)</li>
+                <li>✔️ Cocina pequeña equipada</li>
+                <li>✔️ Lavadora</li>
+                <li>✔️ Secador de pelo</li>
+                <li>✔️ Plancha y tabla</li>
+                <li>✔️ Check-in autónomo</li>
+                <li>✔️ Terraza compartida</li>
+                <li>✔️ No se permiten mascotas ni fumar en el apartamento</li>
+              </ul>
+              <div class="booking-links">
+              <a
+                href="/pages/forms/consulta.html"
+                class="btn btn-consulta js-consulta-link"
+                data-apartment="no3"
+                aria-label="Consulta ahora - Apartamento No.3"
+              >
+                Consulta ahora
+              </a>
+              
+              <a class="cta secondary" 
+                  href="https://www.booking.com/hotel/es/charming-studio-apartment-with-a-47-c-in-medieval-village.en-gb.html?label=gen173nr-10CAsoRkI5Y2hhcm1pbmctc3R1ZGlvLWFwYXJ0bWVudC13aXRoLWEtNDctYy1pbi1tZWRpZXZhbC12aWxsYWdlSDNYBGhGiAEBmAEzuAEHyAEM2AED6AEB-AEBiAIBqAIBuAKpk6PIBsACAdICJDc5OTliMDY2LTNmNTQtNDZkNy04MTc1LTI5YWFiMzZiZTIxONgCAeACAQ&sid=12323c7d0368c20c251515381da1f03e&dist=0&keep_landing=1&sb_price_type=total&type=total&" 
+                  target="_blank" rel="noopener noreferrer">
+                Ver en Booking.com
+              </a>
+              <a class="cta" 
+                  href="https://www.airbnb.com/rooms/21759982?guests=1&adults=1&s=67&unique_share_id=7c58956f-961e-45fb-983f-f03c4c0da51e" 
+                  target="_blank" rel="noopener noreferrer">
+                Ver en Airbnb
+              </a>
+            </div>
+            </aside>
           </div>
         </section>
-        <p>Nuestro apartamento Nº 3 tipo estudio es ubicado en el segundo piso. Con una ventana que da a las pintorescas calles, un baño privado y una práctica cocina pequeña. Tenemos hervidor de agua, cafetera y tostadora. Con una superficie aproximada de 40 metros cuadrados, ofrece un encantador santuario en el corazón del pueblo histórico.</p>
+          <h2>Descripción</h2>
+          <p>
+          Nuestro apartamento No.3 tipo estudio está ubicado en el segundo piso. Cuenta con una ventana que da a las pintorescas calles del casco antiguo, baño privado y una cocina equipada con hervidor, cafetera y tostadora. Con aproximadamente 40 m², ofrece un espacio acogedor en el corazón de Jávea.
+          </p>
+          <h2>Galería de imágenes – No.3</h2>
         <div class="gallery">
-        <!-- No3-img-01 -->
+        
+          <!-- No3-img-01 -->
         <a href="/images/gallery/no3/large/no3-img-01.jpg" class="glightbox" data-gallery="no3-gallery" data-title="Apartamento Nº3 de Casa Tosca Jávea – imagen 01">
           <picture>
             <source srcset="/images/gallery/no3/large/no3-img-01.jpg" type="image/jpeg">
@@ -276,36 +292,7 @@
       <div class="clearfloat"></div>
     </footer>
     </div><!-- end .container -->
-			<script>
-				document.addEventListener('DOMContentLoaded', function () {
-
-        // NAV
-        fetch('/templates/nav.html')
-          .then(res => res.text())
-          .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-            initNav();
-          });
-
-        // FOOTER
-        fetch('/templates/footer.html')
-          .then(res => res.text())
-          .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-          });
-
-        // APT NAV (if exists)
-        const aptNav = document.getElementById('apt-nav-placeholder');
-        if (aptNav) {
-          fetch('/templates/apt-nav.html')
-            .then(res => res.text())
-            .then(data => {
-              aptNav.innerHTML = data;
-            });
-        }
-
-      });
-		</script>
+	
     <!-- GLightbox JS for the Image Gallery on each apartment individual pages -->
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script>

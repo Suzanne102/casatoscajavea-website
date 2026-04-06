@@ -44,6 +44,8 @@
 
 		<!-- 8. CSS STYLESHEETS  -->
 		<link rel="stylesheet" href="/css/styles.css" />
+		<script src="/js/nav.js" defer></script>
+		<script src="/js/loadPartials.js" defer></script>
 		<!-- Font-awesome stylesheet -->
 		<script src="https://kit.fontawesome.com/53ce13aac7.js" crossorigin="anonymous"></script>
 	</head>
@@ -67,6 +69,7 @@
 					<h3>Google Map</h3>
 					<address>Casa Tosca Jávea, Carrer enForn, 2, 03730 Jávea, Alicante, España</address>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.925911822424!2d0.15930237637974407!3d38.78833277174747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129e0f9a6faff26f%3A0x5c50a30833264377!2sCasa%20Tosca!5e0!3m2!1sen!2ske!4v1765358099084!5m2!1sen!2ske" 
+					 title="Google Map Location of Casa Tosca Jávea"
 					 width="600" height="450" 
 					 style="border:0;" allowfullscreen="" 
 					 loading="lazy" 
@@ -87,7 +90,7 @@
 				<p>From Valencia or Alicante airports/train stations to Jávea:</p>
 				<ul>
 					<li><strong>Taxi:</strong> approx. <strong>€120-150</strong>, duration around <strong>1h20-1h30min. Alicante is a little closer.</strong>.</li>
-					<li><strong>Bus:</strong> 2.5–3 hours. Check options with <a href="https://www.alsa.en" target="_blank">ALSA</a> (Around 15Euros). The Bus station in Javea is walking distance from Casa Tosca.</li>
+					<li><strong>Bus:</strong> 2.5–3 hours. Check options with <a href="https://www.alsa.en" target="_blank" rel="noopener">ALSA</a> (Around 15Euros). The Bus station in Javea is walking distance from Casa Tosca.</li>
 					<li><strong>Blabla Cars</strong> can be a good option too.</li>
 				</ul>
 
@@ -127,42 +130,6 @@
 				<div class="clearfloat"></div>
 			</footer>
 		</div> <!-- end of container -->
-	<script>
-      document.addEventListener('DOMContentLoaded', function () {
-        // Load navigation
-        fetch('/en/templates/nav.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-
-          // Load nav.js AFTER nav.html is in DOM
-          const script = document.createElement('script');
-            script.src = "/js/nav.js";
-            script.onload = () => {
-              initNav(); // now nav.js exists, and nav.html exists
-            };
-            document.body.appendChild(script);
-          });
-
-        // Load footer
-        fetch('/en/templates/footer.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-          });
-
-        // Load apartment navbar ONLY if placeholder exists
-        const aptPlaceholder = document.getElementById('apt-nav-placeholder');
-        if (aptPlaceholder) {
-          fetch('/en/templates/apt-nav.html')
-            .then(response => response.text())
-            .then(data => {
-              aptPlaceholder.innerHTML = data;
-            });
-        }
-
-      });
-    </script>
 
 	</body>
 </html><!-- InstanceEnd -->

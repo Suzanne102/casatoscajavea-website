@@ -80,6 +80,20 @@ a:link {
 	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
 }
 
+.seo-links {
+  font-size: 1.05rem;
+  color: #666;
+  margin: 10px auto 30px;
+  max-width: 800px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.seo-links a {
+  font-weight: 500;
+  color: #4b3d33;
+}
+
 a:visited {
 	color: #4E5869;
 	text-decoration: underline;

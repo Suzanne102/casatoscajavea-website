@@ -28,6 +28,10 @@
 
   <!-- 8. Styles & external resources -->
   <link rel="stylesheet" href="/css/styles.css" />
+  <script src="/js/nav.js" defer></script>
+  <script src="/js/loadPartials.js" defer></script>
+
+  <!-- FontAwesome Styles -->
   <script src="https://kit.fontawesome.com/53ce13aac7.js" crossorigin="anonymous"></script>
   
 </head>
@@ -44,88 +48,59 @@
   </header>
 
   <!-- MAIN CONTENT -->
-<main class="enquiry-content">
-  <h1>Enquire & Reserve</h1>
-  <form action="/form-handlers/enquiry-handler.php" method="POST">
-    <!-- Honeypot field for spam prevention -->
-    <input type="text" name="website" style="display:none">
+  <main class="enquiry-content">
+    <h1>Enquire & Reserve</h1>
+    <form action="/form-handlers/enquiry-handler.php" method="POST">
+      <!-- Honeypot field for spam prevention -->
+      <input type="text" name="website" style="display:none">
 
-    <div class="form-row"><h2>Fill the Form</h2></div>
+      <div class="form-row"><h2>Fill the Form</h2></div>
 
-    <label for="firstName">First Name</label>
-    <input type="text" id="firstName" name="firstName" placeholder="First name" required>
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" placeholder="First name" required>
 
-    <label for="lastName">Last Name</label>
-    <input type="text" id="lastName" name="lastName" placeholder="Last name" required>
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" placeholder="Last name" required>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Email" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Email" required>
 
-    <label for="phone">Phone</label>
-    <input type="tel" id="phone" name="phone" placeholder="Mobile phone" required>
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" placeholder="Mobile phone" required>
 
-    <div class="apart-row"><h2>Select 1 of our 5 options</h2></div>
-    <select name="apart-no" id="apart-no" aria-label="Select an apartment" required>
-      <option value="" disabled selected>Please select an apartment</option>
-      <option value="No.1">NO. 1 - 55-60€</option>
-      <option value="No.2">NO. 2 - 120-130€</option>
-      <option value="No.3">NO. 3 - 80-90€</option>
-      <option value="No.4">NO. 4 - 130-145€</option>
-      <option value="No.5">NO. 5 - 75-85€</option>
-    </select>
+      <div class="apart-row"><h2>Select 1 of our 5 options</h2></div>
+      <select name="apart-no" id="apart-no" aria-label="Select an apartment" required>
+        <option value="" disabled selected>Please select an apartment</option>
+        <option value="No.1">NO. 1 - 55-60€</option>
+        <option value="No.2">NO. 2 - 120-130€</option>
+        <option value="No.3">NO. 3 - 80-90€</option>
+        <option value="No.4">NO. 4 - 130-145€</option>
+        <option value="No.5">NO. 5 - 75-85€</option>
+      </select>
 
-    <div class="form-row"><h2>For How Many Persons?</h2></div>
-    <select name="no-of-people" id="no-of-people" required aria-label="Number of guests">
-      <option value="" disabled selected>Please select an option</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-    </select>
+      <div class="form-row"><h2>For How Many Persons?</h2></div>
+      <select name="no-of-people" id="no-of-people" required aria-label="Number of guests">
+        <option value="" disabled selected>Please select an option</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
 
-    <div class="form-row"><h2>Select your dates</h2></div>
+      <div class="form-row"><h2>Select your dates</h2></div>
 
-    <label for="checkInDate">Arrival Date</label>
-    <input type="date" id="checkInDate" name="checkInDate" required>
+      <label for="checkInDate">Arrival Date</label>
+      <input type="date" id="checkInDate" name="checkInDate" required>
 
-    <label for="checkOutDate">Departure Date</label>
-    <input type="date" id="checkOutDate" name="checkOutDate" required>
+      <label for="checkOutDate">Departure Date</label>
+      <input type="date" id="checkOutDate" name="checkOutDate" required>
 
-    <button type="submit" class="submit-btn">Submit</button>
-  </form>
-  <footer>
-    <div id="footer-placeholder"></div>
-    <div class="clearfloat"></div>
-  </footer>
-</main>
-
-  <!-- Templates & Scripts -->
-      <script>
-      document.addEventListener('DOMContentLoaded', function () {
-
-        // Load navigation
-        fetch('/en/templates/nav.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-
-            // Load nav.js AFTER nav.html is in DOM
-            const script = document.createElement('script');
-            script.src = "/js/nav.js";
-            script.onload = () => {
-              initNav(); // now nav.js exists, and nav.html exists
-            };
-            document.body.appendChild(script);
-          });
-
-          // Load footer
-        fetch('/en/templates/footer.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-          });
-
-      });
-    </script>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+    <footer>
+      <div id="footer-placeholder"></div>
+      <div class="clearfloat"></div>
+    </footer>
+  </main>
 </body>
 </html>

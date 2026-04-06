@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image" />
 		
 		<!-- 6. Favicon -->
-		<link rel="icon" type="image/x-icon" img src="favicon.ico" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 	
 		<!-- 7. Google Tag Manager - in head -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -41,7 +41,9 @@
 
     <!-- 8. Styles & external resources -->
     <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <script src="/js/nav.js" defer></script>
+    <script src="/js/loadPartials.js" defer></script>
+
     <!-- GLightbox CSS for the Image Gallery on each apartment individual pages -->
 		<script src="https://kit.fontawesome.com/53ce13aac7.js" crossorigin="anonymous"></script>
   </head>
@@ -60,35 +62,32 @@
       <div id="apt-nav-placeholder"></div>
 
       <div class="content">
-       <h1>NO. 4 - THE ATTIC</h1>
-       <p>All feature private bathrooms, A/C, heating, Smart TV and Wi‑Fi.</p>
-       <p>
-        Discover more options at Casa Tosca Jávea. For a cosy and intimate stay, explore 
-        <a href="/en/pages/apt/no1.html">Room No.1 The Vault</a>, 
-        or enjoy the charm of 
-        <a href="/en/pages/apt/no3.html">Apartment No.3 El Estudio</a>. 
-        For a central apartment with balconies, see 
-        <a href="/en/pages/apt/no2.html">Apartment No.2 Juliet</a>.
-        </p>
+       <h1>Apartment No.4 The Attic – 80 m²</h1>
+       <p>Apartment No.4 “The Attic” is a spacious top-floor apartment in the heart of Jávea Old Town, 
+        offering rustic charm with exposed beams and Tosca stone details. Ideal for families or 
+        small groups, it combines generous space with a warm and authentic atmosphere.</p>
+        <p>The apartment features two queen beds, a fully equipped kitchen, air conditioning, 
+          heating, Smart TV, Wi-Fi, and direct access to the shared terrace.</p>
 			  <section class="apartment-page">
+          <h2>Apartment Details & Availability</h2>
           <div class="apartment-details">
             <div class="apartment-calendar">
               <h3>Availability Calendar - No.4</h3>
               <iframe src="https://calendar.google.com/calendar/embed?title=NO.4%20-%20THE%20ATTIC&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=nputjt43i3ml80qbq0nvbcn4adg6atj5%40import.calendar.google.com&amp;color=%238C500B&amp;src=qe2vihqpt2vcnan7ma9iouols9iaspgc%40import.calendar.google.com&amp;color=%23AB8B00&amp;ctz=Europe%2FMadrid" 
-                title="Availability Calendaar - No.4"
+                title="Availability Calendar - No.4"
                 style="border:0" 
                 width="800" height="600" 
-                frameborder="0" scrolling="No">
+                frameborder="0" scrolling="no">
               </iframe>
             </div>
             <aside class="apartment-info">
-              <h3>Sleeps 4 pers on 3rd floor, next to terrace.</h3>
+              <h3>Sleeps 4 guests • Third floor • Next to terrace</h3>
               <div class="price-range">From €120 - €146 / night</div>
                 <ul class="amenities">
                   <li>✔️ 2 Queen beds (150 x 190 cm)</li>
                   <li>✔️ Well equipped kitchen</li>
                   <li>✔️ Dishwasher</li>
-                  <li>✔️ Chimenee</li>
+                  <li>✔️ Fireplace</li>
                 </ul>
               <div class="booking-links">
 								<a
@@ -113,11 +112,28 @@
             </aside>
           </div> 
         </section> <!--end of section apartmewnt-page-->
-
-        <div class="gallery">
-          <h2>Photo Gallery - NO. 4</h2>
-          <p>Enjoy the tranquility of the Attic Apartment, a spacious hideaway full of Old Town charm. Simply furnished, it offers a warm and functional atmosphere. In addition to the main bed, a queen bed on the mezzanine can comfortably accommodate one or two extra guests — though the staircase to the loft is not suitable for small children. With approximately 80 m² (900 sq ft), the apartment is well equipped for cooking, including an oven, microwave, toaster, coffee maker, and—rare in the Old Town—a dishwasher. Towels and linens are provided, and a washing machine is available. In winter, the small fireplace adds a warm, cozy touch. The apartment is also located next to the shared terrace, perfect for enjoying the outdoors. Throughout your stay, you’ll have fast, reliable fibre-optic interne.</p>      
-          <!-- No4-img-01 -->
+        <p class="apt-links">
+          Looking for another stay at Casa Tosca Jávea? Discover 
+          <a href="/en/pages/apt/no1.html">Room No.1 The Vault</a>, 
+          <a href="/en/pages/apt/no2.html">Apartment No.2 Juliet</a>, 
+          <a href="/en/pages/apt/no3.html">Apartment No.3 The Studio</a>, 
+          or choose a quieter option with 
+          <a href="/en/pages/apt/no5.html">Apartment No.5 The Refuge</a>.
+        </p>
+        <h2>Photo Gallery – Apartment No.4 The Attic</h2>
+          <p>Enjoy the tranquility of the Attic Apartment, a spacious hideaway full of Old Town 
+            charm. Simply furnished, it offers a warm and functional atmosphere. 
+            In addition to the main bed, a queen bed on the mezzanine can comfortably accommodate 
+            one or two extra guests — though the staircase to the loft is not suitable for 
+            small children. </p>
+            <p>With approximately 80 m² (900 sq ft), the apartment is well equipped 
+            for cooking, including an oven, microwave, toaster, coffee maker, and—rare 
+            in the Old Town—a dishwasher. Towels and linens are provided, and a washing 
+            machine is available. In winter, the small fireplace adds a warm, cozy touch. 
+            The apartment is also located next to the shared terrace, perfect for enjoying 
+            the outdoors. Throughout your stay, you’ll have fast, reliable fibre-optic internet.</p>      
+          <div class="gallery">
+            <!-- No4-img-01 -->
           <a href="/images/gallery/no4/large/no4-img-01.jpg" class="glightbox" data-gallery="no4-gallery" data-title="Apartment Nº4 Casa Tosca Jávea – image 01">
           <picture>
             <source srcset="/images/gallery/no4/large/no4-img-01.jpg" type="image/jpeg">
@@ -348,7 +364,7 @@
             <source
               srcset="
                 /images/gallery/ca/small/terrace-01.jpg 480w,
-                /images/gallery//ca/med/terrace-01.jpg 768w,
+                /images/gallery/ca/med/terrace-01.jpg 768w,
                 /images/gallery/ca/large/terrace-01.jpg 1200w"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
             <img src="/images/gallery/ca/large/terrace-01.jpg"
@@ -365,41 +381,7 @@
         <div class="clearfloat"></div>
       </footer>
     </div><!-- end .container -->
-    <script>
-     document.addEventListener('DOMContentLoaded', function () {
-     // Load navigation
-     fetch('/en/templates/nav.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('nav-placeholder').innerHTML = data;
-
-        // Load nav.js AFTER nav.html is in DOM
-        const script = document.createElement('script');
-        script.src = "/js/nav.js";
-        script.onload = () => {
-          initNav(); // now nav.js exists, and nav.html exists
-        };
-        document.body.appendChild(script);
-      });
-
-     // Load footer
-     fetch('/en/templates/footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      });
-
-     // Load apartment navbar ONLY if placeholder exists
-     const aptPlaceholder = document.getElementById('apt-nav-placeholder');
-     if (aptPlaceholder) {
-      fetch('/en/templates/apt-nav.html')
-        .then(response => response.text())
-        .then(data => {
-          aptPlaceholder.innerHTML = data;
-        });
-       }
-      });
-    </script>    
+    
     <!-- GLightbox JS -->
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script>

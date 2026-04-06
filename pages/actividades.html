@@ -45,8 +45,8 @@
   	<!-- 8. Styles & external resources -->
 		<link rel="stylesheet" href="/css/styles.css" />
     <script src="/js/nav.js" defer></script>
-
-    <!-- FontAwasome Styles -->
+    <script src="/js/loadPartials.js" defer></script>
+    <!-- FontAwesome Styles --> 
     <script src="https://kit.fontawesome.com/53ce13aac7.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -475,26 +475,5 @@
         <div class="clearfloat"></div>
       </footer>
     </div>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-
-        // NAV
-        fetch('/templates/nav.html')
-          .then(res => res.text())
-          .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-            initNav();
-          });
-
-        // FOOTER
-        fetch('/templates/footer.html')
-          .then(res => res.text())
-          .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-          });
-
-      });
-		</script>
   </body>
 </html>

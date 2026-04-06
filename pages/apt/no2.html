@@ -7,7 +7,7 @@
 		<title>Casa Tosca Jávea | Apartamento No.2 Julietta en el Casco Antiguo</title>
     
     <!-- 2. Basic SEO -->
-    <meta name="description" content="El Apartamento Nº2 de Casa Tosca en Jávea ofrece dos balcones con vistas a diferentes calles del casco antiguo. Luminoso y acogedor, con comedor amplio y sofá cama para hasta 3 huéspedes." />
+    <meta name="description" content="El Apartamento Nº2 de Casa Tosca en Jávea ofrece dos balcones con vistas a diferentes calles del casco antiguo. Luminoso y acogedor, con comedor amplio y sofá cama, ideal para hasta 3 huéspedes." />
       <!-- Canonical and hreflang -->
     <link rel="canonical" href="https://www.casatoscajavea.com/pages/apt/no2.html" />
     <link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/apt/no2.html" />
@@ -44,6 +44,8 @@
     <!-- 8. Styles & external resources -->
     <link rel="stylesheet" href="/css/styles.css" />
     <script src="/js/nav.js" defer></script>
+    <script src="/js/loadPartials.js" defer></script>
+    
     <!-- GLightbox CSS for the Image Gallery on each apartment individual pages -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     <script src="https://kit.fontawesome.com/53ce13aac7.js" crossorigin="anonymous"></script>
@@ -65,6 +67,14 @@
       <div class="content">
         <h1>Apartamento No.2 Julietta – 50 m²</h1>
         <p>El Apartamento No.2 Julietta es amplio y luminoso, situado en el casco antiguo de Jávea, con dos balcones a la calle. Ideal para 2 a 3 personas.</p>
+        <p>
+          ¿Buscas otra opción en Casa Tosca Jávea? Descubre la 
+          <a href="/pages/apt/no1.html">Habitación No.1 La Bóveda</a>, 
+          o el 
+          <a href="/pages/apt/no3.html">Apartamento No.3 El Estudio</a>. 
+          Para más espacio, también puedes ver el 
+          <a href="/pages/apt/no4.html">Apartamento No.4 El Ático</a>.
+          </p>
         <section class="apartment-page">
           <div class="apartment-details">
             <div class="apartment-calendar">
@@ -77,7 +87,7 @@
               <p class="price-range">Desde 120€ a 140€ / noche</p>
               <ul class="amenities">
                 <li>✔️ 1 Cama grande (150 x 190 cm)</li>
-                <li>✔️ 1 Sofa-cama</li>
+                <li>✔️ 1 Sofá cama</li>
                 <li>✔️ Cocina Equipada</li>
                 <li>✔️ Lavadora</li>
               </ul>
@@ -103,14 +113,15 @@
             </aside>
           </div> <!-- end of apartment-details -->    
         </section> <!--end of section apartmewnt-page-->
-
-        <p>El apartamento Julietta es ideal para una escapada romántica o para una familia con un niño. Cuenta con una cama grande, un sofá cama, un comedor, lavadora y dos balcones con vistas a la calle.</p>
-        <div class="gallery">
+          <h2>Descripción</h2>
+          <p>El apartamento Julietta es ideal para una escapada romántica o para una familia con un niño. Cuenta con una cama grande, un sofá cama, un comedor, lavadora y dos balcones con vistas a la calle.</p>
           <!-- No2-img-01 -->
+          <h2>Galería de imágenes – No.2</h2>
+        <div class="gallery"> 
           <a href="/images/gallery/no2/large/no2-img-01.jpg" 
-           class="glightbox" 
-           data-gallery="no2-gallery" 
-           data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 01">
+            class="glightbox" 
+            data-gallery="no2-gallery" 
+            data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 01">
             <picture>
               <source srcset="/images/gallery/no2/large/no2-img-01.webp" type="image/webp">
               <source
@@ -125,7 +136,7 @@
             </picture>
           </a>
           <!-- No2-img-02 -->
-            <a href="/images/gallery/no2/large/no2-img-02.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 02">
+          <a href="/images/gallery/no2/large/no2-img-02.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 02">
             <picture>
               <source srcset="/images/gallery/no2/large/no2-img-02.webp" type="image/webp">
               <source
@@ -140,234 +151,204 @@
             </picture>
           </a>
 
-        <!-- No2-img-03 -->
-        <a href="/images/gallery/no2/large/no2-img-03.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 03">
-          <picture>
-            <source srcset="/images/gallery/no2/large/no2-img-03.webp" type="image/webp">
-            <source
-              srcset="
-                /images/gallery/no2/small/no2-img-03.jpg 480w,
-                /images/gallery/no2/med/no2-img-03.jpg 768w,
-                /images/gallery/no2/large/no2-img-03.jpg 1200w"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
-            <img src="/images/gallery/no2/large/no2-img-03.jpg"
-                alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 3"
-                width="1200" height="900" loading="lazy" decoding="async">
-          </picture>
-        </a>
+          <!-- No2-img-03 -->
+          <a href="/images/gallery/no2/large/no2-img-03.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 03">
+            <picture>
+              <source srcset="/images/gallery/no2/large/no2-img-03.webp" type="image/webp">
+              <source
+                srcset="
+                  /images/gallery/no2/small/no2-img-03.jpg 480w,
+                  /images/gallery/no2/med/no2-img-03.jpg 768w,
+                  /images/gallery/no2/large/no2-img-03.jpg 1200w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
+              <img src="/images/gallery/no2/large/no2-img-03.jpg"
+                  alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 3"
+                  width="1200" height="900" loading="lazy" decoding="async">
+            </picture>
+          </a>
 
-        <!-- No2-img-04 -->
-        <a href="/images/gallery/no2/large/no2-img-04.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 04">
-          <picture>
-            <source srcset="/images/gallery/no2/large/no2-img-04.webp" type="image/webp">
-            <source
-              srcset="
-                /images/gallery/no2/small/no2-img-04.jpg 480w,
-                /images/gallery/no2/med/no2-img-04.jpg 768w,
-                /images/gallery/no2/large/no2-img-04.jpg 1200w"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
-            <img src="/images/gallery/no2/large/no2-img-04.jpg"
-                alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 4"
-                width="1200" height="900" loading="lazy" decoding="async">
-          </picture>
-        </a>
+          <!-- No2-img-04 -->
+          <a href="/images/gallery/no2/large/no2-img-04.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 04">
+            <picture>
+              <source srcset="/images/gallery/no2/large/no2-img-04.webp" type="image/webp">
+              <source
+                srcset="
+                  /images/gallery/no2/small/no2-img-04.jpg 480w,
+                  /images/gallery/no2/med/no2-img-04.jpg 768w,
+                  /images/gallery/no2/large/no2-img-04.jpg 1200w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
+              <img src="/images/gallery/no2/large/no2-img-04.jpg"
+                  alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 4"
+                  width="1200" height="900" loading="lazy" decoding="async">
+            </picture>
+          </a>
 
-        <!-- No2-img-05 -->
-        <a href="/images/gallery/no2/large/no2-img-05.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 05">
-          <picture>
-            <source srcset="/images/gallery/no2/large/no2-img-05.webp" type="image/webp">
-            <source
-              srcset="
-                /images/gallery/no2/small/no2-img-05.jpg 480w,
-                /images/gallery/no2/med/no2-img-05.jpg 768w,
-                /images/gallery/no2/large/no2-img-05.jpg 1200w"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
-            <img src="/images/gallery/no2/large/no2-img-05.jpg"
-                alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 5"
-                width="1200" height="900" loading="lazy" decoding="async">
-          </picture>
-        </a>
+          <!-- No2-img-05 -->
+          <a href="/images/gallery/no2/large/no2-img-05.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 05">
+            <picture>
+              <source srcset="/images/gallery/no2/large/no2-img-05.webp" type="image/webp">
+              <source
+                srcset="
+                  /images/gallery/no2/small/no2-img-05.jpg 480w,
+                  /images/gallery/no2/med/no2-img-05.jpg 768w,
+                  /images/gallery/no2/large/no2-img-05.jpg 1200w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
+              <img src="/images/gallery/no2/large/no2-img-05.jpg"
+                  alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 5"
+                  width="1200" height="900" loading="lazy" decoding="async">
+            </picture>            
+          </a>
 
-        <!-- No2-img-06 -->
-        <a href="/images/gallery/no2/large/no2-img-06.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 06">
-          <picture>
-            <source srcset="/images/gallery/no2/large/no2-img-06.webp" type="image/webp">
-            <source
-              srcset="
-                /images/gallery/no2/small/no2-img-06.jpg 480w,
-                /images/gallery/no2/med/no2-img-06.jpg 768w,
-                /images/gallery/no2/large/no2-img-06.jpg 1200w"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
-            <img src="/images/gallery/no2/large/no2-img-06.jpg"
-                alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 6"
-                width="1200" height="900" loading="lazy" decoding="async">
-          </picture>
-        </a>
+          <!-- No2-img-06 -->
+          <a href="/images/gallery/no2/large/no2-img-06.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 06">
+            <picture>
+              <source srcset="/images/gallery/no2/large/no2-img-06.webp" type="image/webp">
+              <source
+                srcset="
+                  /images/gallery/no2/small/no2-img-06.jpg 480w,
+                  /images/gallery/no2/med/no2-img-06.jpg 768w,
+                  /images/gallery/no2/large/no2-img-06.jpg 1200w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
+              <img src="/images/gallery/no2/large/no2-img-06.jpg"
+                  alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 6"
+                  width="1200" height="900" loading="lazy" decoding="async">
+            </picture>
+          </a>
 
-        <!-- No2-img-07 -->
-        <a href="/images/gallery/no2/large/no2-img-07.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 07">
-          <picture>
-            <source srcset="/images/gallery/no2/large/no2-img-07.webp" type="image/webp">
-            <source
-              srcset="
-                /images/gallery/no2/small/no2-img-07.jpg 480w,
-                /images/gallery/no2/med/no2-img-07.jpg 768w,
-                /images/gallery/no2/large/no2-img-07.jpg 1200w"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
-            <img src="/images/gallery/no2/large/no2-img-07.jpg"
-                alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 7"
-                width="1200" height="900" loading="lazy" decoding="async">
-          </picture>
-        </a>
+          <!-- No2-img-07 -->
+          <a href="/images/gallery/no2/large/no2-img-07.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 07">
+            <picture>
+              <source srcset="/images/gallery/no2/large/no2-img-07.webp" type="image/webp">
+              <source
+                srcset="
+                  /images/gallery/no2/small/no2-img-07.jpg 480w,
+                  /images/gallery/no2/med/no2-img-07.jpg 768w,
+                  /images/gallery/no2/large/no2-img-07.jpg 1200w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
+              <img src="/images/gallery/no2/large/no2-img-07.jpg"
+                  alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 7"
+                  width="1200" height="900" loading="lazy" decoding="async">
+            </picture>
+          </a>
 
-        <!-- No2-img-08 -->
-        <a href="/images/gallery/no2/large/no2-img-08.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 08">
-          <picture>
-            <source srcset="/images/gallery/no2/large/no2-img-08.webp" type="image/webp">
-            <source
-              srcset="
-                /images/gallery/no2/small/no2-img-08.jpg 480w,
-                /images/gallery/no2/med/no2-img-08.jpg 768w,
-                /images/gallery/no2/large/no2-img-08.jpg 1200w"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
-            <img src="/images/gallery/no2/large/no2-img-08.jpg"
-                alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 8"
-                width="1200" height="900" loading="lazy" decoding="async">
-          </picture>
-        </a>
+          <!-- No2-img-08 -->
+          <a href="/images/gallery/no2/large/no2-img-08.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 08">
+            <picture>
+              <source srcset="/images/gallery/no2/large/no2-img-08.webp" type="image/webp">
+              <source
+                srcset="
+                  /images/gallery/no2/small/no2-img-08.jpg 480w,
+                  /images/gallery/no2/med/no2-img-08.jpg 768w,
+                  /images/gallery/no2/large/no2-img-08.jpg 1200w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
+              <img src="/images/gallery/no2/large/no2-img-08.jpg"
+                  alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 8"
+                  width="1200" height="900" loading="lazy" decoding="async">
+            </picture>
+           </a>
 
-        <!-- No2-img-09 -->
-        <a href="/images/gallery/no2/large/no2-img-09.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 09">
-          <picture>
-            <source srcset="/images/gallery/no2/large/no2-img-09.webp" type="image/webp">
-            <source
-              srcset="
-                /images/gallery/no2/small/no2-img-09.jpg 480w,
-                /images/gallery/no2/med/no2-img-09.jpg 768w,
-                /images/gallery/no2/large/no2-img-09.jpg 1200w"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
-            <img src="/images/gallery/no2/large/no2-img-09.jpg"
-                alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 9"
-                width="1200" height="900" loading="lazy" decoding="async">
-          </picture>
-        </a>
+          <!-- No2-img-09 -->
+          <a href="/images/gallery/no2/large/no2-img-09.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 09">
+            <picture>
+              <source srcset="/images/gallery/no2/large/no2-img-09.webp" type="image/webp">
+              <source
+                srcset="
+                  /images/gallery/no2/small/no2-img-09.jpg 480w,
+                  /images/gallery/no2/med/no2-img-09.jpg 768w,
+                  /images/gallery/no2/large/no2-img-09.jpg 1200w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
+              <img src="/images/gallery/no2/large/no2-img-09.jpg"
+                  alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 9"
+                  width="1200" height="900" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <!-- No2-img-10 -->
+          <a href="/images/gallery/no2/large/no2-img-10.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 10">
+              <picture>
+              <source srcset="/images/gallery/no2/large/no2-img-10.webp" type="image/webp">
+              <source
+                srcset="
+                  /images/gallery/no2/small/no2-img-10.jpg 480w,
+                  /images/gallery/no2/med/no2-img-10.jpg 768w,
+                  /images/gallery/no2/large/no2-img-10.jpg 1200w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
+              <img src="/images/gallery/no2/large/no2-img-10.jpg"
+                  alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 10"
+                  width="1200" height="900" loading="lazy" decoding="async">
+            </picture>
+          </a>
 
-        <!-- No2-img-10 -->
-        <a href="/images/gallery/no2/large/no2-img-10.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 10">
-          <picture>
-            <source srcset="/images/gallery/no2/large/no2-img-10.webp" type="image/webp">
-            <source
-              srcset="
-                /images/gallery/no2/small/no2-img-10.jpg 480w,
-                /images/gallery/no2/med/no2-img-10.jpg 768w,
-                /images/gallery/no2/large/no2-img-10.jpg 1200w"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
-            <img src="/images/gallery/no2/large/no2-img-10.jpg"
-                alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 10"
-                width="1200" height="900" loading="lazy" decoding="async">
-          </picture>
-        </a>
+          <!-- No2-img-11 -->
+          <a href="/images/gallery/no2/large/no2-img-11.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 11">
+            <picture>
+              <source srcset="/images/gallery/no2/large/no2-img-11.webp" type="image/webp">
+              <source
+                srcset="
+                  /images/gallery/no2/small/no2-img-11.jpg 480w,
+                  /images/gallery/no2/med/no2-img-11.jpg 768w,
+                  /images/gallery/no2/large/no2-img-11.jpg 1200w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
+              <img src="/images/gallery/no2/large/no2-img-11.jpg"
+                  alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 11"
+                  width="1200" height="900" loading="lazy" decoding="async">
+            </picture>
+          </a>
 
-        <!-- No2-img-11 -->
-        <a href="/images/gallery/no2/large/no2-img-11.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 11">
-          <picture>
-            <source srcset="/images/gallery/no2/large/no2-img-11.webp" type="image/webp">
-            <source
-              srcset="
-                /images/gallery/no2/small/no2-img-11.jpg 480w,
-                /images/gallery/no2/med/no2-img-11.jpg 768w,
-                /images/gallery/no2/large/no2-img-11.jpg 1200w"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
-            <img src="/images/gallery/no2/large/no2-img-11.jpg"
-                alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 11"
-                width="1200" height="900" loading="lazy" decoding="async">
-          </picture>
-        </a>
+          <!-- No2-img-12 -->
+          <a href="/images/gallery/no2/large/no2-img-12.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 12">
+            <picture>
+              <source srcset="/images/gallery/no2/large/no2-img-12.webp" type="image/webp">
+              <source
+                srcset="
+                  /images/gallery/no2/small/no2-img-12.jpg 480w,
+                  /images/gallery/no2/med/no2-img-12.jpg 768w,
+                  /images/gallery/no2/large/no2-img-12.jpg 1200w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
+              <img src="/images/gallery/no2/large/no2-img-12.jpg"
+                  alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 12"
+                  width="1200" height="900" loading="lazy" decoding="async">
+            </picture>
+          </a>
 
-        <!-- No2-img-12 -->
-        <a href="/images/gallery/no2/large/no2-img-12.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 12">
-          <picture>
-            <source srcset="/images/gallery/no2/large/no2-img-12.webp" type="image/webp">
-            <source
-              srcset="
-                /images/gallery/no2/small/no2-img-12.jpg 480w,
-                /images/gallery/no2/med/no2-img-12.jpg 768w,
-                /images/gallery/no2/large/no2-img-12.jpg 1200w"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
-            <img src="/images/gallery/no2/large/no2-img-12.jpg"
-                alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 12"
-                width="1200" height="900" loading="lazy" decoding="async">
-          </picture>
-        </a>
+          <!-- No2-img-13 -->
+          <a href="/images/gallery/no2/large/no2-img-13.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 13">
+            <picture>
+              <source srcset="/images/gallery/no2/large/no2-img-13.webp" type="image/webp">
+              <source
+                srcset="
+                  /images/gallery/no2/small/no2-img-13.jpg 480w,
+                  /images/gallery/no2/med/no2-img-13.jpg 768w,
+                  /images/gallery/no2/large/no2-img-13.jpg 1200w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
+              <img src="/images/gallery/no2/large/no2-img-13.jpg"
+                  alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 13"
+                  width="1200" height="900" loading="lazy" decoding="async">
+            </picture>
+            </a>
 
-        <!-- No2-img-13 -->
-        <a href="/images/gallery/no2/large/no2-img-13.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 13">
-          <picture>
-            <source srcset="/images/gallery/no2/large/no2-img-13.webp" type="image/webp">
-            <source
-              srcset="
-                /images/gallery/no2/small/no2-img-13.jpg 480w,
-                /images/gallery/no2/med/no2-img-13.jpg 768w,
-                /images/gallery/no2/large/no2-img-13.jpg 1200w"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
-            <img src="/images/gallery/no2/large/no2-img-13.jpg"
-                alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 13"
-                width="1200" height="900" loading="lazy" decoding="async">
-          </picture>
-        </a>
-
-        <!-- No2-img-14 -->
-        <a href="/images/gallery/no2/large/no2-img-14.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 14">
-          <picture>
-            <source srcset="/images/gallery/no2/large/no2-img-14.webp" type="image/webp">
-            <source
-              srcset="
-                /images/gallery/no2/small/no2-img-14.jpg 480w,
-                /images/gallery/no2/med/no2-img-14.jpg 768w,
-                /images/gallery/no2/large/no2-img-14.jpg 1200w"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
-            <img src="/images/gallery/no2/large/no2-img-14.jpg"
-                alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 14"
-                width="1200" height="900" loading="lazy" decoding="async">
-          </picture>
-        </a>
-      </div> <!--end of gallery-->
-      <div class="clearfloat"> </div>
+          <!-- No2-img-14 -->
+          <a href="/images/gallery/no2/large/no2-img-14.jpg" class="glightbox" data-gallery="no2-gallery" data-title="Apartamento Nº2 de Casa Tosca Jávea – imagen 14">
+            <picture>
+              <source srcset="/images/gallery/no2/large/no2-img-14.webp" type="image/webp">
+              <source
+                srcset="
+                  /images/gallery/no2/small/no2-img-14.jpg 480w,
+                  /images/gallery/no2/med/no2-img-14.jpg 768w,
+                  /images/gallery/no2/large/no2-img-14.jpg 1200w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
+              <img src="/images/gallery/no2/large/no2-img-14.jpg"
+                  alt="Apartamento Nº2 de Casa Tosca Jávea – imagen 14"
+                  width="1200" height="900" loading="lazy" decoding="async">
+            </picture>
+          </a>
+        </div> <!--end of gallery-->
+        <div class="clearfloat"> </div>
       </div><!-- end .content -->
       <footer>
         <div id="footer-placeholder"></div>
         <div class="clearfloat"></div>
       </footer>
-			<script>
-				document.addEventListener('DOMContentLoaded', function () {
 
-        // NAV
-        fetch('/templates/nav.html')
-          .then(res => res.text())
-          .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-            initNav();
-          });
-
-        // FOOTER
-        fetch('/templates/footer.html')
-          .then(res => res.text())
-          .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-          });
-
-        // APT NAV (if exists)
-        const aptNav = document.getElementById('apt-nav-placeholder');
-        if (aptNav) {
-          fetch('/templates/apt-nav.html')
-            .then(res => res.text())
-            .then(data => {
-              aptNav.innerHTML = data;
-            });
-        }
-
-      });
-			</script>
     </div><!-- end .container -->
     
     <!-- GLightbox JS -->

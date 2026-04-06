@@ -46,7 +46,8 @@
     
 		<!-- CSS STYLESHEETS -->
 		<link rel="stylesheet" href="/css/styles.css" />
-
+    <script src="/js/nav.js" defer></script>
+    <script src="/js/loadPartials.js" defer></script>
     <!-- Font-awesome stylesheet -->
    	<script src="https://kit.fontawesome.com/53ce13aac7.js" crossorigin="anonymous">
    	</script>
@@ -147,49 +148,6 @@
     <footer>
       <div id="footer-placeholder"></div>
     </footer>
-  </div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-
-      // Load navigation
-      fetch('/templates/nav.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('nav-placeholder').innerHTML = data;
-
-          // Load nav.js AFTER nav.html is in DOM
-          const script = document.createElement('script');
-          script.src = "/js/nav.js";
-          script.onload = () => {
-            initNav(); // now nav.js exists, and nav.html exists
-          };
-          document.body.appendChild(script);
-        });
-
-      // Load footer
-      fetch('/templates/footer.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('footer-placeholder').innerHTML = data;
-        });
-
-      // Load apartment navbar ONLY if placeholder exists
-      const aptPlaceholder = document.getElementById('apt-nav-placeholder');
-      if (aptPlaceholder) {
-        fetch('/templates/apt-nav.html')
-          .then(response => response.text())
-          .then(data => {
-            aptPlaceholder.innerHTML = data;
-          });
-      }
-
-    });
-    </script>
-    </script>
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBXNHFPD"
-		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-		<!-- End Google Tag Manager (noscript) -->
-	
+  </div>	
 </body>
 </html>
