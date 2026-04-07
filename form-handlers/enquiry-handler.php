@@ -71,5 +71,6 @@ $headers = "From: info@casatoscajavea.com\r\n";
 @mail($to, $subject, $message, $headers);
 
 // Redirect to THANK YOU page/Spanish version
-header("Location: /pages/forms/gracias-consulta.html");
+header("Location: /pages/forms/consulta-exito.html?test=1");
+
 exit;
