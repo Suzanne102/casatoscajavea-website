@@ -19,13 +19,19 @@
   <link rel="stylesheet" href="/css/styles.css" />
   <link rel="stylesheet" href="/css/form-styles.css" />
 	<script src="/js/nav.js" defer></script>
-	<script src="/js/loadPartials.js" defer></script>
+	<!--<script src="/js/loadPartials.js" defer></script>-->
 
 </head>
 <body>
 	<div id="nav-placeholder"></div>	
 	<main>
 		<div class="form-container">
+
+			<form action="/form-handlers/registro-handler.php" method="post" enctype="multipart/form-data">
+  		<input type="hidden" name="lang" value="es">
+			<!-- Honeypot field for spam prevention -->
+      <input type="text" name="website" style="display:none">
+			
 
 			<div class="form-row">
 				<h2>Datos del Establecimiento</h2>
@@ -36,9 +42,6 @@
 				<p><strong>Provincia:</strong> Alicante</p>
 				</div>
 
-			<form action="/form-handlers/registro-handler.php" method="post" enctype="multipart/form-data">
-  		<input type="hidden" name="lang" value="es">
-			
 				<div class="form-row">
 					<h2>Documento</h2>
 					<label for="id-upload">Suba su documento (DNI / Pasaporte):</label>

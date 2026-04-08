@@ -38,58 +38,60 @@
                 </div>
 
                 <form action="/form-handlers/registro-handler.php" method="post" enctype="multipart/form-data">
-                <input type="hidden" name="lang" value="en">
+                    <input type="hidden" name="lang" value="en">
+                    <!-- Honeypot field for spam prevention -->
+                    <input type="text" name="website" style="display:none">
+                
+                    <div class="form-row">
+                        <h2>Identification Document</h2>
+                        <label for="id-upload">Upload ID (Passport / ID Card):</label>
+                        <input type="file" id="id-upload" name="id-upload" accept=".jpg,.jpeg,.png,.pdf" required>
+                    </div>
 
-                <div class="form-row">
-                    <h2>Identification Document</h2>
-                    <label for="id-upload">Upload ID (Passport / ID Card):</label>
-                    <input type="file" id="id-upload" name="id-upload" accept=".jpg,.jpeg,.png,.pdf" required>
-                </div>
+                    <div class="form-row">
+                        <label for="tipodoc">Document Type</label>
+                        <select id="tipodoc" name="tipodoc" required>
+                        <option value="">Select…</option>
+                        <option value="dni">National ID (DNI)</option>
+                        <option value="pasaporte">Passport</option>
+                        <option value="conducir">Driver’s License</option>
+                        </select>
+                    </div>
 
-                <div class="form-row">
-                    <label for="tipodoc">Document Type</label>
-                    <select id="tipodoc" name="tipodoc" required>
-                    <option value="">Select…</option>
-                    <option value="dni">National ID (DNI)</option>
-                    <option value="pasaporte">Passport</option>
-                    <option value="conducir">Driver’s License</option>
-                    </select>
-                </div>
+                    <div class="form-row">
+                        <label for="no-id">Document Number</label>
+                        <input type="text" id="no-id" name="no-id" required>
+                    </div>
 
-                <div class="form-row">
-                    <label for="no-id">Document Number</label>
-                    <input type="text" id="no-id" name="no-id" required>
-                </div>
+                    <div class="form-row">
+                        <label for="fecha-expedicion">Issue Date</label>
+                        <input type="date" id="fecha-expedicion" name="fecha-expedicion" required>
+                    </div>
 
-                <div class="form-row">
-                    <label for="fecha-expedicion">Issue Date</label>
-                    <input type="date" id="fecha-expedicion" name="fecha-expedicion" required>
-                </div>
+                    <div class="form-row">
+                        <h2>Guest Information</h2>
 
-                <div class="form-row">
-                    <h2>Guest Information</h2>
+                        <label for="apellido1">Surname</label>
+                        <input type="text" id="apellido1" name="apellido1" required>
 
-                    <label for="apellido1">Surname</label>
-                    <input type="text" id="apellido1" name="apellido1" required>
+                        <label for="apellido2">Second Surname (optional)</label>
+                        <input type="text" id="apellido2" name="apellido2">
 
-                    <label for="apellido2">Second Surname (optional)</label>
-                    <input type="text" id="apellido2" name="apellido2">
+                        <label for="nombre">First Name</label>
+                        <input type="text" id="nombre" name="nombre" required>
 
-                    <label for="nombre">First Name</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                        <label>Sex</label>
+                        <label><input type="radio" name="sexo" value="M" required> Male</label>
+                        <label><input type="radio" name="sexo" value="F"> Female</label>
 
-                    <label>Sex</label>
-                    <label><input type="radio" name="sexo" value="M" required> Male</label>
-                    <label><input type="radio" name="sexo" value="F"> Female</label>
+                        <label for="fecha-nacimiento">Date of Birth</label>
+                        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
 
-                    <label for="fecha-nacimiento">Date of Birth</label>
-                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                        <label for="pais">Country of Nationality</label>
+                        <input type="text" id="pais" name="pais" required>
+                    </div>
 
-                    <label for="pais">Country of Nationality</label>
-                    <input type="text" id="pais" name="pais" required>
-                </div>
-
-                <button type="submit" class="submit-btn">Submit</button>
+                    <button type="submit" class="submit-btn">Submit</button>
 
                 </form>
 
