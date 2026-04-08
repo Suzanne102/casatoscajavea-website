@@ -1,5 +1,4 @@
 <?php
-die("HANDLER IS RUNNING");
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     echo "<h2>Acceso inválido</h2>";
@@ -15,8 +14,6 @@ function clean(string $value): string {
 $tipodoc          = clean($_POST['tipodoc']          ?? '');
 $numeroID         = clean($_POST['no-id']            ?? '');
 $fechaExpedicion  = clean($_POST['fecha-expedicion'] ?? '');
-$apellido1        = clean($_POST['apellido1']        ?? '');
-$apellido2        = clean($_POST['apellido2']        ?? '');
 $nombre           = clean($_POST['nombre']           ?? '');
 $sexo             = clean($_POST['sexo']             ?? '');
 $fechaNacimiento  = clean($_POST['fecha-nacimiento'] ?? '');
@@ -74,8 +71,6 @@ $csvRow  = [
     $tipodoc,
     $numeroID,
     $fechaExpedicion,
-    $apellido1,
-    $apellido2,
     $nombre,
     $sexo,
     $fechaNacimiento,
@@ -95,8 +90,6 @@ if ($csvHandle) {
             'tipodoc',
             'numeroID',
             'fechaExpedicion',
-            'apellido1',
-            'apellido2',
             'nombre',
             'sexo',
             'fechaNacimiento',
@@ -128,7 +121,7 @@ if (file_exists(__DIR__ . '/vendor/fpdf.php')) {
 
     // Basic info
     $pdf->Cell(50, 8, 'Name:', 0, 0);
-    $pdf->Cell(0, 8, $nombre . ' ' . $apellido1 . ' ' . $apellido2, 0, 1);
+    $pdf->Cell(0, 8, $nombre, 0, 1);
 
     $pdf->Cell(50, 8, 'Document:', 0, 0);
     $pdf->Cell(0, 8, strtoupper($tipodoc) . ' - ' . $numeroID, 0, 1);
@@ -178,7 +171,7 @@ $to      = 'info@casatoscajavea.com';
 $subject = 'Nuevo registro de huesped - Casa Tosca';
 
 $message  = "Nuevo registro enviado:\n\n";
-$message .= "Nombre: $nombre $apellido1 $apellido2\n";
+$message .= "Nombre: $nombre\n";
 $message .= "Documento: $tipodoc - $numeroID\n";
 $message .= "Fecha de expedicion: $fechaExpedicion\n";
 $message .= "Fecha de nacimiento: $fechaNacimiento\n";

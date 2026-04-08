@@ -37,61 +37,85 @@
                 <p><strong>Province:</strong> Alicante</p>
                 </div>
 
-                <form action="/form-handlers/registro-handler.php" method="post" enctype="multipart/form-data">
+                <form action="/form-handlers/registro-handler.php" method="post" enctype="multipart/form-data" class="guest-form">
+    
                     <input type="hidden" name="lang" value="en">
-                    <!-- Honeypot field for spam prevention -->
                     <input type="text" name="website" style="display:none">
-                
-                    <div class="form-row">
+
+                    <!-- Identification -->
+                    <section class="form-section">
                         <h2>Identification Document</h2>
-                        <label for="id-upload">Upload ID (Passport / ID Card):</label>
-                        <input type="file" id="id-upload" name="id-upload" accept=".jpg,.jpeg,.png,.pdf" required>
-                    </div>
 
-                    <div class="form-row">
-                        <label for="tipodoc">Document Type</label>
-                        <select id="tipodoc" name="tipodoc" required>
-                        <option value="">Select…</option>
-                        <option value="dni">National ID (DNI)</option>
-                        <option value="pasaporte">Passport</option>
-                        <option value="conducir">Driver’s License</option>
-                        </select>
-                    </div>
+                        <div class="form-field">
+                            <label for="id-upload">Upload ID (Passport / ID Card)</label>
+                            <input type="file" id="id-upload" name="id-upload" accept=".jpg,.jpeg,.png,.pdf" required>
+                        </div>
 
-                    <div class="form-row">
-                        <label for="no-id">Document Number</label>
-                        <input type="text" id="no-id" name="no-id" required>
-                    </div>
+                        <div class="form-field">
+                            <label for="tipodoc">Document Type</label>
+                            <select id="tipodoc" name="tipodoc" required>
+                                <option value="">Select…</option>
+                                <option value="dni">National ID (DNI)</option>
+                                <option value="pasaporte">Passport</option>
+                                <option value="conducir">Driver’s License</option>
+                            </select>
+                        </div>
 
-                    <div class="form-row">
-                        <label for="fecha-expedicion">Issue Date</label>
-                        <input type="date" id="fecha-expedicion" name="fecha-expedicion" required>
-                    </div>
+                        <div class="form-field">
+                            <label for="no-id">Document Number</label>
+                            <input type="text" id="no-id" name="no-id" required>
+                        </div>
 
-                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="fecha-expedicion">Issue Date</label>
+                            <input type="date" id="fecha-expedicion" name="fecha-expedicion" required>
+                        </div>
+                    </section>
+
+                    <!-- Guest Info -->
+                    <section class="form-section">
                         <h2>Guest Information</h2>
 
-                        <label for="apellido1">Surname</label>
-                        <input type="text" id="apellido1" name="apellido1" required>
+                        <div class="form-field">
+                            <label for="nombre">Full Name</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
 
-                        <label for="apellido2">Second Surname (optional)</label>
-                        <input type="text" id="apellido2" name="apellido2">
+                        <div class="form-field">
+                            <span class="field-label">Sex</span>
+                            <div class="radio-group">
+                                <label><input type="radio" name="sexo" value="M" required> Male</label>
+                                <label><input type="radio" name="sexo" value="F"> Female</label>
+                            </div>
+                        </div>
 
-                        <label for="nombre">First Name</label>
-                        <input type="text" id="nombre" name="nombre" required>
+                        <div class="form-field">
+                            <label for="fecha-nacimiento">Date of Birth</label>
+                            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                        </div>
 
-                        <label>Sex</label>
-                        <label><input type="radio" name="sexo" value="M" required> Male</label>
-                        <label><input type="radio" name="sexo" value="F"> Female</label>
+                        <div class="form-field">
+                            <label for="pais">Country of Nationality</label>
+                            <input type="text" id="pais" name="pais" required>
+                        </div>
 
-                        <label for="fecha-nacimiento">Date of Birth</label>
-                        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
 
-                        <label for="pais">Country of Nationality</label>
-                        <input type="text" id="pais" name="pais" required>
-                    </div>
+                        <div class="form-field">
+                            <label for="telefono">Phone</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
 
-                    <button type="submit" class="submit-btn">Submit</button>
+                        <div class="form-field">
+                            <label for="fecha-llegada">Arrival Date</label>
+                            <input type="date" id="fecha-llegada" name="fecha-llegada">
+                        </div>
+                    </section>
+
+                    <button type="submit" class="submit-btn">Submit Registration</button>
 
                 </form>
 
