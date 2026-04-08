@@ -191,7 +191,106 @@ $headers = "From: info@casatoscajavea.com\r\n";
 
 @mail($to, $subject, $message, $headers);
 
-// ---------- REDIRECT TO SUCCESS PAGE ----------
-header('Location: /en/pages/forms/registration-confirmation.html');
-exit;
-?>
+// Redirect to THANK YOU page/Spanish version
+$lang = $_POST['lang'] ?? 'es';
+
+if ($lang === 'en') {
+    header("Location: /en/pages/forms/registration-success.html");
+} else {
+    header("Location: /pages/forms/registro-exito.html");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
