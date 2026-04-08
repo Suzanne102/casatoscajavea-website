@@ -192,6 +192,8 @@ $headers = "From: info@casatoscajavea.com\r\n";
 @mail($to, $subject, $message, $headers);
 
 // Redirect to THANK YOU page/Spanish version
+$requestUri = $_SERVER['REQUEST_URI'];
+
 $lang = $_POST['lang'] ?? 'es';
 
 if ($lang === 'en') {
@@ -199,7 +201,7 @@ if ($lang === 'en') {
 } else {
     header("Location: /pages/forms/registro-exito.html");
 }
-
+exit;
 
 
 
