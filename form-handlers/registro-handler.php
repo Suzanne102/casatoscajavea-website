@@ -1,7 +1,7 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    echo "<h2>Acceso inválido</h2>";
+    header("Location: /");
     exit;
 }
 
