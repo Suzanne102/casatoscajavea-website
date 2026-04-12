@@ -45,6 +45,16 @@
       <div id="nav-placeholder"></div>
       <div class="clearfloat"></div>
     </header>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const offer = params.get("offer");
+
+      if (offer === "escapada") {
+        document.querySelector("#offer-note").textContent =
+          "Oferta escapada fin de semana aplicada";
+      }
+    </script>
+    
 
     <!-- MAIN CONTENT -->
   <main class="enquiry-content">
@@ -96,6 +106,7 @@
 
       <button type="submit" class="submit-btn">Enviar</button>
     </form>
+    <p id="offer-note"></p>
     <footer>
       <div id="footer-placeholder"></div>
       <div class="clearfloat"></div>
