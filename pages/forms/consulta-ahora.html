@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- 1. Document metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Ahora</title>
+
+    <!-- 2. SEO -->
+    <meta name="description" content="Rellena el formulario para consultar la disponibilidad y precios de nuestros apartamentos en Casa Tosca Jávea. ¡Te responderemos lo antes posible!">
+    <meta name="keywords" content="consulta, formulario, apartamentos, Casa Tosca, Jávea, disponibilidad, precios">
+
+    <!-- Add hreflang so that Google knows the relationship in BOTH /index.html (ES) and /en/index.html (EN) -->
+    <link rel="canonical" href="https://www.casatoscajavea.com/pages/forms/consulta-ahora.html" />
+    <link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/forms/consulta-ahora.html" />
+    <link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/forms/enquire.html" />
+    <link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/forms/consulta-ahora.html" />
+
+    <!-- 6. Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- 7. Google Tag Manager (in head) -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NBXNHFPD');</script>
+
+	  <!-- 8. Styles & external resources -->
+	  <link rel="stylesheet" href="/css/styles.css" />
+	  <!-- FontAwasome Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/53ce13aac7.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="enquiry-page">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBXNHFPD"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- HEADER -->
+    <header>
+      <div id="nav-placeholder"></div>
+      <div class="clearfloat"></div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+  <main class="enquiry-content">
+    <h1>Consulta & Reserva</h1>
+    <form action="/form-handlers/enquiry-handler.php" method="POST">
+      <!-- Honeypot field for spam prevention -->
+      <input type="text" name="website" style="display:none">
+
+      <div class="form-row"><h2>Ingresa tus datos</h2></div>
+
+      <label for="firstName">Nombre</label>
+      <input type="text" id="firstName" name="firstName" placeholder="Nombre" required>
+
+      <label for="lastName">Apellido</label>
+      <input type="text" id="lastName" name="lastName" placeholder="Apellido" required>
+
+      <label for="email">Correo Electronico</label>
+      <input type="email" id="email" name="email" placeholder="Correo Electronico" required>
+
+      <label for="phone">Telefono</label>
+      <input type="tel" id="phone" name="phone" placeholder="Telefono Mobile" required>
+
+      <div class="apart-row"><h2>Eliga una de nuestras 5 opciones</h2></div>
+      <select name="apart-no" id="apart-no" aria-label="Select an apartment" required>
+        <option value="" disabled selected>Por favor, elige una opcion</option>
+        <option value="No.1">NO. 1 - 55-60€</option>
+        <option value="No.2">NO. 2 - 120-130€</option>
+        <option value="No.3">NO. 3 - 80-90€</option>
+        <option value="No.4">NO. 4 - 130-145€</option>
+        <option value="No.5">NO. 5 - 75-85€</option>
+      </select>
+
+      <div class="form-row"><h2>Cuantos personas?</h2></div>
+      <select name="no-of-people" id="no-of-people" required aria-label="Number of guests">
+        <option value="" disabled selected>Por favor, elige una opcion</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+
+      <div class="form-row"><h2>Elige tus fechas</h2></div>
+
+      <label for="checkInDate">Check-in</label>
+      <input type="date" id="checkInDate" name="checkInDate" required>
+
+      <label for="checkOutDate">Check-out</label>
+      <input type="date" id="checkOutDate" name="checkOutDate" required>
+
+      <button type="submit" class="submit-btn">Enviar</button>
+    </form>
+    <footer>
+      <div id="footer-placeholder"></div>
+      <div class="clearfloat"></div>
+    </footer>
+
+  </main>
+
+    <!-- Templates & Scripts -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // Load navigation
+      fetch('/templates/nav.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('nav-placeholder').innerHTML = data;
+
+          // Load nav.js AFTER nav.html is in DOM
+          const script = document.createElement('script');
+          script.src = "/js/nav.js";
+          script.onload = () => {
+            initNav(); // now nav.js exists, and nav.html exists
+          };
+          document.body.appendChild(script);
+        });
+      // Load footer
+      fetch('/templates/footer.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+        });
+      // Load apartment navbar
+      fetch('/templates/apt-nav.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('apt-nav-placeholder').innerHTML = data;
+        });
+      });
+    </script>
+  </body>
+</html>
