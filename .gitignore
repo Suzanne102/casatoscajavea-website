@@ -30,3 +30,4 @@ cgi-bin/
 # Design / assets not needed
 *.psd
 assets/fontawesome/
+images/brochure/
