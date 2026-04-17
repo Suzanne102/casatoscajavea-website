@@ -39,15 +39,17 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-	margin-top: 20px;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
-	padding-right: 20px;
-	padding-left: 30px;
+	margin-top: 20px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
-
 h1 {
-	font-size: 1.6rem;
-	text-align: center;
+  font-size: clamp(1.8rem, 2.5vw, 2.6rem);
+  text-align: center;
+  color: #4b3d33;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 h2 {
@@ -386,16 +388,84 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 .btn-consulta:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0,0,0,.12); }
 
-/* container alignment */
-.booking-links {
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
-  padding-right: 12px;
-  font-size: 1rem;
+/* STYLING FOR Apartment.html page 
+container alignment */
+
+.hero h1 {
+  font-size: 1.6rem;
+  text-align: center;
 }
+
+.apartments-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.apartment-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.apartment-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+  /* Styling for Booking links on the Apartment pages */
+  .booking-links {
+    justify-content: flex-end; /* move to right on mobile */
+    padding-right: 12px;
+  }
+
+/* ===== BOOKING BUTTONS ===== */
+
+/* Base style */
+.booking-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+/* Airbnb */
+.airbnb-btn {
+  background-color: #FF5A5F;
+}
+
+.airbnb-btn:hover {
+  background-color: #e04848;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* Booking */
+.booking-btn {
+  background-color: #0071c2;
+}
+
+.booking-btn:hover {
+  background-color: #005b99;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* Icon spacing */
+.booking-links i {
+  margin-right: 4px;
+}
+/* END OF BOOKING LINKS STYLES */
 
 .cta.secondary {
   background-color: #0071c2; /* Booking blue */
@@ -1448,17 +1518,12 @@ address {
   body {
         font-size: 1.2rem;
   }
-  
-    h1, h2 {
-        padding-left: 0;
-        padding-right: 0;
-  }
-  
+    
   h1 {
-        font-size: 1.4rem;
-        padding-top: 8%;
+    font-size: clamp(1.6rem, 5vw, 2rem);
+    margin-top: 10px;
   }
-  
+
   h2 {
         font-size: 1.3rem;
   }
@@ -1613,7 +1678,6 @@ address {
   .asterisk-note {
     font-size: 0.85rem;
   }
-
     /* Apartment pages No1 to No5 Stack details: show INFO first (so guests see key details before the calendar). 
      Swap the order if you prefer calendar first. */
   .apartment-details {
