@@ -1,47 +1,55 @@
 /* STYLESHEET FOR CASA TOSCA JAVEA WEBSITE */
 /* Site Colors*/
 :root {
-  --color-primary-1: #CEB3AA;       /* light pink */
-  --color-primary-2: #D2BEBE;       /* lighter pink */
-  --color-primary-3: #caa16c;       /* light stone */
+  --color-primary-1: #ceb3aa; /* light pink */
+  --color-primary-2: #d2bebe; /* lighter pink */
+  --color-primary-3: #caa16c; /* light stone */
   --color-primary-4: #f3edef;
 
-  --background-color-1: #f4f7f4;    /* light sage */
-  --background-color-2: #f8f1e6;    /* light stone */
-  --background-color-3: #eaf6ec;    /* Soft mint green */ 
+  --background-color-1: #f4f7f4; /* light sage */
+  --background-color-2: #f8f1e6; /* light stone */
+  --background-color-3: #eaf6ec; /* Soft mint green */
 
-  --text-color-1: #575757;          /* dark gray */
-  --text-color-2: #8d8076;          /* light gray */
-  --text-hover-color: #4E5869; /* desaturated blue for hover effects */
+  --text-color-1: #575757; /* dark gray */
+  --text-color-2: #8d8076; /* light gray */
+  --text-hover-color: #4e5869; /* desaturated blue for hover effects */
 
   --gap: clamp(16px, 2vw, 28px);
   --card-bg: #fff;
   --border: 1px solid #e7e7e7;
   --radius: 12px;
-  --shadow: 0 6px 20px rgba(0,0,0,.06);
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
   --brand: #0e7a6d;
   --text: #2a2a2a;
 }
 
 html {
-    font-size: 100%;
+  font-size: 100%;
 }
 
 body {
-	background: var(--background-color-1); /* this is a light sage background color */
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	color: #333;
-	font-family: Tahoma, Geneva, sans-serif;
-	font-size: 1.5rem;
-	line-height: 1.6;
+  background: var(
+    --background-color-1
+  ); /* this is a light sage background color */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-	margin-top: 20px;
-	padding-left: 0;
-	padding-right: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 5px;
 }
 
 h1 {
@@ -53,33 +61,34 @@ h1 {
 }
 
 h2 {
-	font-size: 1.6rem;
-	text-align: center;
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 h3 {
-	font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 h4 {
-	font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 h5 {
-	font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 h6 {
-	font-size: 1rem
+  font-size: 1rem;
 }
 
-a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
-	border: none;
+a img {
+  /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+  border: none;
 }
 
 /* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
 a:link {
-	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+  text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
 }
 
 .seo-links {
@@ -97,12 +106,15 @@ a:link {
 }
 
 a:visited {
-	color: #4E5869;
-	text-decoration: underline;
+  color: #4e5869;
+  text-decoration: underline;
 }
-a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
-	text-decoration: none;
-	color:#4E5869;
+a:hover,
+a:active,
+a:focus {
+  /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+  text-decoration: none;
+  color: #4e5869;
 }
 
 .visually-hidden {
@@ -119,30 +131,30 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 /* LOGO AND NAV MENU _ GENERAL */
 .casatosca-logo {
-    width: 120px;
-    height: auto;
-    padding-top: 10px;
+  width: 120px;
+  height: auto;
+  padding-top: 10px;
 }
 
 .nav-menu {
-    display: flex;
-    gap: 15px;
-    list-style: none;
-    background: none;
-    padding: 0;
-    margin: 0;
-    align-items: center;
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
 }
 
 .nav-menu li a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .nav-menu li a:hover {
-    color: #666;
+  color: #666;
 }
 
 .container {
@@ -199,7 +211,9 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
   font-weight: bold;
   text-decoration: none;
   border-radius: 4px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
   font-size: 1rem;
 }
 
@@ -232,10 +246,10 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 /* HERO CONTENT OR SECTION */
 .hero-content {
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	color: #033
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #033;
 }
 
 .hero-img-container {
@@ -253,7 +267,8 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
   display: block;
 }
 
-.hero-activities, .hero-about{
+.hero-activities,
+.hero-about {
   background-size: cover;
   background-position: center;
   padding: 6rem 2rem;
@@ -261,16 +276,20 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
   text-align: center;
 }
 
-.hero-activities{
-  background-image: url('/images/hero-activities.jpg');
+.hero-activities {
+  background-image: url("/images/hero-activities.jpg");
 }
 
-.hero-about{
-  background-image: url('/images/about/hero-about.jpg');
+.hero-activities h1 {
+  color: var(--color-primary-4);
+}
+
+.hero-about {
+  background-image: url("/images/about/hero-about.jpg");
 }
 
 .hero-apt-ca {
-  background-image: url('/images/gallery/ca/19-6-interior-01.jpg');
+  background-image: url("/images/gallery/ca/19-6-interior-01.jpg");
   background-size: cover;
   background-position: center;
   padding: 6rem 2rem;
@@ -281,7 +300,6 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 .hero-actions {
   margin-top: 1rem;
   list-style: none;
-
 }
 
 /* HOMEPAGE APARTMENTS SECTION */
@@ -293,7 +311,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
   margin: 2rem auto;
   border-radius: 12px;
   max-width: 1100px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 }
 
 /* Title */
@@ -325,7 +343,9 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
   background: #ffffff;
   border-radius: 8px;
   border: 1px solid #e7e7e7;
-  transition: transform 0.15s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
 }
 
 /* Link styling */
@@ -340,7 +360,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 /* Hover effect */
 .apartment-links li:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
 }
 
 /* Link hover */
@@ -358,13 +378,16 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
   border-radius: 6px;
   text-decoration: none;
   font-size: 1.05rem;
-  transition: transform 0.15s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .btn-primary:hover {
   background-color: #b8914f;
   transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
 .btn-secondary {
@@ -392,24 +415,31 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px; /* Optional: smooth edges */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  transition:
+    background-color 0.3s,
+    color 0.3s; /* Smooth transition for hover effect */
 }
 
 /* base button look */
 .btn-consulta {
   display: inline-flex;
   align-items: center;
-  gap: .5rem;
-  padding: .75rem 1rem;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
   background: #0f6;
   color: #0a0a0a;
   text-decoration: none;
   font-weight: 600;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,.08);
-  transition: transform .08s ease, box-shadow .2s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.08s ease,
+    box-shadow 0.2s ease;
 }
-.btn-consulta:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0,0,0,.12); }
+.btn-consulta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
 
 /* STYLING FOR Apartment.html page 
 container alignment */
@@ -431,21 +461,23 @@ container alignment */
   background: #fff;
   border-radius: 12px;
   padding: 1rem;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .apartment-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 /* ===== BOOKING BUTTONS ===== */
 /* Styling for Booking links on the Apartment pages 
   and on the NO1 to 5 en/es */
 
-  .booking-links {
+.booking-links {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -463,18 +495,20 @@ container alignment */
   text-decoration: none;
   font-weight: 500;
   color: white;
-  transition: transform 0.15s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
 }
 
 /* Airbnb */
 .airbnb-btn {
-  background-color: #FF5A5F;
+  background-color: #ff5a5f;
 }
 
 .airbnb-btn:hover {
   background-color: #e04848;
   transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
 /* Booking */
@@ -485,7 +519,7 @@ container alignment */
 .booking-btn:hover {
   background-color: #005b99;
   transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
 /* Icon spacing */
@@ -512,7 +546,7 @@ container alignment */
   margin: auto;
   background: white;
   padding: 2rem;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .thank-you-page {
@@ -526,7 +560,8 @@ label {
   font-weight: bold;
 }
 
-input, select {
+input,
+select {
   width: 100%;
   padding: 0.5rem;
   margin-top: 0.3rem;
@@ -534,7 +569,8 @@ input, select {
   border-radius: 4px;
 }
 
-.apart-row, .form-row {
+.apart-row,
+.form-row {
   margin-top: 2rem;
 }
 
@@ -676,7 +712,7 @@ button.submit-btn:hover {
   padding: 2rem;
   border-radius: 10px;
   margin-top: 2rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 /* Instructions below the map */
@@ -710,11 +746,21 @@ button.submit-btn:hover {
 }
 
 /* Colors matching your calendar colors */
-.apt-link.blue   { background: #4285F4; }  /* Google blue */
-.apt-link.yellow { background: #F6BF26; }  /* Calendar yellow */
-.apt-link.red    { background: #D50000; }  /* Calendar red */
-.apt-link.orange { background: #EF6C00; }  /* Calendar orange */
-.apt-link.green  { background: #0B8043; }  /* Calendar green */
+.apt-link.blue {
+  background: #4285f4;
+} /* Google blue */
+.apt-link.yellow {
+  background: #f6bf26;
+} /* Calendar yellow */
+.apt-link.red {
+  background: #d50000;
+} /* Calendar red */
+.apt-link.orange {
+  background: #ef6c00;
+} /* Calendar orange */
+.apt-link.green {
+  background: #0b8043;
+} /* Calendar green */
 
 .apt-link:hover {
   opacity: 0.85;
@@ -733,10 +779,10 @@ button.submit-btn:hover {
 }
 
 .apt-box p {
-    font-size: 1.2rem;
-    font-weight: 800;
-    padding: 0 8px;
-  }
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: 0 8px;
+}
 
 .apartment-gallery {
   flex: 1 1 calc(33.33% - 20px);
@@ -755,13 +801,13 @@ button.submit-btn:hover {
   overflow: hidden;
   flex: 1 1 calc(33.333% - 20px);
   max-width: calc(33.333% - 20px);
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .apt-card p {
-    font-size: 1rem;
-    padding: 0 8px;
-  }
+  font-size: 1rem;
+  padding: 0 8px;
+}
 
 .apt-card img {
   width: 100%;
@@ -770,11 +816,9 @@ button.submit-btn:hover {
   display: block;
 }
 
-
 .apt-card:hover {
   transform: translateY(-5px);
 }
-
 
 /* Caption Overlay */
 .apt-caption {
@@ -789,9 +833,9 @@ button.submit-btn:hover {
   text-align: center;
   background: linear-gradient(
     to bottom,
-    rgba(0,0,0,0.35),
-    rgba(0,0,0,0.10)
-  );                             
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.1)
+  );
   /* soft top bar that fades */
   -webkit-backdrop-filter: saturate(110%) blur(1px);
   z-index: 2;
@@ -802,11 +846,12 @@ button.submit-btn:hover {
 /* CAPTION STYLING */
 
 .caption h3 {
-	font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
-.caption h3, .caption p {
-    margin: 5px 0;
+.caption h3,
+.caption p {
+  margin: 5px 0;
 }
 
 /* RESENAS - REVIEWS SECTION */
@@ -883,7 +928,7 @@ button.submit-btn:hover {
 /* 1) Two-column detail area: calendar (left) + info (right) */
 .apartment-details {
   display: grid;
-  grid-template-columns: 2fr 1fr;   /* calendar wider */
+  grid-template-columns: 2fr 1fr; /* calendar wider */
   gap: var(--gap);
   align-items: start;
   margin-bottom: clamp(28px, 4vw, 48px);
@@ -902,7 +947,7 @@ button.submit-btn:hover {
 .apartment-calendar iframe {
   display: block;
   width: 100%;
-  min-height: 540px;               /* adjust to your widget */
+  min-height: 540px; /* adjust to your widget */
   border: 0;
 }
 
@@ -923,7 +968,7 @@ button.submit-btn:hover {
   display: grid;
   grid-template-columns: 1fr;
   gap: 6px;
-  font-size: .90rem;
+  font-size: 0.9rem;
 }
 
 .apartment-info .short-desc {
@@ -938,11 +983,13 @@ button.submit-btn:hover {
   text-decoration: none;
   padding: 10px 14px;
   border-radius: 8px;
-  transition: transform .08s ease, box-shadow .2s ease;
+  transition:
+    transform 0.08s ease,
+    box-shadow 0.2s ease;
 }
 .apartment-info .cta:hover {
   transform: translateY(-1px);
-  box-shadow: 0 8px 16px rgba(0,0,0,.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 /* AMENITIES STYLES FOR ALL ICONS ON ONE LINE DESKTOP*/
@@ -1040,7 +1087,7 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #25D366;
+  background: #25d366;
   color: white;
   padding: 10px 14px;
   border-radius: 50px;
@@ -1116,7 +1163,7 @@ address {
   height: auto;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -1141,10 +1188,10 @@ address {
 /* Images scale nicely without distortion */
 .apt-gallery .img-grid-item {
   width: 100%;
-  height: auto;                 /* keep original aspect ratio */
+  height: auto; /* keep original aspect ratio */
   display: block;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Make the LAST image span all columns (so it sits alone on its row) */
@@ -1172,7 +1219,6 @@ address {
 .todo-page:hover {
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
 }
-
 
 /* GUIDE SECTION */
 .guide-links {
@@ -1205,8 +1251,10 @@ address {
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
   font-size: 1rem;
 }
 
@@ -1235,13 +1283,12 @@ address {
 
 /* Buttons back to sections */
 
-
 /* ACTIVITIES PAGE – BEACHES LIST **/
 .activity-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-  margin-top: 15px; 
+  margin-top: 15px;
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
@@ -1251,20 +1298,21 @@ address {
   background: #fff;
   border-radius: 10px;
   padding: 1rem;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .activity-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .activity-card h4 {
   margin-top: 0;
   color: #4b3d33;
   font-size: 1.05rem;
-
 }
 
 .activity-card p {
@@ -1272,7 +1320,6 @@ address {
 }
 
 .activity-nav {
-
   display: flex;
 
   flex-wrap: wrap;
@@ -1284,11 +1331,9 @@ address {
   margin: 2rem auto;
 
   max-width: 900px;
-
 }
 
 .activity-nav a {
-
   display: inline-flex;
 
   align-items: center;
@@ -1310,17 +1355,14 @@ address {
   font-weight: 500;
 
   transition: all 0.2s ease;
-
 }
 
 .activity-nav a:hover {
-
   background-color: #caa16c;
 
   color: white;
 
   transform: translateY(-2px);
-
 }
 .activity-list {
   margin-top: 10px;
@@ -1357,11 +1399,11 @@ address {
   display: none;
 }
 
-.fiestas-accordion  {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 20px;
-} 
+.fiestas-accordion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px;
+}
 
 .fiestas-accordion details {
   margin-bottom: 15px;
@@ -1399,7 +1441,7 @@ address {
   border-radius: 6px;
   padding: 15px;
   background: #fafafa;
-} 
+}
 
 /*STYLES FOR THE ACTIVITIES PAGE ONLY */
 /* Reusable activity blocks + imagery */
@@ -1415,13 +1457,14 @@ address {
   color: #003366;
   display: flex;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .activity-figure {
   margin: 8px 0 14px;
 }
-.activity-figure.sm { /* smaller top banner for the fiestas section */
+.activity-figure.sm {
+  /* smaller top banner for the fiestas section */
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -1433,11 +1476,11 @@ address {
   object-fit: cover;
   border-radius: 10px;
   display: block;
-  box-shadow: 0 2px 10px rgba(0,0,0,.06);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
 }
 
 .activity-figure figcaption {
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #666;
   margin-top: 6px;
   text-align: center;
@@ -1461,8 +1504,7 @@ address {
   font-size: 1.2rem;
   padding: 14px;
   line-height: 1.4rem;
-  }
-
+}
 
 /* END OF GENERAL STYLES - START OF MEDIA QUERIES FOR RESPONSIVE DESIGN */
 
@@ -1509,7 +1551,7 @@ address {
   height: auto;
   max-width: clamp(160px, 25vw, 300px);
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 /* gilght box */
@@ -1524,37 +1566,36 @@ address {
 
 /* Optional: XL screens (1200px and up) */
 @media (min-width: 1024px) {
-  .apt-box {  
+  .apt-box {
     flex-direction: row;
     justify-content: center;
     gap: 30px;
-    }
-    /* wide layout tweaks */
+  }
+  /* wide layout tweaks */
 
   .apt-card img {
     height: 400px;
-    width: auto
-    }
+    width: auto;
+  }
 
   .apartment-details {
     grid-template-columns: 1.5fr 1fr; /* slightly tighter on tablets */
-    }
-  .apt-gallery { grid-template-columns: repeat(8, 1fr); 
+  }
+  .apt-gallery {
+    grid-template-columns: repeat(8, 1fr);
   }
 
   .calendar {
     grid-template-columns: repeat(3, 1fr);
   }
-
 }
 
 /* RESPONSIVE DESIGN - MAP/CAL  side-by-side layout - Used in Index page */
-@media (min-width: 900px ) and (max-width: 1023px) {
-
+@media (min-width: 900px) and (max-width: 1023px) {
   .amenity-item {
-	font-size: 1.1rem;
-	padding: 10px;
-	line-height: 1.2rem;
+    font-size: 1.1rem;
+    padding: 10px;
+    line-height: 1.2rem;
   }
   .map-grid {
     display: grid;
@@ -1566,13 +1607,10 @@ address {
   .calendar-panel {
     min-width: 0;
   }
-
-} 
+}
 /*end of media query section for Map/Cal */
 
-
 @media (min-width: 769px) and (max-width: 1199px) {
-  
   .nav-menu i {
     display: none; /* hides the Font Awesome icons */
   }
@@ -1601,13 +1639,13 @@ address {
     flex-direction: column;
     justify-content: space-between;
   }
-  
+
   .apt-card img {
     height: 300px; /* Adjusted height for smaller screens */
   }
 
   .apt-box .apt-card p {
-    font-size: 1.0rem;
+    font-size: 1rem;
     line-height: 1.3;
     padding: 0 10px;
   }
@@ -1616,13 +1654,14 @@ address {
     grid-template-columns: repeat(2, 1fr);
   }
 
-   /* Styling for the Activity Holidays and Events */
+  /* Styling for the Activity Holidays and Events */
   /* DEFAULT: Always show only the month to expand */
 
   .fiestas-accordion {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 20px;  }
+    gap: 20px;
+  }
 
   .fiestas-accordion details {
     background: #fff;
@@ -1632,15 +1671,15 @@ address {
 
   .fiestas-accordion li {
     font-size: 1.3rem;
-  } 
-  
+  }
+
   .activity-figure,
   #hikes .activity-figure,
   #restaurants .activity-figure,
   #bikes .activity-figure {
     grid-column: 1 / 2;
   }
-  
+
   /* FOOTER 2-column layout for medium screens */
 
   footer {
@@ -1657,30 +1696,29 @@ address {
 
 /* MEDIA QUERY GENERAL - 768px NAV MENU_LOGO_TITLES*/
 @media (max-width: 768px) {
-
   body {
-        font-size: 1.2rem;
+    font-size: 1.2rem;
   }
-    
+
   h1 {
     font-size: clamp(1.6rem, 5vw, 2rem);
     margin-top: 10px;
   }
 
   h2 {
-        font-size: 1.3rem;
+    font-size: 1.3rem;
   }
 
   .casatosca-logo {
-        width: 100px; /* Example smaller size */
+    width: 100px; /* Example smaller size */
   }
 
   .header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-    /* NAV MENU ON SMALL SCREENS */
+  /* NAV MENU ON SMALL SCREENS */
   .nav-menu {
     display: none;
     flex-wrap: wrap;
@@ -1696,27 +1734,27 @@ address {
     gap: 10px;
   }
   .nav-menu li {
-      width: 45%; /* each nav item takes about half the width */
+    width: 45%; /* each nav item takes about half the width */
   }
 
   /* When .show is added, display it */
   .nav-menu.show {
-  display: flex;
-  z-index: 1001;
-  position: absolute;
+    display: flex;
+    z-index: 1001;
+    position: absolute;
   }
 
   .hamburger {
-      display: block;
-      position: absolute;
-      top: 20px;
-      right: 20px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
 
   .apt-nav ul {
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
   }
 
   .booking-links {
@@ -1725,22 +1763,22 @@ address {
   }
 
   .btn-secondary {
-  font-size: 0.9rem;
-  padding: 0.4rem 0.9rem;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.9rem;
   }
 
   .glightbox-button {
     font-size: 24px; /* smaller lightbox buttons */
     padding: 10px;
   }
-  
+
   /* SNMALL SCREENS - Flag size adjustment */
- .lang-switcher {
+  .lang-switcher {
     justify-content: center;
     width: 100%;
     padding: 10px 0;
   }
-  
+
   /* HERO SECTION ADJUSTMENTS FOR SMALL SCREENS */
   .hero-content p {
     font-size: 1rem;
@@ -1755,7 +1793,7 @@ address {
     padding: 1rem 1rem 0 0;
     color: #fff;
   }
-  
+
   /* RESPONSIVE DESIGN - FOR MAP AND CAL. */
   .calendar {
     grid-template-columns: 1fr;
@@ -1763,15 +1801,15 @@ address {
 
   .map,
   .calendar {
-      max-width: 100%;
+    max-width: 100%;
   }
-  
+
   .map-iframe {
-    height: 60vh;   /* adjust as needed */
+    height: 60vh; /* adjust as needed */
   }
-  
+
   .calendar-iframe {
-    width: 100%;   /* taller on mobile */
+    width: 100%; /* taller on mobile */
     height: 600px;
     max-height: 80vh;
     border: 0;
@@ -1785,9 +1823,8 @@ address {
     min-width: 0;
   }
 
-
   .calendar h4 {
-    font-size: .9rem;
+    font-size: 0.9rem;
     padding: 0px;
   }
 
@@ -1801,7 +1838,7 @@ address {
   .apt-card {
     max-width: 100%;
   }
-  
+
   .apt-caption {
     font-size: 0.85rem;
     padding: 0.4rem 0.6rem;
@@ -1818,37 +1855,41 @@ address {
   }
 
   .amenity-item {
-    font-size: .9rem;
+    font-size: 0.9rem;
     padding: 5px 10px;
-    line-height: .7rem;
+    line-height: 0.7rem;
   }
 
   .asterisk-note {
     font-size: 0.85rem;
   }
-    /* Apartment pages No1 to No5 Stack details: show INFO first (so guests see key details before the calendar). 
+  /* Apartment pages No1 to No5 Stack details: show INFO first (so guests see key details before the calendar). 
      Swap the order if you prefer calendar first. */
   .apartment-details {
     grid-template-columns: 1fr;
   }
-  .apartment-info { order: 1; }
-  .apartment-calendar { order: 2; }
-  
-  .apt-gallery { 
+  .apartment-info {
+    order: 1;
+  }
+  .apartment-calendar {
+    order: 2;
+  }
+
+  .apt-gallery {
     grid-template-columns: repeat(6, 1fr);
   }
-  .apt-gallery img { 
-  grid-column: span 3;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
+  .apt-gallery img {
+    grid-column: span 3;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
   }
   /* Activities Page - List of activities */
   .month-desktop {
     display: none;
   }
-  
+
   /* STYLING FOR THE Activities Page  */
   /* Reusable activity blocks + imagery */
   .activity-section {
@@ -1866,7 +1907,7 @@ address {
   .about-row {
     flex-direction: column;
     align-items: center;
-    text-align: left;      /* keep text left-aligned */
+    text-align: left; /* keep text left-aligned */
     padding: 0 1rem;
   }
 
@@ -1897,5 +1938,4 @@ address {
     margin: 1.5rem auto;
     max-width: 100%;
   }
-
 }
