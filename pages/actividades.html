@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+  \
   <head>
     <!-- 1. Document metadata -->
     <meta charset="utf-8" />
@@ -105,8 +106,8 @@
         <div id="nav-placeholder"></div>
         <div class="clearfloat"></div>
       </header>
-
       <main class="content">
+        <a id="top"></a>
         <section class="hero-activities">
           <h1>Explora Jávea: Actividades y Lugares que Encantan</h1>
         </section>
@@ -122,6 +123,16 @@
           Jávea, basada en lo que más nos gusta y en lo que disfrutan nuestros
           huéspedes.
         </p>
+        <div class="activity-nav">
+          <a href="#beaches"><i class="fas fa-swimmer"></i> Playas</a>
+          <a href="#hikes"><i class="fas fa-hiking"></i> Senderismo</a>
+          <a href="#restaurants"
+            ><i class="fas fa-utensils"></i> Restaurantes</a
+          >
+          <a href="#food"><i class="fas fa-fish"></i> Gastronomía</a>
+          <a href="#boats"><i class="fas fa-sailboat"></i> Barco</a>
+          <a href="#bikes"><i class="fas fa-bicycle"></i> Bicicletas</a>
+        </div>
         <section class="guide-links">
           <h2>Guías descargables y en línea</h2>
           <div class="guide-buttons">
@@ -155,6 +166,9 @@
             </figure>
           </div>
         </section>
+        <div class="back-to-nav">
+          <a href="#top">Volver arriba</a>
+        </div>
         <section class="coming-soon">
           <h2>Javea Folk Festival</h2>
           <img
@@ -174,6 +188,9 @@
             decoding="async"
           />
         </section>
+        <div class="back-to-nav">
+          <a href="#top">Volver arriba</a>
+        </div>
         <section class="fiestas-calendar">
           <h2>Festividades y Días Festivos</h2>
           <figure class="activity-figure sm">
@@ -442,6 +459,9 @@
             </div>
           </div>
         </section>
+        <div class="back-to-nav">
+          <a href="#top">Volver arriba</a>
+        </div>
 
         <!-- PLAYAS Y DEPORTES ACUÁTICOS -->
         <section class="activity-section" id="beaches">
@@ -483,6 +503,47 @@
             como Sardinera requieren un pequeño paseo pero ofrecen tranquilidad
             y vistas increíbles.
           </p>
+          <div class="activity-grid">
+            <div class="activity-card">
+              <h4>🏖️ Playa del Arenal</h4>
+              <p>
+                La única playa de arena de Jávea, ideal para familias,
+                restaurantes y paseos al atardecer.
+              </p>
+            </div>
+
+            <div class="activity-card">
+              <h4>🌊 Cala Granadella</h4>
+              <p>
+                Una de las calas más famosas de España, con aguas cristalinas
+                perfectas para snorkel.
+              </p>
+            </div>
+
+            <div class="activity-card">
+              <h4>🌅 Cala Portitxol (La Barraca)</h4>
+              <p>
+                Con sus icónicas puertas azules y vistas increíbles, es perfecta
+                para fotos y kayak.
+              </p>
+            </div>
+
+            <div class="activity-card">
+              <h4>🌿 Cala Sardinera</h4>
+              <p>
+                Más tranquila y salvaje, accesible a pie — ideal si buscas
+                naturaleza y calma.
+              </p>
+            </div>
+
+            <div class="activity-card">
+              <h4>🏝️ Cala Blanca</h4>
+              <p>
+                Muy accesible, con varias pequeñas calas y aguas claras para
+                nadar.
+              </p>
+            </div>
+          </div>
           <div class="guide-buttons">
             <a
               href="https://en.javea.com/playas-y-calas-de-javea/"
@@ -495,6 +556,9 @@
             </a>
           </div>
         </section>
+        <div class="back-to-nav">
+          <a href="#top">Volver arriba</a>
+        </div>
 
         <!-- SENDERISMO Y NATURALEZA -->
         <section class="activity-section" id="hikes">
@@ -531,7 +595,30 @@
             <strong>Cova Tallada</strong> combinan historia, mar y formaciones
             rocosas únicas.
           </p>
+          <div class="activity-grid">
+            <div class="activity-card">
+              <h4>⛰️ Montgó</h4>
+              <p>
+                La ruta más emblemática, con vistas espectaculares de toda la
+                costa.
+              </p>
+            </div>
 
+            <div class="activity-card">
+              <h4>🌊 Cova Tallada</h4>
+              <p>
+                Ruta costera única que combina mar, historia y cuevas
+                impresionantes.
+              </p>
+            </div>
+
+            <div class="activity-card">
+              <h4>🌄 Miradores de Jávea</h4>
+              <p>
+                Ruta fácil en coche o bici con paradas panorámicas increíbles.
+              </p>
+            </div>
+          </div>
           <div class="guide-buttons">
             <a
               href="https://www.wikiloc.com/trails/hiking/spain/valencian-community/javea"
@@ -551,6 +638,9 @@
             </a>
           </div>
         </section>
+        <div class="back-to-nav">
+          <a href="#top"><i class="fas fa-arrow-up"></i> Volver arriba</a>
+        </div>
 
         <!-- RESTAURANTES -->
         <section class="activity-section" id="restaurants">
@@ -614,17 +704,83 @@
             >
               ⭐ Guía Tripadvisor
             </a>
-
-            <a
-              href="https://www.javeaonline24.com/guide/restaurant-guide"
-              class="guide-btn"
-              target="_blank"
-              rel="noopener"
-            >
-              📖 Guía de Restaurantes (EN)
-            </a>
           </div>
         </section>
+        <section class="activity-section" id="food">
+          <header class="activity-header">
+            <h2><i class="fas fa-fish"></i> Platos Típicos de Jávea</h2>
+          </header>
+
+          <p>
+            La gastronomía de Jávea está profundamente ligada al mar y a la
+            tradición valenciana. Aquí podrás disfrutar de arroces, pescados
+            frescos del día y platos típicos llenos de sabor mediterráneo.
+          </p>
+
+          <p>
+            En los restaurantes locales, es habitual encontrar pescado fresco
+            según la pesca del día, por lo que siempre merece la pena preguntar
+            por las recomendaciones.
+          </p>
+
+          <div class="activity-grid">
+            <div class="activity-card">
+              <h4>🐟 Lubina (Sea Bass)</h4>
+              <p>
+                Pescado muy popular, normalmente servido a la plancha o al
+                horno. Ligero, fino y muy sabroso.
+              </p>
+            </div>
+
+            <div class="activity-card">
+              <h4>🐟 Rodaballo (Turbot)</h4>
+              <p>
+                Pescado más carnoso y jugoso, perfecto a la parrilla. Muy
+                apreciado en la costa.
+              </p>
+            </div>
+
+            <div class="activity-card">
+              <h4>🐟 San Pedro / Gallo Pedro (John Dory)</h4>
+              <p>
+                Pescado salvaje de gran calidad, con carne firme y sabor
+                delicado. Una excelente elección.
+              </p>
+            </div>
+
+            <div class="activity-card">
+              <h4>🐟 Merluza (Hake)</h4>
+              <p>
+                Más suave y ligera, muy común en España. Ideal si prefieres un
+                sabor más delicado.
+              </p>
+            </div>
+
+            <div class="activity-card">
+              <h4>🥘 Arroces Valencianos</h4>
+              <p>
+                Paella, arroz a banda, arroz negro o fideuà — imprescindibles en
+                cualquier visita.
+              </p>
+            </div>
+
+            <div class="activity-card">
+              <h4>🍤 Tapas locales</h4>
+              <p>
+                Prueba el pulpo seco (polp sec), las gambas rojas o las cocas
+                tradicionales.
+              </p>
+            </div>
+          </div>
+
+          <p class="local-tip">
+            💡 Consejo local: Pregunta siempre por el “pescado del día” — suele
+            ser la mejor opción del restaurante.
+          </p>
+        </section>
+        <div class="back-to-nav">
+          <a href="#top">Volver arriba</a>
+        </div>
 
         <!-- PASEOS EN BARCO -->
         <section class="activity-section" id="boats">
@@ -727,6 +883,9 @@
             </a>
           </div>
         </section>
+        <div class="back-to-nav">
+          <a href="#top">Volver arriba</a>
+        </div>
       </main>
       <!-- End of content -->
 
@@ -735,5 +894,8 @@
         <div class="clearfloat"></div>
       </footer>
     </div>
+    <a href="#top" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
   </body>
 </html>
