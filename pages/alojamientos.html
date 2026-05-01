@@ -1,81 +1,38 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apartments in Jávea | Casa Tosca</title>
+    <title>Alojamientos en Jávea | Casa Tosca</title>
 
-    <!-- 2. Basic SEO -->
-    <meta
-      name="description"
-      content="Discover our charming apartments in the heart of Jávea's old town."
-    />
-    <link
-      rel="canonical"
-      href="https://www.casatoscajavea.com/en/pages/apartments.html"
-    />
-    <link
-      rel="alternate"
-      hreflang="es"
-      href="https://www.casatoscajavea.com/pages/alojamientos.html"
-    />
-    <link
-      rel="alternate"
-      hreflang="x-default"
-      href="https://www.casatoscajavea.com/en/pages/apartments.html"
-    />
-
-    <!-- 7. GOOGLE TAG MANAGER (HEAD) -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=GTM-NBXNHFPD" + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-NBXNHFPD");
-    </script>
-
-    <!-- 8. CSS STYLESHEETS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="/css/styles.css" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    
-    <!-- 9. JS SCRIPTS -->
     <script src="/js/nav.js" defer></script>
     <script src="/js/loadPartials.js" defer></script>
   </head>
 
   <body>
-    <!-- GTM (noscript) -->
-    <noscript>
-      <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-NBXNHFPD"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe>
-    </noscript>
-    <!-- NAV -->
     <div id="nav-placeholder"></div>
 
     <!-- HERO -->
     <section class="hero small-hero">
-      <h1>Our Apartments in Jávea</h1>
-      <h2>Discover our charming accommodations in the heart of the old town</h2>
+      <h1>Alojamientos en Jávea</h1>
+      <h2>
+        Descubre nuestros encantadores alojamientos en el corazón del casco
+        antiguo
+      </h2>
     </section>
 
-    <!-- APARTMENTS -->
-    <section class="apartments-container">
-      <!-- Room No. 1 -->
+    <!-- APARTAMENTOS -->
+    <main class="apartments-container">
+      <!-- Apartamento 1 -->
       <div class="apartment-card">
-        <h2>Apartment No.1</h2>
+        <h2>Habitación Nº1</h2>
 
         <div
           class="airbnb-embed-frame"
@@ -106,9 +63,9 @@
         </div>
       </div>
 
-      <!-- Apartment 2 -->
+      <!-- Apartamento 2 -->
       <div class="apartment-card">
-        <h2>Apartment No.2</h2>
+        <h2>Apartamento Nº2</h2>
 
         <div
           class="airbnb-embed-frame"
@@ -139,9 +96,9 @@
         </div>
       </div>
 
-      <!-- Apartment 3 -->
+      <!-- Apartamento 3 -->
       <div class="apartment-card">
-        <h2>Apartment No.3</h2>
+        <h2>Apartamento Nº3</h2>
 
         <div
           class="airbnb-embed-frame"
@@ -172,9 +129,9 @@
         </div>
       </div>
 
-      <!-- Apartment 4 -->
+      <!-- Apartamento 4 -->
       <div class="apartment-card">
-        <h2>Apartment No.4</h2>
+        <h2>Apartamento Nº4</h2>
 
         <div
           class="airbnb-embed-frame"
@@ -205,9 +162,9 @@
         </div>
       </div>
 
-      <!-- Apartment 5 -->
+      <!-- Apartamento 5 -->
       <div class="apartment-card">
-        <h2>Apartment No.5</h2>
+        <h2>Apartamento Nº5</h2>
 
         <div
           class="airbnb-embed-frame"
@@ -237,15 +194,14 @@
           </a>
         </div>
       </div>
-    </section>
+    </main>
 
-    <!-- FOOTER -->
-    <div id="footer-placeholder"></div>
-
-    <!-- AIRBNB SCRIPT (IMPORTANT) -->
+    <footer>
+      <div id="footer-placeholder"></div>
+    </footer>
+    <!-- AIRBNB SCRIPT (IMPORTANTE) -->
     <script async src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script>
-
     <!-- LOAD PARTIALS -->
-    <script src="/js/loadPartials.js"></script>
+    <script src="/js/loadPartials.js" defer></script>
   </body>
 </html>
