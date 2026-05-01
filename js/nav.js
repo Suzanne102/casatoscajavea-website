@@ -27,6 +27,7 @@ const langMap = {
     "/en/pages/forms/registration-success.html",
   "/pages/precios.html": "/en/pages/prices.html",
   "/pages/calendarios.html": "/en/pages/calendars.html",
+  "/pages/alojamientos.html": "/en/pages/apartments.html",
 };
 
 // EN -> ES computed from langMap
