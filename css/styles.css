@@ -1428,6 +1428,33 @@ address {
   line-height: 1.4;
 }
 
+.whats-on .activity-card ul {
+  margin: 1rem 0;
+  padding-left: 1.2rem;
+  list-style-position: outside;
+}
+
+.whats-on .activity-card li {
+  margin-bottom: 0.45rem;
+  line-height: 1.5;
+}
+
+.whats-on .activity-card li strong {
+  color: #8b5e3c;
+}
+
+.whats-on .activity-img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 1.25rem auto 0;
+  border-radius: 12px;
+}
+
 .local-tip {
   margin-top: 8px;
   font-size: 0.95rem;
