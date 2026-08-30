@@ -149,6 +149,15 @@
                     decoding="async"
                     class="activity-img"
                   />
+                  <img
+                    src="/images/fiestas/mare-de-deu-01.jpg"
+                    alt="Fiestas Mare de Déu de Loreta en Xàbia"
+                    width="1000"
+                    height="750"
+                    loading="lazy"
+                    decoding="async"
+                    class="activity-img"
+                  />
                 </a>
                 Fechas: <strong>17 Agosto - 8 Septiembre</strong>
                 <strong>Lunes 31</strong> hasta <strong>Jueves 3</strong> de
@@ -203,37 +212,46 @@
           <a href="#bikes"><i class="fas fa-bicycle"></i> Bicicletas</a>
         </div>
 
-        <section class="guide-links">
-          <h2>Guías descargables y en línea</h2>
+        <section class="guide-links" aria-labelledby="guide-title">
+          <h2 id="guide-title">Guías descargables y en línea</h2>
+
           <div class="guide-buttons">
             <a
-              href="https://en.xabia.org/ver/968/Discover-X%C3bia.html"
+              href="https://www.xabia.org/ver/968/Discover-X%C3%A0bia.html"
               class="guide-btn"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fas fa-map"></i> Guía oficial de Xàbia
+              <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
+
+              <span>
+                <strong>Guía oficial de Xàbia</strong>
+                <small>Consultar en línea</small>
+              </span>
+
+              <i
+                class="fas fa-external-link-alt guide-btn-action"
+                aria-hidden="true"
+              ></i>
             </a>
 
-            <!--<a href="https://irp-cdn.multiscreensite.com/dc7531d1/files/uploaded/2021%20Guia%20Javea%20-%20Porta%20Maris%20%28Espa%C3%B1ol%29.pdf" 
-              class="guide-btn" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-file-pdf"></i> Guía rápida (PDF)
-            </a> -->
-            <figure class="guide-thumb">
-              <img
-                src="/images/brochure/guia-javea-ES-thumb.webp"
-                alt="Guia de Javea - Thumbnail"
-              />
-              <figcaption>
-                <a
-                  href="/assets/guia-javea-ES.pdf"
-                  target="_blank"
-                  class="guide-btn"
-                >
-                  <i class="fas fa-file-pdf"></i> Quick Guide (PDF)
-                </a>
-              </figcaption>
-            </figure>
+            <a
+              href="/images/brochures/guia-javea-ES.pdf"
+              class="guide-btn"
+              download
+            >
+              <i class="fas fa-file-pdf" aria-hidden="true"></i>
+
+              <span>
+                <strong>Guía de Jávea</strong>
+                <small>Descargar PDF en español</small>
+              </span>
+
+              <i
+                class="fas fa-download guide-btn-action"
+                aria-hidden="true"
+              ></i>
+            </a>
           </div>
         </section>
         <div class="back-to-nav">
