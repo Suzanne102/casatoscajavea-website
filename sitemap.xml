@@ -4,10 +4,10 @@
 
   <!-- Home -->
   <url>
-    <loc>https://www.casatoscajavea.com/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/index.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/index.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/index.html"/>
+    <loc>https://www.casatoscajavea.com/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/"/>
   </url>
 
   <!-- Activities -->
@@ -37,19 +37,69 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/galeria-fotos.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/galeria-fotos.html"/>
   </url>
+  <url>
+    <loc>https://www.casatoscajavea.com/pages/alojamientos.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/alojamientos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/apartments.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/alojamientos.html"/>
+  </url>
+  <url>
+    <loc>https://www.casatoscajavea.com/en/pages/apartments.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/apartments.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/alojamientos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/alojamientos.html"/>
+  </url>
+  <url>
+    <loc>https://www.casatoscajavea.com/pages/apt/no1.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/apt/no1.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/apt/no1.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/apt/no1.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.casatoscajavea.com/pages/apt/no2.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/apt/no2.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/apt/no2.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/apt/no2.html"/>
+  </url>
+    <url>
+    <loc>https://www.casatoscajavea.com/pages/apt/no3.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/apt/no3.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/apt/no3.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/apt/no3.html"/>
+  </url>
+  <url>
+    <loc>https://www.casatoscajavea.com/pages/apt/no4.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/apt/no4.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/apt/no4.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/apt/no4.html"/>
+  </url>
+    <url>
+    <loc>https://www.casatoscajavea.com/pages/apt/no5.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/apt/no5.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/apt/no5.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/apt/no5.html"/>
+  </url>
+  <url>
+    <loc>https://www.casatoscajavea.com/pages/apt/ca.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/apt/ca.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/apt/ca.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/apt/ca.html"/>
+  </url>
+
 
   <!-- Availability -->
   <url>
-    <loc>https://www.casatoscajavea.com/pages/disponibilidad.html</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/disponibilidad.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/availability.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/disponibilidad.html"/>
+    <loc>https://www.casatoscajavea.com/pages/calendarios.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/calendarios.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/calendars.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/calendarios.html"/>
   </url>
   <url>
-    <loc>https://www.casatoscajavea.com/en/pages/availability.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/availability.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/disponibilidad.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/disponibilidad.html"/>
+    <loc>https://www.casatoscajavea.com/en/pages/calendars.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/calendars.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/calendarios.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/calendarios.html"/>
   </url>
 
   <!-- Optional: other core pages -->
