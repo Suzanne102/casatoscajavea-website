@@ -24,6 +24,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/actividades.html"/>
   </url>
 
+  <!-- Alicante Airport travel guide -->
+  <url>
+    <loc>https://www.casatoscajavea.com/pages/guias/aeropuerto-alicante-javea.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/guias/aeropuerto-alicante-javea.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/guides/airport-to-javea.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/guias/aeropuerto-alicante-javea.html"/>
+  </url>
+  <url>
+    <loc>https://www.casatoscajavea.com/en/pages/guides/airport-to-javea.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.casatoscajavea.com/en/pages/guides/airport-to-javea.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.casatoscajavea.com/pages/guias/aeropuerto-alicante-javea.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.casatoscajavea.com/pages/guias/aeropuerto-alicante-javea.html"/>
+  </url>
+
   <!-- Gallery -->
   <url>
     <loc>https://www.casatoscajavea.com/pages/galeria-fotos.html</loc>
